@@ -1,0 +1,70 @@
+
+<div class="container" fxLayout="column wrap" fxLayoutAlign="start" >
+  <div class="heading-box">
+    <h1 class="heading">Contact Us</h1>
+  </div>
+  <div class="containing" >
+    <div class="flex-container" fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column"   fxLayoutGap="90px">
+
+      <mat-card class="form" fxFlex="50"  >
+        <mat-card-title>Contact form</mat-card-title>
+        <mat-card-content>
+          <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+            <div fxLayout="row wrap" fxLayoutAlign="space-between">
+
+              <div fxFlex="40" fxFlex.xs="45">
+                <h3>Name</h3>
+                <input  type="text" class="input form-control" formControlName="name" placeholder="Name">
+                <span *ngIf="!myReactiveForm.get('name').valid && myReactiveForm.get('name').touched">
+                            Enter valid name.
+                        </span>
+              </div>
+              <div fxFlex="40" fxFlex.xs="45">
+                <h3>Phone</h3>
+                <input  type="tel" maxlength="10" class="input form-control" formControlName="phone" placeholder="Phone">
+                <span *ngIf="!myReactiveForm.get('phone').valid && myReactiveForm.get('phone').touched">
+                                Enter Valid Phone Number.</span>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="space-between" >
+              <div fxFlex="40" fxFlex.xs="100" >
+                <h3>Email</h3>
+                <input  type="email" class="input form-control" formControlName="email" placeholder="Email">
+                <span *ngIf="!myReactiveForm.get('email').valid && myReactiveForm.get('email').touched">
+                                  Enter Valid Email.</span>
+              </div>
+              <div fxFlex="40" fxFlex.xs="100">
+                <h3>Subject</h3>
+                <input  type="text" class="input form-control" formControlName="subject" placeholder="Subject">
+                <span *ngIf="myReactiveForm.get('subject').value==null && myReactiveForm.get('subject').touched ">
+                                Required.</span>
+              </div>
+            </div>
+            <div fxLayout="row wrap">
+              <div fxFlex="99">
+                <h3>Message</h3>
+                <textarea type="textarea" class="message form-control" formControlName="message" placeholder="Message"></textarea>
+                <span *ngIf="myReactiveForm.get('message').touched && myReactiveForm.get('message').value==null">
+                            Required.</span>
+              </div>
+            </div>
+            <div>
+              <button mat-flat-button type="submit" class="button" [disabled]="!myReactiveForm.valid">Send</button>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="services" fxFlex="33">
+        <mat-card-content>
+          <mat-icon class="icon">phone</mat-icon>
+          <h2>contact customer service</h2>
+          <p> Need assistance? Our customer service is here to assist you Monday through Friday from 9 am EST to 10 pm EST.</p>
+          <mat-icon class="icon">live_help</mat-icon>
+          <h2>Khan copper Faq</h2>
+          <p> You might find the answer you’re looking for in our frequently asked questions</p>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
