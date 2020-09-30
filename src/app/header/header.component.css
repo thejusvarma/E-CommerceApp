@@ -1,0 +1,11 @@
+.header-spacer {
+  height : 10%;
+  width:100%;
+}
+
+@media screen and (min-width: 700px) {
+  .header-spacer {
+    height : 18%;
+
+  }
+}

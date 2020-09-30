@@ -26,10 +26,7 @@
       background-color: #FFD7B5;
       margin-right: 9%;
   }
-  body {
-    overflow: hidden;
-    font-family: Poppins;
-  }
+
   .loader,
 .loader:before,
 .loader:after {
