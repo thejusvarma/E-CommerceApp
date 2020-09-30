@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+    background-color: #e1e1e1;
+  }
+  
+  .flex-container > div {
+    background-color: white;
+    text-align: center;
+    line-height: 8vw;
+    font-size: 5vw;
+  }
+  #rcorners2 {
+    border-radius: 1vw;
+    border: 2px solid #FFD7B5;
+  }
+  #rcorners1 {
+    border-radius: 3vw;
+    border: 2px solid white;
+  }
+  .header {
+    word-spacing: 2vw;
+  }

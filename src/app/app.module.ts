@@ -28,6 +28,9 @@ import { MyCartComponent } from './my-cart/my-cart.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {FooterComponent} from './footer/footer.component';
 import {ContactUsComponent} from './contact-us/contact-us.component';
+import {AboutUsComponent} from './about-us/about-us.component';
+import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +41,10 @@ import {ContactUsComponent} from './contact-us/contact-us.component';
     ProductCardComponent,
     MyCartComponent,
     FooterComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    AboutUsComponent,
+    OrderPlaceSuccessComponent,
+
   ],
   imports: [
     BrowserModule,
