@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { SidenavComponent } from './header/sidenav/sidenav.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {FormsModule,ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatMenuModule} from '@angular/material/menu';
@@ -27,6 +27,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { MyCartComponent } from './my-cart/my-cart.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {FooterComponent} from './footer/footer.component';
+import {ContactUsComponent} from './contact-us/contact-us.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import {FooterComponent} from './footer/footer.component';
     MegaMenuComponent,
     ProductCardComponent,
     MyCartComponent,
-    FooterComponent
+    FooterComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
