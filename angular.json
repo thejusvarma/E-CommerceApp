@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Khan-Coppers-Frontend": {
+    "Khan-Coppers-Admin-Frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Khan-Coppers-Frontend",
+            "outputPath": "dist/Khan-Coppers-Admin-Frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Khan-Coppers-Frontend:build"
+            "browserTarget": "Khan-Coppers-Admin-Frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Khan-Coppers-Frontend:build:production"
+              "browserTarget": "Khan-Coppers-Admin-Frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Khan-Coppers-Frontend:build"
+            "browserTarget": "Khan-Coppers-Admin-Frontend:build"
           }
         },
         "test": {
@@ -112,16 +112,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Khan-Coppers-Frontend:serve"
+            "devServerTarget": "Khan-Coppers-Admin-Frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Khan-Coppers-Frontend:serve:production"
+              "devServerTarget": "Khan-Coppers-Admin-Frontend:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Khan-Coppers-Frontend"
+  "defaultProject": "Khan-Coppers-Admin-Frontend"
 }

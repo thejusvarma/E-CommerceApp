@@ -1,0 +1,164 @@
+.example-spacer {
+  flex: auto;
+}
+button{
+  color:black;
+  background-color: #FFD7B5;
+  border: none;
+  margin-left: -25px;
+  margin-bottom: 10px;
+}
+ .mat-toolbar{
+  background-color: #FFD7B5;
+ }
+ .mat-icon{
+  margin-top: 8px;
+  color:black;
+ }
+
+ .seacrh-icon-pad{
+  margin:0px;
+  color: white;
+  background-color: white;
+ }
+
+ img{
+   margin-top: 8px;
+   height: 60%;
+   width: 100%;
+   margin-left: -15px;
+ }
+
+ .example-form {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  padding-left: 40px;
+  margin-top: 10px;
+  margin-left: 5%;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 1px solid white;
+  float: left;
+  width: 80%;
+  background: white;
+  outline-width: 0;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 10%;
+  height: 42px;
+  margin-top: 10px;
+  background:black;
+  color: white;
+  font-size: 17px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  outline-width: 0;
+  outline-style: none;
+  outline-offset: 0;
+}
+
+form.example button .mat-icon {
+  color: white;
+}
+
+form.example button:hover .mat-icon {
+  color: black;
+}
+
+form.example button:hover {
+  background: rgb(209, 204, 204);
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* phone view input box */
+.phone input{
+  padding: 10px;
+  margin: 15px;
+}
+
+/* phone view input form  */
+.phone-form {
+  width: 100%;
+}
+
+
+/* phoneview search field style*/
+form.phone input[type=text] {
+  padding: 10px;
+  padding-left: 40px;
+  margin-top: 10px;
+  margin-left: 5%;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 1px solid white;
+  float: left;
+  width: 80%;
+  background: white;
+  outline-width: 0;
+}
+
+/* phoneview Style the submit button */
+form.phone button {
+  float: left;
+  width: 15%;
+  height: 42px;
+  margin-top: 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  border: 1px solid white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  outline-width: 0;
+  outline-style: none;
+  outline-offset: 0;
+  margin-left: -10%;
+}
+
+form.phone button .mat-icon {
+  color: white;
+}
+
+form.phone button:hover {
+  background: rgb(68, 61, 61);
+}
+
+.display{
+  display: none;
+}
+
+.phonesearch:hover .display{
+  display: block;
+}
+
+/* Clear floats */
+form.phone::after {
+  content: "";
+  clear: both;
+  display: table;
+}
