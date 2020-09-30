@@ -1,0 +1,55 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-evenly center">
+  <div fxFlex="1" fxFlex.xs="10">
+    <button (click)="onSelect()" fxShow [fxShow.gt-xs]="isVisibleOnMobile()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <div fxFlex="15" fxFlex.xs="35">
+    <span><a> <img src="../../../assets/logo.png"> </a></span>
+  </div>
+
+  <div fxFlex="60" fxFlex.xs="15" [fxShow.xs]="isVisibleOnMobile()">
+    <form class="example" action=" ">
+      <input type="text" placeholder="Search for Products" name="search">
+      <button type="submit"><mat-icon class="search-icon-pad"><a class="search-icon-pad">search</a></mat-icon></button>
+    </form>
+  </div>
+
+  <div class="phonesearch">
+    <div fxFlex="5" fxFlex.xs="8" fxShow [fxShow.gt-xs]="isVisibleOnMobile()" >
+      <a href="#" >
+        <mat-icon  matBadge="15" matBadgeColor="warn">search</mat-icon>
+      </a>
+    </div>
+  </div>
+
+  <div fxFlex="5" fxFlex.xs="15" [fxShow.lt-sm]="isVisibleOnMobile()">
+    <a href="#" matTooltip="My Profile">
+      <mat-icon matBadge="15"  matBadgeColor="warn">perm_identity</mat-icon>
+    </a>
+  </div>
+
+  <div fxFlex="5" fxFlex.xs="8">
+    <a href="#"  matTooltip="Wishlist">
+      <mat-icon matBadge="15"  matBadgeColor="accent">assignment</mat-icon>
+    </a>
+  </div>
+
+  <div fxFlex="5" fxFlex.xs="5" >
+    <a href="#" matTooltip="My Cart">
+      <mat-icon matBadge="15" matBadgeColor="accent">shopping_basket</mat-icon>
+    </a>
+  </div>
+</mat-toolbar>
+
+<div class="display" >
+  <div fxLayoutAlign="center none">
+    <form class="phone" action=" ">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><mat-icon class="search-icon-pad-phone"><a class="search-icon-pad-phone">search</a></mat-icon></button>
+    </form>
+  </div>
+</div>
+
+

@@ -1,0 +1,109 @@
+.w3-card {
+  position : relative;
+}
+
+.w3-display-bottomleft {
+  bottom : 5%;
+  left : 2%;
+  display : none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 0.96rem;
+}
+
+
+.bold {
+font-weight: bold !important;
+}
+
+
+.prod-card{
+  width: 280px;
+  height: 280px;
+  position: relative;
+  max-width:100%;
+  overflow : hidden;
+  padding:0 !important;
+}
+
+
+.ul-effect {
+  position: relative;
+}
+
+.ul-effect:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #b79b6c;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.ul-effect:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+
+.prod-cart {
+  display:none;
+}
+
+.w3-card:hover > img {
+  opacity: 0.6;
+  transform: scale(1.01);
+}
+
+.w3-card:hover > .w3-display-bottomleft {
+  display: block;
+}
+
+.prod-card:hover > .prod-detail {
+  display:block;
+}
+
+.prod-category:hover, .prod-title:hover {
+  color: #b79b6c;
+  font-weight: bold !important;
+
+}
+
+.prod-price-cart:hover > .prod-price {
+display: none;
+}
+
+
+.prod-price-cart:hover > .prod-cart {
+  display:block !important;
+      color: #b79b6c;
+      font-weight: bold !important;
+  }
+
+.w3-button:hover {
+  background-color :#b79b6c !important;
+  color : white !important;
+
+}
+
+
+.button {
+  margin-top:2px;
+  margin-right:8px;
+  border:none !important;
+  border-radius: 4%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .prod-buttons {
+    display: none !important;
+  }
+}

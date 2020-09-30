@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Khan-Coppers-Frontend app is running!');
+    expect(page.getTitleText()).toEqual('Khan-Coppers-Admin-Frontend app is running!');
   });
 
   afterEach(async () => {

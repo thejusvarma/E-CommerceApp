@@ -1,0 +1,124 @@
+.flex-container{
+  margin:5%;
+  margin-top: 3%;
+}
+.gap{
+  margin-top: 1%;
+  margin-left: 4%;
+}
+
+img{
+  width: 100%;
+}
+.text{
+  font-size: 200%;
+}
+.textcenter{
+  padding-right: auto;
+  padding-left: auto;
+}
+.price-details-cont{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.address-feature{
+  width: fit-content;
+  height: fit-content;
+  border:solid 0px whitesmoke;
+  background-color: whitesmoke;
+  margin-left: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  margin-top: -0.4%;
+}
+
+.label-feature{
+  width: fit-content;
+  height: fit-content;
+  border:solid 0px #FFd7B5;
+  background-color: #FFd7B5;
+  border-radius: 3px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2.5%;
+  padding-bottom: 2%;
+
+}
+.label-feature-text{
+  font-size: 120%;
+  font-weight: 400;
+  color: black;
+  padding-top: 10%;
+}
+
+.feature{
+  width: 50%;
+  height: fit-content;
+  border:solid 0px #FFd7B5;
+  background-color: #FFd7B5;
+  border-radius: 10px;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 5%;
+
+}
+.mat-flat-button{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 10px ;
+}
+
+.savedlater-feature-text{
+  font-size: 130%;
+  font-weight: 400;
+  color: black;
+  padding-top: 10%;
+}
+
+.savedlater-feature{
+  width: fit-content;
+  height: fit-content;
+  border:solid 0px #FFd7B5;
+  background-color: #FFd7B5;
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-bottom: -3%;
+}
+
+.heading-feature-text{
+  font-size: 140%;
+  font-weight: 500;
+  color: black;
+  padding-top: 11%;
+}
+
+.heading-feature{
+  width: fit-content;
+  height: fit-content;
+  border:solid 0px #FFd7B5;
+  background-color: #FFd7B5;
+  border-radius: 3px;
+  padding-top: 13px;
+  padding-bottom: 9px;
+  padding-right: 50px;
+  padding-left: 50px;
+
+}
+
+.button-spec{
+  color: black;
+  background-color: #FFd7B5;
+  padding-top: 0.5%;
+  padding-bottom: 0.3%;
+  padding-right: 2%;
+  padding-left: 2%;
+  font-size: 120%;
+  font-weight: 400;
+  margin-bottom: 10%;
+}
