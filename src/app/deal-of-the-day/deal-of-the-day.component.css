@@ -1,0 +1,32 @@
+.container{
+    background-color: #E1E1E1;
+    min-height: 100vh;
+    padding: 10px 20px;
+
+}
+.heading-box{
+    background-color: #FFD7B5;
+    width: 200px;
+    height: 50px;
+    /* padding-left: 1  0px; */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+h1{
+    align-items: center;
+    font-size: 210%;
+}
+.icon{
+    font-size: 210%;
+    margin-right: 15%;
+}
+.button{
+    font-weight: 500;
+    background-color: #FFD7B5;
+    padding: 15px 70px; 
+    border-radius: 50px;
+    font-size: 1.8rem;
+    margin: 15px 0;
+}

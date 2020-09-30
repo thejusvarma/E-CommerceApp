@@ -30,6 +30,8 @@ import {FooterComponent} from './footer/footer.component';
 import {ContactUsComponent} from './contact-us/contact-us.component';
 import {AboutUsComponent} from './about-us/about-us.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
+import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
+import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import {OrderPlaceSuccessComponent} from './order-place-success/order-place-succ
     ContactUsComponent,
     AboutUsComponent,
     OrderPlaceSuccessComponent,
+    DealOfTheDayComponent,
+    DealDayProdCardComponent,
 
   ],
   imports: [
