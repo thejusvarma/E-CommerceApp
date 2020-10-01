@@ -1,23 +1,27 @@
+
 .heading-box{
   margin-top:1%;
   margin-left: 6%;
   margin-bottom: 1%;
-  width: 250px;
-  height: 90px;
-  border-radius: 15px;
-  background-color: #FFD7B5;
-  padding: 0px 20px;
-
-}
-.heading{
-
-  padding-top: 20px;
-  font-weight: 500;
-  font-size: 2.7rem;
-  text-align: center;
-
-
-}
+  width: 200px;
+  height: 70px;
+ border-radius: 15px;
+ background-color: #FFD7B5;
+ padding: 0px 15px;
+ 
+ 
+ 
+ }
+ 
+ .heading{
+     
+ padding-top: 20px;
+ font-weight: 500;
+ font-size: 2.2rem;
+ text-align: center;
+ font-family:Poppins;
+ 
+ }
 .services{
   background-color: #FFD7B5;
   padding: 50px 60px;
@@ -28,6 +32,7 @@
 .form{
   padding: 30px;
   padding-right: 45px;
+  /* padding-left: 20px; */
   border-radius: 20px;
 }
 .message{
@@ -44,6 +49,11 @@ textarea{
   border: 1px solid black;
   padding: 10px;
 
+}
+img{
+  width: 88%;
+  margin: 2%;
+  /* margin: 0 ; */
 }
 .button{
   font-weight: 600;
@@ -62,6 +72,7 @@ textarea{
 mat-card-title{
   font-size: 1.8rem;
   padding-bottom: 20px;
+  font-family:Poppins;
 }
 p{
   font-size: 1.2rem;
@@ -77,6 +88,9 @@ h3{
 .icon{
   padding: 30px 0;
   font-size: 50px;
+}
+.margin{
+  margin-left: 0;
 }
 
 .input{
@@ -138,16 +152,19 @@ button:disabled,button[disabled]{
   textarea{
     font-size: 1rem;
   }
+  
   .heading-box{
     margin: 2% 0;
-    padding: 0 10px;
-    width: 200px;
-    height: 70px;
-  }
-  .heading{
-    font-size: 2rem;
+    
+    width: 150px;
+    height: 55px;
 
-  }
+}
+.heading{
+    font-size: 1.8rem;
+    padding-top: 10px !important;
+    
+}
   mat-card-title{
     font-size: 1.5rem;
     padding-bottom: 20px;
@@ -161,5 +178,9 @@ button:disabled,button[disabled]{
   .services{
     padding: 30px 20px;
     padding-bottom: 90px;
+  }
+  img{
+margin: 2% 0;
+width: 100%;
   }
 }
