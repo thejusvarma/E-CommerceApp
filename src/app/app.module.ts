@@ -32,6 +32,7 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
+import { SlideComponent } from './slide/slide.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.
     OrderPlaceSuccessComponent,
     DealOfTheDayComponent,
     DealDayProdCardComponent,
+    SlideComponent,
 
   ],
   imports: [
