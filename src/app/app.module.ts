@@ -32,7 +32,7 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
-import {PaymentComponent} from './payment/payment.component';
+import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
 import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
@@ -50,7 +50,7 @@ import {MatRadioModule} from '@angular/material/radio';
         OrderPlaceSuccessComponent,
         DealOfTheDayComponent,
         DealDayProdCardComponent,
-        PaymentComponent,
+        SelectPaymentModeComponent,
 
     ],
   imports: [
