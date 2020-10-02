@@ -1,15 +1,17 @@
+
+<!-- Heading -->
 <div style="background:  #E1E1E1;">
-<br>
+
 <div class="flex-container">
-    <div fxLayoutAlign.lt-md="center none">
+    <div>
     <div class="heading-feature" >
       <span class="heading-feature-text">My Cart</span>
     </div>
   </div>
 </div>
-
-<div class="flex-container">
-  <div fxLayoutAlign.lt-md="center none" fxLayout="row">
+<br>
+<div class="flex-container1">
+  <div  fxLayout="row">
     <div><mat-icon> location_on</mat-icon></div>
     <div>
       <p>  Deliver To  -</p>
@@ -20,169 +22,106 @@
   </div>
 </div>
 
-<div  class="flex-container"  fxLayout="row" fxLayout.xs="column">
 
-  <div fxLayout="row" fxFlex="65"  fxFlex.xs="100"  >
-    <div fxFlex="75"  fxFlex.xs="40">
-      <img src="../assets/prod2.jpg">
-    </div>
+<!-- my cart items -->
+<div  class="flex-container"  fxLayout="row" fxLayout.xs="column" fxLayoutGap="70px">
+  <div fxLayout="column" fxFlex="60"  fxFlex.xs="100">
+  <div id="parentDiv" scrollSpy  style="height: 400px; overflow-y: scroll;" >
+      <app-my-cart-item></app-my-cart-item>
 
-    <div fxFlex="40" fxFlex.xs="100" class="gap" fxLayout="column">
-      <div>
-        <h3>Product Name</h3>
-      </div>
-      <div >
-        <h3>More Details</h3>
-      </div>
-      <div >
-        <h3>INR 3000</h3>
-      </div>
-      <div fxLayoutAlign="center none">
-        <p>Delivery by Mon Aug 31 | ₹52
-
-        10 Days Replacement Policy</p>
-      </div>
-      <div>
-
-      </div>
 
     </div>
   </div>
 
-  <div  fxFlex="20"  fxFlex.xs="100"  fxLayout="column" >
+  <div  fxFlex="25"  fxFlex.xs="100"  fxLayout="column"  fxLayoutGap="-10px">
     <div fxLayoutAlign.lt-md="center none">
       <div class="label-feature" >
-        <span class="label-feature-text">Price Details</span>
+        <span class="label-feature-text text-bold">Price Details</span>
       </div>
     </div>
+
     <br>
     <div fxLayout="row" fxLayoutGap="30%" fxLayoutGap.md="30%" fxLayoutAlign="space-between">
       <div>
-        <h3>Price(1 Item)</h3>
+        <h3 class="text-bold">Price(1 Item) -</h3>
       </div>
       <div>
-        <h3>545</h3>
-      </div>
-    </div>
-    <div fxLayout="row" fxLayoutGap="30%" fxLayoutGap.md="30%" fxLayoutAlign="space-between">
-      <div>
-        <h3>Delivery Charges</h3>
-      </div>
-      <div>
-        <h3>50</h3>
-      </div>
-    </div>
-    <div fxLayout="row" fxLayoutGap="30%" fxLayoutGap.md="30%"  fxLayoutAlign="space-between">
-      <div>
-        <h3>Total</h3>
-      </div>
-      <div>
-        <h3>50</h3>
+        <h3 class="text-bold">545</h3>
       </div>
     </div>
 
-    <div fxLayoutAlign="center none" style="margin-bottom: 5%;">
-      <span > Safe and Secure Payments 100% Authentic products</span>
+    <div fxLayout="row" fxLayoutGap="30%" fxLayoutGap.md="30%" fxLayoutAlign="space-between">
+      <div>
+        <h4>Delivery Charges -</h4>
+      </div>
+      <div>
+        <h3 >50</h3>
+      </div>
+    </div>
+    <br>
+
+    <div fxLayout="row" fxLayoutGap="30%" fxLayoutGap.md="30%"  fxLayoutAlign="space-between">
+      <div>
+        <h3 class="text-bold">Total Amount-</h3>
+      </div>
+      <div>
+        <h3 class="text-bold">595</h3>
+      </div>
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="center none" fxLayoutGap="1px">
+        <p>Delivery by Mon Aug 31 | ₹52 </p>
+        <p> 10 Days Replacement Policy </p>
+    </div>
+    <div>
+      <hr>
+    </div>
+    <br>
+    <div class="place-order-button">
+      <button mat-raised-button class="place-order-button span1" >Place Order <mat-icon>shop</mat-icon></button>
+    </div>
+    <br>
+
+    <div class="white-card">
+      <span class="span1"><mat-icon>verified_user</mat-icon> Safe and Secure Payments </span>
+      <br>
+      <span > 100% Authentic products</span>
     </div>
   </div>
 </div>
 
-<div class="flex-container" fxLayoutAlign="center center" >
-  <div class="feature" >
-    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-evenly center">
-      <div>
-        <a mat-flat-button href="#" target="_blank">Remove</a>
-      </div>
-      <div>
-        <a mat-flat-button href="#" target="_blank">Save for later</a>
-      </div>
-      <div>
-        <a mat-flat-button href="#" target="_blank">Place Order</a>
-      </div>
-    </div>
-</div>
-</div>
+<br>
+<br>
 
+<!-- saved for later -->
 <div class="flex-container">
   <div fxLayoutAlign.lt-md="center none">
     <div class="savedlater-feature" >
-      <span class="savedlater-feature-text">Saved For Later ( 7 )</span>
+      <span class="savedlater-feature-text">Saved For Later (7)</span>
     </div>
   </div>
 </div>
+<br>
 
-
-<div fxLayout="row" class="flex-container">
-  <div fxLayout="row" fxFlex="65"  fxFlex.xs="100"  >
-    <div fxFlex="40"  fxFlex.xs="40">
-      <img src="../assets/prod2.jpg">
-    </div>
-
-    <div fxFlex="30" fxFlex.xs="100" class="gap" fxLayout="column">
-      <div>
-        <h3>Product Name</h3>
-      </div>
-      <div >
-        <h3>More Details</h3>
-      </div>
-      <div >
-        <h3>INR 3000</h3>
-      </div>
-
-      <div>
-
-      </div>
-    </div>
+<div fxLayout="row" class="flex-container" fxLayout.xs="column" fxLayoutGap="5px">
+  <div fxLayout="row" fxFlex="35"  fxFlex.xs="50"  >
+   <app-my-cart-saved-later></app-my-cart-saved-later>
   </div>
 
-  <div fxLayout="row" fxFlex="65"  fxFlex.xs="100"  >
-    <div fxFlex="40"  fxFlex.xs="40">
-      <img src="../assets/prod2.jpg">
-    </div>
+  <div fxLayout="row" fxFlex="35"  fxFlex.xs="50"  >
+    <app-my-cart-saved-later></app-my-cart-saved-later>
+   </div>
 
-    <div fxFlex="30" fxFlex.xs="100" class="gap" fxLayout="column">
-      <div>
-        <h3>Product Name</h3>
-      </div>
-      <div >
-        <h3>More Details</h3>
-      </div>
-      <div >
-        <h3>INR 3000</h3>
-      </div>
 
-      <div>
-
-      </div>
-    </div>
-  </div>
-
-  <div fxLayout="row" fxFlex="65"  fxFlex.xs="100" [fxShow.xs]="isVisibleOnMobile()" >
-    <div fxFlex="40"  fxFlex.xs="40">
-      <img src="../assets/prod2.jpg">
-    </div>
-
-    <div fxFlex="30" fxFlex.xs="100" class="gap" fxLayout="column">
-      <div>
-        <h3>Product Name</h3>
-      </div>
-      <div >
-        <h3>More Details</h3>
-      </div>
-      <div >
-        <h3>INR 3000</h3>
-      </div>
-
-      <div>
-
-      </div>
-    </div>
+  <div fxLayout="row" fxFlex="35" [fxShow.xs]="isVisibleOnMobile()" >
+    <app-my-cart-saved-later></app-my-cart-saved-later>
   </div>
 
 </div>
+<br>
 
 <div fxLayoutAlign="center none">
-  <button mat-raised-button class="button-spec">View More</button>
+  <button mat-raised-button class="button-spec">View More<mat-icon>chevron_right</mat-icon></button>
 </div>
 
 </div>
