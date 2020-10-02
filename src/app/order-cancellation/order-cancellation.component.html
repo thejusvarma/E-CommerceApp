@@ -6,7 +6,7 @@ fxHide.xs>
   <div fxFlex="1 1 5"></div>
   <div fxLayout="row" fxFlex="1 1 10">
     <div fxFlex="1 1 5"></div>
-    <div fxFlex="1 1 30" style="background-color: #FFD7B5;" fxLayoutAlign="start center">
+    <div fxFlex="1 1 30" style="background-color: #FFD7B5;border-radius: 10px;" fxLayoutAlign="start center">
       <h1 style="font-weight:bold;padding-left:4%;padding-top:2%;"> Easy Cancellation</h1>
     </div>
   </div>
@@ -37,7 +37,7 @@ fxHide.xs>
                 <div fxFlex="1 1 5"></div>
                 <div fxFlex="1 1 10" fxLayout="row" fxLayoutAlign="end center">
                   <button mat-button class="button"
-                  style="background-color:#FFD7B5;height:40px;width:200px;border-radius:20px;font-size:20px;font-weight:bold;"
+                  style="background-color:#FFD7B5;height:45px;width:200px;border-radius:20px;font-size:20px;font-weight:bold;"
                   [disabled]="!form.valid">
                     Continue</button>
                 </div>
@@ -52,9 +52,9 @@ fxHide.xs>
       <div fxLayout="row" fxFlex="1 1 100">
         <div fxFlex="1 1 3"></div>
         <div fxLayout="column" fxFlex="1 1 95">
-          <div fxFlex="1 1 2"></div>
+          <div fxFlex="1 1 4"></div>
           <div fxLayout="row" fxFlex="1 1 10">
-            <div fxFlex.gt-md="1 1 40" style="background-color: #FFD7B5;" fxLayoutAlign="center center"
+            <div fxFlex.gt-md="1 1 40" style="background-color: #FFD7B5;border-radius: 8px;" fxLayoutAlign="center center"
             fxFlex.md="1 1 50"
             fxFlex.sm="1 1 60">
               <h1  [ngStyle.gt-xs]="'font-size:35px;padding-top:4%;'">Price Detail</h1>
@@ -62,7 +62,7 @@ fxHide.xs>
           </div>
           <div fxFlex="1 1 8"></div>
           <div fxLayout="row" fxFlex="1 1 15" fxLayoutGap.gt-md="40%" fxLayoutGap.md="20%" fxLayoutGap.sm="30%">
-            <h1 [ngStyle.gt-sm]="'font-size:35px;'">Price(1 item)</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:35px;'">Price (1 item)</h1>
             <h1 [ngStyle.gt-sm]="'font-size:35px;'">₹330</h1>
           </div>
           <div fxLayout="row" fxFlex="1 1 15" fxLayoutGap.gt-md="35%" fxLayoutGap.md="15%" fxLayoutGap.sm="25%">
@@ -77,9 +77,10 @@ fxHide.xs>
             [ngStyle.sm]="'font-size:25px;font-weight:bold;'">₹382</h1>
           </div>
           <div fxFlex="1 1 8"></div>
-          <div fxLayout="row" fxLayoutAlign.gt-xs="start center" style="color:rgb(112, 106, 106);padding-left:5%;">
-            <img src="assets/lock.svg" width="20px" height="20px">
-            <p fxFlex="1 1 60" style="font-style: normal;font-weight: 500;font-size: 15px;line-height: 25px;color: #646161;">
+          <div fxLayout="row" fxLayoutAlign.gt-xs="center center" style="color:rgb(112, 106, 106);padding-left:5%;">
+            <img src="assets/lock.svg" width="35px" height="35px">
+            <p
+            fxFlex="1 1 60" style="font-style: normal;font-weight: 500;font-size: 25px;line-height: 20px;color: #837f7f;padding-top:1rem;">
               Safe and Secure Payments 100% Authentic products</p>
           </div>
         </div>
@@ -146,8 +147,8 @@ fxHide.xs>
                 </div>
                 <div fxLayout="row" fxFLex="1 1 15"></div>
                 <div fxLayout="row" fxLayoutAlign="center center" style="color:rgb(112, 106, 106);padding-left:5%;">
-                  <img src="assets/lock.svg" width="20px" height="20px">
-                  <p fxFlex="1 1 60" style="font-style: normal;font-weight: 500;font-size: 12px;line-height: 25px;color: #646161;">
+                  <img src="assets/lock.svg" width="30px" height="30px">
+                  <p fxFlex="1 1 60" style="font-style: normal;font-weight: 500;font-size: 15px;line-height: 25px;color: #646161;">
                     Safe and Secure Payments 100% Authentic products</p>
                 </div>
     </div>
@@ -170,7 +171,7 @@ fxHide.xs>
           <div fxLayout="column wrap" fxLayoutAlign="space-between" fxLayoutGap="15px">
             <div fxFlex="30">
               <h1 style="font-size: 20px;">Reason For Cancellation</h1>
-              <textarea type="text"  class="input form-control" formControlName="comment"></textarea>
+              <textarea type="text"  class="input form-control" formControlName="reason"></textarea>
               <span *ngIf="!form.get('reason').valid && form.get('reason').touched" style="color:red;">
                           Enter valid reason.
                       </span>
@@ -185,7 +186,7 @@ fxHide.xs>
             <div fxFlex="1 1 10" fxLayout="row" fxLayoutAlign="center center">
               <button mat-button type="submit"
               style="background-color:#FFD7B5;height:50px;width:200px;border-radius:20px;font-size:15px;font-weight:bold;"
-               [disabled]="!form.valid">
+              [disabled]="!form.valid">
               Confirm Cancellation</button>
             </div>
           </div>

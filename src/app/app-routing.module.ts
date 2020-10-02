@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'cart', component: MyCartComponent },
   { path: 'order-placed', component: OrderPlaceSuccessComponent },
   { path: 'payment-options', component: SelectPaymentModeComponent },
-  { path: 'order-cancel', component: OrderCancellationComponent }
+  { path: 'cancel-order', component: OrderCancellationComponent }
 ];
 
 

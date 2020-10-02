@@ -16,11 +16,11 @@ export class OrderCancellationComponent implements OnInit {
       reason: new FormControl(null, [Validators.required]),
       comment: new FormControl(null, [Validators.required])
     });
+    console.log(this.form);
   }
 
   onSubmit(): void{
     console.log(this.form);
-    this.form.reset();
   }
 
 }
