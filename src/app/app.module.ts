@@ -32,7 +32,14 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
+<<<<<<< HEAD
 import { SlideComponent } from './slide/slide.component';
+=======
+import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MyCartItemComponent} from './my-cart/my-cart-item/my-cart-item.component';
+import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
+>>>>>>> e6a4951021d5dbe73a5b15940a4874d19f5264fc
 
 @NgModule({
   declarations: [
@@ -49,7 +56,13 @@ import { SlideComponent } from './slide/slide.component';
     OrderPlaceSuccessComponent,
     DealOfTheDayComponent,
     DealDayProdCardComponent,
+<<<<<<< HEAD
     SlideComponent,
+=======
+    SelectPaymentModeComponent,
+    MyCartItemComponent,
+    MyCartSavedLaterComponent,
+>>>>>>> e6a4951021d5dbe73a5b15940a4874d19f5264fc
 
   ],
   imports: [
@@ -72,7 +85,8 @@ import { SlideComponent } from './slide/slide.component';
     MatCardModule,
     MatDialogModule,
     MatSnackBarModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
