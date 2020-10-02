@@ -1,0 +1,86 @@
+.payment{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #E1E1E1;
+}
+.card{
+  position: absolute;
+  width: 620px;
+  height: 580px;
+  background: #FFFFFF;
+}
+
+a:hover{
+  font-weight:bold;
+}
+
+.payment-xs{
+  height: 2000px;
+  width: 100%;
+  background: #E1E1E1;
+}
+
+.card-xs{
+  position: absolute;
+  width: 340px;
+  height: 280px;
+  background: white;
+  border-radius: 30px;
+}
+.radio{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.radio-button{
+  margin-top: 5px;
+  margin-left:5px;
+
+}
+.payment-card{
+  position: absolute;
+  width: 340px;
+  height: 220px;
+  background: white;
+  border-radius: 20px;
+}
+@media (min-width:2560px){
+ .card{width:1200px;height:550px;}
+}
+
+@media (max-width:1256px){
+  .card{width:580px;height:500px;}
+}
+
+@media (max-width:1025px){
+  .card{width:460px;height:500px;}
+}
+
+@media (max-width:768px){
+  .card{width:350px;height:350px;}
+}
+
+@media (max-width:376px){
+  .card-xs{ width:295px;
+  height:270px;
+  background: white;
+  border-radius: 20px;
+  }
+  .payment-card{ width:300px;height:210px;}
+  .card-xs a{font-size:15px;}
+}
+
+@media (max-width:320px){
+  .card-xs{ width:260px;
+  height:300px;
+  background: white;
+  border-radius: 20px;
+  }
+  .payment-card{ width:260px;height:230px;}
+  div.payment-card a{font-size:10px;}
+  div.card-xs a{font-size:10px;}
+  .card-xs h1{font-size:10px;}
+}
+
+
