@@ -32,24 +32,27 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
+import {PaymentComponent} from './payment/payment.component';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    NavbarComponent,
-    SidenavComponent,
-    MegaMenuComponent,
-    ProductCardComponent,
-    MyCartComponent,
-    FooterComponent,
-    ContactUsComponent,
-    AboutUsComponent,
-    OrderPlaceSuccessComponent,
-    DealOfTheDayComponent,
-    DealDayProdCardComponent,
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        NavbarComponent,
+        SidenavComponent,
+        MegaMenuComponent,
+        ProductCardComponent,
+        MyCartComponent,
+        FooterComponent,
+        ContactUsComponent,
+        AboutUsComponent,
+        OrderPlaceSuccessComponent,
+        DealOfTheDayComponent,
+        DealDayProdCardComponent,
+        PaymentComponent,
 
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -70,7 +73,8 @@ import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.
     MatCardModule,
     MatDialogModule,
     MatSnackBarModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
