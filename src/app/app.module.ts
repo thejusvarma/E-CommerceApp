@@ -34,6 +34,7 @@ import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
 import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { OrderCancellationComponent } from './order-cancellation/order-cancellation.component';
 
 @NgModule({
     declarations: [
@@ -51,6 +52,7 @@ import {MatRadioModule} from '@angular/material/radio';
         DealOfTheDayComponent,
         DealDayProdCardComponent,
         SelectPaymentModeComponent,
+        OrderCancellationComponent,
 
     ],
   imports: [

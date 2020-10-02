@@ -1,0 +1,39 @@
+.input{
+  width: 100%;
+  font-size: 1rem;
+  height: 40px;
+  background-color: #FFD7B5;
+}
+
+.input1{
+  width: 100%;
+  font-size: 1rem;
+  height: 85px;
+  background-color: #FFD7B5;
+}
+
+@media (min-width:2560px){
+  .input{
+    width: 100%;
+    font-size: 2rem;
+    height: 80px;
+    background-color: #FFD7B5;
+  }
+
+.input1{
+  width: 100%;
+  font-size: 1rem;
+  height: 180px;
+  background-color: #FFD7B5;
+}
+.button{
+  width:400px;
+  height:200px;
+}
+h1{
+  font-size: 50px;
+}
+p{
+  font-size:50px;
+}
+}
