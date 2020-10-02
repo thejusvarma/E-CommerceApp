@@ -32,8 +32,10 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
-import { MyCartItemComponent } from './my-cart/my-cart-item/my-cart-item.component';
-import { MyCartSavedLaterComponent } from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
+import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MyCartItemComponent} from './my-cart/my-cart-item/my-cart-item.component';
+import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
 
 @NgModule({
   declarations: [
@@ -50,10 +52,11 @@ import { MyCartSavedLaterComponent } from './my-cart/my-cart-saved-later/my-cart
     OrderPlaceSuccessComponent,
     DealOfTheDayComponent,
     DealDayProdCardComponent,
+    SelectPaymentModeComponent,
     MyCartItemComponent,
     MyCartSavedLaterComponent,
 
-    ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
