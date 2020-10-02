@@ -32,6 +32,8 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
+import { MyCartItemComponent } from './my-cart/my-cart-item/my-cart-item.component';
+import { MyCartSavedLaterComponent } from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.
     OrderPlaceSuccessComponent,
     DealOfTheDayComponent,
     DealDayProdCardComponent,
+    MyCartItemComponent,
+    MyCartSavedLaterComponent,
 
   ],
   imports: [

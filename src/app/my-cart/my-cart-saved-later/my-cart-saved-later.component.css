@@ -1,0 +1,11 @@
+img{
+  width: 100%;
+}
+.gap{
+  margin-top: 1%;
+  margin-left: 4%;
+}
+.mat-flat-button{
+  background-color: #28a745;
+  color:white;
+}
