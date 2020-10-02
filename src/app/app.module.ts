@@ -34,6 +34,7 @@ import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
 import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
 import {MatRadioModule} from '@angular/material/radio';
+<<<<<<< HEAD
 import { OrderCancellationComponent } from './order-cancellation/order-cancellation.component';
 
 @NgModule({
@@ -53,8 +54,31 @@ import { OrderCancellationComponent } from './order-cancellation/order-cancellat
         DealDayProdCardComponent,
         SelectPaymentModeComponent,
         OrderCancellationComponent,
+=======
+import {MyCartItemComponent} from './my-cart/my-cart-item/my-cart-item.component';
+import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
 
-    ],
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    NavbarComponent,
+    SidenavComponent,
+    MegaMenuComponent,
+    ProductCardComponent,
+    MyCartComponent,
+    FooterComponent,
+    ContactUsComponent,
+    AboutUsComponent,
+    OrderPlaceSuccessComponent,
+    DealOfTheDayComponent,
+    DealDayProdCardComponent,
+    SelectPaymentModeComponent,
+    MyCartItemComponent,
+    MyCartSavedLaterComponent,
+>>>>>>> e6a4951021d5dbe73a5b15940a4874d19f5264fc
+
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
