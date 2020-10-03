@@ -1,7 +1,47 @@
+<div style="width: 90%; margin-left: 5%;  border-radius: 5vw;">
+  <form #f="ngForm">
+    <article id="slider" style="height: 40vw; border-radius: 5vw;">
+        <input checked type='radio' name='slider' [value]='0' ngModel id='slide1'/>
+        <input type='radio' name='slider' [value]='1' ngModel id='slide2'/>
+        <input type='radio' name='slider' [value]='2' id='slide3' ngModel/>
+        <input type='radio' name='slider' [value]='3' id='slide4' ngModel/>
+        <input type='radio' name='slider' id='slide5' [value]='4' ngModel/>
+        <div id="slides">
+            <div id="container">
+                <div class="inner">
+                    <article>
+                    <img src="assets/slide1.jpg"/>
+                    </article>
+                    <article>
+                    <img src="assets/slide2.jpg"/>
+                    </article>
+                    <article>
+    
+                    <img src="assets/slide3.jpg"/>
+                    </article>
+                    <article>
+                    
+                    <img src="assets/slide4.jpg"/>
+                    </article>
+                    <article>
+                    
+                    <img src="assets/slide5.jpg"/>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div id="commands">
+            <label for='slide1'></label>
+            <label for='slide2'></label>
+            <label for='slide3'></label>
+            <label for='slide4'></label>
+            <label for='slide5'></label>
+        </div>
+        </article>
+    </form>
+</div>
     <div *ngIf="!isMobile">
-      <div style="width: 90%; margin-left: 5%;  border-radius: 5vw;">
-      <app-slide></app-slide>
-    </div>
+      
       <h1  style="width: 21%;
     height: 5vw;
     margin-left: 5%;
@@ -64,13 +104,11 @@ color: #000000;"> Khan Copper House was founded in
 </div>
 </div>
 <div *ngIf="isMobile">
-   <div style="width: 90%; margin-left: 5%;">
-      <app-slide></app-slide>
-    </div>
     <h1 id="rcorners2" style="width: 40%;
-    height: 7vw;
+    height: 9vw;
     margin-left: 28%;
     margin-top: 5%;
+    margin-bottom: 3%;
     background: #FFD7B5;"><font style="position: absolute;
     margin-top: 1.5vw;
     margin-left: 6%;
@@ -79,7 +117,7 @@ color: #000000;"> Khan Copper House was founded in
     height: 7vw;
     font-family: Poppins;
     font-size: 6vw;
-    line-height: 4.5vw;
+    line-height: 6vw;
     color: #000000;
     "><b>About Us</b></font></h1>
      <div class="flex-container">
