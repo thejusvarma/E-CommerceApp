@@ -6,14 +6,14 @@ fxHide.xs>
   <div fxFlex="1 1 5"></div>
   <div fxLayout="row" fxFlex="1 1 10">
     <div fxFlex="1 1 5"></div>
-    <div fxFlex="1 1 30" style="background-color: #FFD7B5;border-radius: 10px;" fxLayoutAlign="start center">
+    <div fxFlex="1 1 30" style="background-color: #FFD7B5;" fxLayoutAlign="start center" class="card">
       <h1 style="font-weight:bold;padding-left:4%;padding-top:2%;"> Easy Cancellation</h1>
     </div>
   </div>
   <div fxFlex="1 1 5"></div>
   <div fxLayout="row" fxFlex="1 1 75" fxLayout.xs="column">
     <div fxFlex="1 1 5"></div>
-    <div fxFlex="1 1 45" style="background-color: white;">
+    <div fxFlex="1 1 45" style="background-color: white;" class="card">
       <div fxLayout="row" fxFlex="1 1 100">
         <div fxFlex="1 1 4"></div>
         <div fxLayout="column" fxFlex="1 1 92">
@@ -36,7 +36,7 @@ fxHide.xs>
                 </div>
                 <div fxFlex="1 1 5"></div>
                 <div fxFlex="1 1 10" fxLayout="row" fxLayoutAlign="end center">
-                  <button mat-button class="button"
+                  <button mat-raised-button class="button"
                   style="background-color:#FFD7B5;height:45px;width:200px;border-radius:20px;font-size:20px;font-weight:bold;"
                   [disabled]="!form.valid">
                     Continue</button>
@@ -48,7 +48,7 @@ fxHide.xs>
       </div>
     </div>
     <div fxFlex="1 1 3"></div>
-    <div fxFlex="1 1 42" style="background-color: white;">
+    <div fxFlex="1 1 42" style="background-color: white;" class="card">
       <div fxLayout="row" fxFlex="1 1 100">
         <div fxFlex="1 1 3"></div>
         <div fxLayout="column" fxFlex="1 1 95">
@@ -95,7 +95,7 @@ fxHide.xs>
   <div fxFlex="1 1 5">
     <div fxLayout="row" fxLayout="1 1 100" fxFlex="1 1 100">
       <div fxFlex="1 1 16"></div>
-      <div fxFlex="1 1 68" style="background-color: #FFD7B5;" fxLayoutAlign="center center">
+      <div fxFlex="1 1 68" style="background-color: #FFD7B5;" fxLayoutAlign="center center" class="card">
         <h1 style="font-size:25px;font-weight: bold;padding-top:3%;">Order Cancellation</h1>
       </div>
     </div>
@@ -119,7 +119,7 @@ fxHide.xs>
   </div>
   <div fxFlex="1 1 25" fxLayout="row">
     <div fxFlex="1 1 8"></div>
-    <div fxLayout="column" fxFlex="1 1 84" style="background-color: white;border-radius:20px;">
+    <div fxLayout="column" fxFlex="1 1 84" style="background-color: white;border-radius:20px;" class="card">
       <div fxFLex="1 1 20"></div>
                 <div fxLayout="row" fxFLex="1 1 50">
                   <div fxFlex="1 1 15"></div>
@@ -148,7 +148,7 @@ fxHide.xs>
                 <div fxLayout="row" fxFLex="1 1 15"></div>
                 <div fxLayout="row" fxLayoutAlign="center center" style="color:rgb(112, 106, 106);padding-left:5%;">
                   <img src="assets/lock.svg" width="30px" height="30px">
-                  <p fxFlex="1 1 60" style="font-style: normal;font-weight: 500;font-size: 15px;line-height: 25px;color: #646161;">
+                  <p fxFlex="1 1 80" style="font-style: normal;font-weight: 500;font-size: 15px;line-height: 25px;color: #646161;">
                     Safe and Secure Payments 100% Authentic products</p>
                 </div>
     </div>
@@ -164,7 +164,7 @@ fxHide.xs>
   </div>
   <div fxFlex="1 1 38" fxLayout="row">
     <div fxFlex="1 1 8"></div>
-    <div fxLayout="row" fxFlex="1 1 84" style="background-color: white;border-radius:20px;">
+    <div fxLayout="row" fxFlex="1 1 84" style="background-color: white;border-radius:20px;" class="card">
       <div fxFlex="1 1 5"></div>
       <div fxFlex="1 1 90" fxLayout="column">
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
@@ -184,7 +184,7 @@ fxHide.xs>
             </div>
             <div fxFlex="1 1 5"></div>
             <div fxFlex="1 1 10" fxLayout="row" fxLayoutAlign="center center">
-              <button mat-button type="submit"
+              <button  mat-raised-button type="submit"
               style="background-color:#FFD7B5;height:50px;width:200px;border-radius:20px;font-size:15px;font-weight:bold;"
               [disabled]="!form.valid">
               Confirm Cancellation</button>
