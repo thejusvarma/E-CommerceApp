@@ -21,6 +21,12 @@
       <p>size -</p>
     </div>
 
+    <div fxLayout="row" fxlayoutAlign="start none" fxLayoutGap="">
+      <div><button class="minus-button"><mat-icon>remove</mat-icon></button></div>
+      <div><button  class="value-box">1</button></div>
+      <div> <button  class="add-button"><mat-icon>add</mat-icon></button></div>
+    </div>
+<!--
     <div fxLayout="row">
       <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
           <mat-icon>remove</mat-icon>
@@ -31,13 +37,13 @@
       <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
         <mat-icon>add</mat-icon>
       </button>
-    </div>
+    </div> -->
 
     <br>
 
-    <div fxLayout="row" fxLayoutAlign="space-between">
-      <div>
-        <button mat-raised-button>Wishlist</button>
+    <div fxLayout="row" fxLayoutAlign="space-between" [fxShow.xs]="isVisibleOnMobile()">
+      <div >
+        <button  mat-raised-button>Save for Later</button>
       </div>
       <div>
         <button mat-raised-button>Remove</button>
@@ -45,4 +51,14 @@
     </div>
   </div>
 </div>
+
+<div fxLayout="row" fxLayoutAlign="space-around" [fxShow.gt-xs]="isVisibleOnMobile()">
+  <div >
+    <button mat-raised-button>Save for Later</button>
+  </div>
+  <div>
+    <button mat-raised-button>Remove</button>
+  </div>
+</div>
+
 <hr>

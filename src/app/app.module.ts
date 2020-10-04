@@ -36,6 +36,12 @@ import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-m
 import {MatRadioModule} from '@angular/material/radio';
 import {MyCartItemComponent} from './my-cart/my-cart-item/my-cart-item.component';
 import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { HomepageImageCarouselComponent } from './homepage/homepage-image-carousel/homepage-image-carousel.component';
+import { HomepageOurAllProductsComponent } from './homepage/homepage-our-all-products/homepage-our-all-products.component';
+import { HomepageMidCarouselComponent } from './homepage/homepage-mid-carousel/homepage-mid-carousel.component';
+import { HomepageTrendingProductsComponent } from './homepage/homepage-trending-products/homepage-trending-products.component';
+import { HomepageDealOfTheDayComponent } from './homepage/homepage-deal-of-the-day/homepage-deal-of-the-day.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +61,13 @@ import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-s
     SelectPaymentModeComponent,
     MyCartItemComponent,
     MyCartSavedLaterComponent,
+    HomepageComponent,
+    HomepageImageCarouselComponent,
+    HomepageOurAllProductsComponent,
+    HomepageMidCarouselComponent,
+    HomepageTrendingProductsComponent,
+    HomepageDealOfTheDayComponent,
+
 
   ],
   imports: [
