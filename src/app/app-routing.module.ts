@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'cart', component: MyCartComponent },
   { path: 'order-placed', component: OrderPlaceSuccessComponent },
   { path: 'login', component: LoginButtonComponent},
-  {path: 'order-details', component:OrderDetailsComponent},
+  {path: 'order-details', component: OrderDetailsComponent},
   {path: 'similar', component: SimilarProductsComponent},
   {path: 'trending', component: TrendingProductsComponent},
   { path: 'payment-options', component: SelectPaymentModeComponent },
