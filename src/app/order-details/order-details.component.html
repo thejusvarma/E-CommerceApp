@@ -1,5 +1,5 @@
 
-<div class="containing">
+<div class="containing" ngClass.xs="small-containing">
 <div class="heading-box" ngClass.xs="heading-box-small">
     <h1 class="heading">Order Details</h1>
 
@@ -8,13 +8,13 @@
     <div class="flex-container">
         
         <div fxLayout="column" fxLayoutAlign="space-between stretch" fxLayoutGap="2%" fxLayoutGap.xs="6%" >
-            <div class="column1" style="width: 100%;">
+            <div class="column1">
                 <mat-card>
                 <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="5%" >
                     <div  class="user-details" fxFlex="30">
                         <div fxLayout="column" fxLayoutAlign="space-between start" fxLayoutGap="2%" >
                             <div >
-                                <h1>Delivery Address</h1>
+                                <h1 style="font-weight: 500;">Delivery Address</h1>
                             </div>
                             <div>
                                 <h3>{{dataUser.name}}</h3>
@@ -24,11 +24,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rewards" fxFlex="30" *ngIf="dataRes[0].orderstatus === 'deliver' || dataRes[0].orderstatus ==='placed' || dataRes[0].orderstatus === 'shipped' " >
+                    <div class="rewards" fxFlex="30">
                         <hr fxHide fxShow.xs>
                         <div fxLayout="column"  fxLayoutGap="2%">
                             <div fxLayout="row" fxLayoutGap="2%">
-                                <h1>Your Rewards</h1>
+                                <h1 style="font-weight: 500;">Your Rewards</h1>
                             </div>
                             <div fxLayout="row" fxLayoutGap="2%">
                                 
@@ -56,91 +56,87 @@
                 </div>
             </mat-card>
             </div>
-            <div class="column1" style="width: 100%;">
-                <mat-card>
-                <div fxLayout="row" fxLayout.xs="column">
-                    <div class="image" fxFlex="15">
-                        <img src="../../assets/images/phone.png" alt="">
+            <div class="column1" *ngFor="let dataRes of dataRe">
+                <mat-card >
+                <div  fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between stretch" fxLayoutGap="5%">
+                    <div class="image" fxFlex="15" fxFlex.md="10">
+                        <img src={{dataRes.productDetails.img}} alt="">
                         
                     </div>
-                    <div class="product-details" fxFlex="20">
+                    <div class="product-details" fxFlex="15">
                         <div fxLayout="column">
                             <div class="product-name">
-                                <h1>{{dataRes[0].productDetails.productname }}</h1>
+                                <h1>{{dataRes.productDetails.productname }}</h1>
                             </div>
                             <div class="product-color">
-                                <h3>Color: {{dataRes[0].productDetails.color }} </h3>
+                                <h3>Color: {{dataRes.productDetails.color }} </h3>
                             </div>
                             <div class="product-seller">
-                                <h3>Seller: {{dataRes[0].productDetails.seller }}</h3>
+                                <h3>Seller: {{dataRes.productDetails.seller }}</h3>
                             </div>
                             <div class="product-price">
-                                <h1>{{dataRes[0].productDetails.price}}</h1>
+                                <h1>{{dataRes.productDetails.price}}</h1>
                             </div>
                             
                         </div>
                         <hr fxHide fxShow.xs>
                     </div>
-                    <div class="stepper-part"  fxFlex="50" *ngIf="dataRes[0].orderstatus === 'cancel' "  >
-                        <div fxLayout="column" fxLayoutGap="5%" fxLayoutGap.xs="15%">
+                    <div class="stepper-part"   *ngIf="dataRes.orderstatus === 'cancel' "  >
+                        <div fxLayout="column" fxFlex="70" fxLayoutGap="20%" fxLayoutGap.xs="15%">
                             <div class="stepper">
                                 
-                                    <span class="circle-desc" [class.circle-desc-active]="orderStatus == item">{{ counts1[0] }}</span>
+                                    <span class="circle-desc" [class.circle-desc-active]="dataRes.orderBar == item">{{ counts1[0] }}</span>
                                     <span class="circles active"></span>
                                     <span class="bar1"></span>
-                                    <span class="circle-desc" [class.circle-desc-active]="orderStatus == item">{{ counts1[1] }}</span>
+                                    <span class="circle-desc" [class.circle-desc-active]="dataRes.orderBar == item">{{ counts1[1] }}</span>
                                     <span class="circles danger"></span>
                                   
                             </div>
-                            <div class="cancel-reason">
-                                <h3>{{dataRes[0].cancellationReason}}</h3>
-                            </div>
-                            <div class="cancel-details" >
+                            <div class="cancel-reason" >
+                                <h3>{{dataRes.cancellationReason}}</h3>
                                 <div fxLayout="row" fxLayoutAlign="space-between">
-                                    <div class="cancel-date" fxFlex="40">
-                                        <h3>{{dataRes[0].cancellationDate}}</h3>
+                                    <div class="cancel-date" >
+                                        <h3>{{dataRes.cancellationDate}}</h3>
                                     </div>
-                                    <div class="cancel-time" fxFlex="40">
-                                        <h3>{{dataRes[0].cancellationTime}}</h3>
+                                    <div class="cancel-time" >
+                                        <h3>{{dataRes.cancellationTime}}</h3>
                                     </div>
                                 </div>
                             </div>
+
+                            
                         </div>
                         <hr fxHide fxShow.xs>
                     </div>
                     <hr fxHide fxShow.xs>
-                    <div class="stepper-part"  fxFlex="40" *ngIf="dataRes[0].orderstatus === 'deliver' || dataRes[0].orderstatus === 'placed' || dataRes[0].orderstatus === 'shipped' "  >
+                    <div class="stepper-part"  fxFlex="30" *ngIf="dataRes.orderstatus === 'deliver' || dataRes.orderstatus === 'placed' || dataRes.orderstatus === 'shipped' "  >
                         <div fxLayout="column" fxLayoutGap="8%" fxLayoutGap.xs="20%">
                             <div class="stepper" >
                                 <span *ngFor="let item of counts;let i = index">
-                                    <span class="circle-desc"  [class.circle-desc-active]="orderStatus == item">{{ item }}</span>
-                                    <span class="circles" [class.active]="orderStatus[i] == item"></span>
-                                    <span class="bar" [class.barActive]="orderStatus[i] == item" *ngIf="(i != counts.length-1)"></span>
+                                    <span class="circle-desc"  [class.circle-desc-active]="dataRes.orderBar == item">{{ item }}</span>
+                                    <span class="circles" [class.active]="dataRes.orderBar[i] == item"></span>
+                                    <span class="bar" [class.barActive]="dataRes.orderBar[i] == item" *ngIf="(i != counts.length-1)"></span>
                                   </span>
                             </div>
-                            <div class="delivered-confirm" *ngIf="dataRes[0].orderstatus === 'deliver'">
-                                <h3 style="font-weight: 500;">{{dataRes[0].deliveredConfirm}}</h3>
+                            <div class="delivered-confirm" *ngIf="dataRes.orderstatus === 'deliver'">
+                                <h3 style="font-weight: 500; padding-top: 10%;">{{dataRes.deliveredConfirm}}</h3>
                             </div>
-                            <div class="shipped-confirm" *ngIf="dataRes[0].orderstatus === 'shipped'">
-                                <h3 style="font-weight: 500;">Your Item is out for delivery.</h3>
+                            <div class="shipped-confirm" *ngIf="dataRes.orderstatus === 'shipped'">
+                                <h3 style="font-weight: 500; padding-top: 10%;">{{dataRes.shippedConfirm}}</h3>
                             </div>
-                            <div fxLayout="row" fxLayoutGap="2%" *ngIf="dataRes[0].orderstatus === 'placed'">
-                                <div class="placed-icon">
-                                    <mat-icon>local_shipping</mat-icon>
-                                </div>
-                                <div class="placed-message">
-                                    <h3 style="font-weight: 500;">Delivery expected by Oct 06.</h3>
+
+                                <div class="placed-message" *ngIf="dataRes.orderstatus === 'placed'">
+                                    <h3 style="font-weight: 500; padding-top: 10%;">{{dataRes.placedConfirm}}</h3>
                                 </div>
                                 
                                
-                            </div>
                            
                         </div>
                         <hr fxHide fxShow.xs>
                         
                     </div>
                     
-                    <div class="status-cancel" *ngIf="dataRes[0].orderstatus === 'cancel' " fxFlex=30>
+                    <div class="status-cancel" *ngIf="dataRes.orderstatus === 'cancel' " fxFlex=20>
                         <div fxLayout="column" >
                             <div class="status-heading">
                                 <h2>Cancelled</h2>
@@ -157,10 +153,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="status-deliver" fxFlex="30" *ngIf="dataRes[0].orderstatus === 'deliver' ">
+                    <div class="status-deliver" fxFlex="20" *ngIf="dataRes.orderstatus === 'deliver' ">
                         <div fxLayout="column" fxLayoutGap="2%" >
                             <div class="status-heading">
-                                <h2>Delivered on Wed, Sep 30</h2>
+                                <h2>{{dataRes.deliveredStatus}}</h2>
                             </div>
                             <div class="need-help-deliver">
                                 <div fxLayout="column">
@@ -192,10 +188,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="status-shipped" fxFlex="30" *ngIf="dataRes[0].orderstatus === 'shipped' ">
+                    <div class="status-shipped" fxFlex="20" *ngIf="dataRes.orderstatus === 'shipped' ">
                         <div fxLayout="column" fxLayoutGap="2%" >
                             <div class="status-heading">
-                                <h2>Delivery Expected by Tomorrow, Oct 06</h2>
+                                <h2>{{dataRes.shippedStatus}}</h2>
                             </div>
                             <div class="need-help-shipped">
                                 <div fxLayout="column">
@@ -219,7 +215,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="need-help-placed" *ngIf="dataRes[0].orderstatus === 'placed' " fxFlex="40">
+                    <div class="need-help-placed" *ngIf="dataRes.orderstatus === 'placed' " fxFlex="20">
                         <div fxLayout="column">
                             
                             <div fxLayout="row" fxLayoutGap="3%">

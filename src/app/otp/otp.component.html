@@ -5,31 +5,32 @@
                 <h1>OTP Verification</h1>
             </div>
             <div class="content" fxLayout="column"  fxLayoutGap="3%">
-                <div fxLayoutAlign="start start" class="text" ngClass.xs="text-small">
+                <div  class="text" ngClass.xs="text-small">
                 <h3>Enter Your OTP</h3>
             </div>
             <div fxLayout="row" fxLayoutAlign="space-between center">
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1">
+                    <input  class="input" type="text" maxlength="1" #otp1>
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1">
+                    <input  class="input" type="text" maxlength="1" #otp2>
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1">
+                    <input  class="input" type="text" maxlength="1" #otp3>
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1">
+                    <input  class="input" type="text" maxlength="1" #otp4>
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1">
+                    <input  class="input" type="text" maxlength="1" #otp5>
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1">
+                    <input  class="input" type="text" maxlength="1" #otp6>
                 </div>
             </div>
             <div>
-                <button mat-flat-button type="submit" class="button" ngClass.xs="button-small">Verify</button>
+                <button mat-flat-button type="submit" class="button" (click)="display()" ngClass.xs="button-small">Verify</button>
+                <p>{{str}}</p>
             </div>
             <div class="confirmation">
                  <h3>Not Recieve? <span>Click Here</span></h3>
