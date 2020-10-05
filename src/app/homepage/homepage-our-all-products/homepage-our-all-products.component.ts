@@ -9,6 +9,9 @@ export class HomepageOurAllProductsComponent implements OnInit {
 
   constructor() { }
 
+  isVisibleOnMobile(){
+
+  }
   ngOnInit(): void {
   }
 

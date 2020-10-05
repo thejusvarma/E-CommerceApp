@@ -6,12 +6,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .splide__arrow {
-  height:30px !important;
-  width:30px !important;
+  height:25px !important;
+  width:25px !important;
 }
 
 .splide__arrow > svg {
-  height : 20px !important;
-  width:20px !important;
+  height : 15px !important;
+  width:15px !important;
 }
 
+.splide__pagination{
+  color: black;
+
+}

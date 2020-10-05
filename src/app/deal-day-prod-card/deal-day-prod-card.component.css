@@ -56,8 +56,8 @@
      transform: scale(1.5);
  }
  .txt{
-     line-height: 2rem;
-     font-size: 1.2rem;
+     line-height: 140%;
+     font-size: 100%;
      text-decoration: none;
 
  }

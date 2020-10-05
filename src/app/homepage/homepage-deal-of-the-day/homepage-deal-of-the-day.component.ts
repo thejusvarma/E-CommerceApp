@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Splide from '@splidejs/splide';
 
+
 @Component({
   selector: 'app-homepage-deal-of-the-day',
   templateUrl: './homepage-deal-of-the-day.component.html',
@@ -8,19 +9,17 @@ import Splide from '@splidejs/splide';
 })
 export class HomepageDealOfTheDayComponent implements OnInit {
 
-
+  isVisibleOnMobile(){}
   constructor() { }
 
   ngOnInit() {
-
     new Splide( '#deal-day', {
-      padding:'50px',
+      padding:'0px',
       drag: true,
-      // interval : 2000,
-      perPage : 4,
-      gap: '32px',
-      focus    : 'center',
-      // autoplay: true,
+      interval : 2000,
+      perPage : 5,
+      type    : 'loop',
+      gap: '40px',
       pagination: false,
       breakpoints: {
         '800': {
@@ -31,7 +30,13 @@ export class HomepageDealOfTheDayComponent implements OnInit {
           perPage: 2,
           gap    : '12px',
         },
+        '400': {
+          padding:'0px',
+          perPage: 2,
+          gap    : '10px',
+        },
       }
     } ).mount();
 }
 }
+
