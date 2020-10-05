@@ -36,6 +36,8 @@ import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-m
 import {MatRadioModule} from '@angular/material/radio';
 import {MyCartItemComponent} from './my-cart/my-cart-item/my-cart-item.component';
 import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
+import { FailPaymentComponent } from './fail-payment/fail-payment.component';
+import { PandingPaymentComponent } from './panding-payment/panding-payment.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-s
     DealDayProdCardComponent,
     SelectPaymentModeComponent,
     MyCartItemComponent,
-    MyCartSavedLaterComponent
+    MyCartSavedLaterComponent,
+    FailPaymentComponent,
+    PandingPaymentComponent
   ],
   imports: [
     BrowserModule,

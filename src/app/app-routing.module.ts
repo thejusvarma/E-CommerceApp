@@ -6,6 +6,8 @@ import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component
 import {MyCartComponent} from './my-cart/my-cart.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
+import { FailPaymentComponent } from './fail-payment/fail-payment.component';
+import { PandingPaymentComponent } from './panding-payment/panding-payment.component';
 
 const routes: Routes = [
   { path: 'contact', component: ContactUsComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'cart', component: MyCartComponent },
   { path: 'order-placed', component: OrderPlaceSuccessComponent },
   { path: 'payment-options', component: SelectPaymentModeComponent },
+  {path: 'payment-fail',component:FailPaymentComponent},
+  {path:'payment-panding',component:PandingPaymentComponent}
 ];
 
 

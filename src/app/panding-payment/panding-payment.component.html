@@ -1,0 +1,144 @@
+  <div *ngIf="!isMobile">
+        <div class="box blink" >
+            <div class="fail" style="
+            border-radius: 1vw;
+            width: 6vw;
+            padding-top: 1.5vw;
+            padding-left: 3vw;">
+            <img class="img" src="assets/clock.gif" style="height: 4vw; width: 4vw; margin-left: 37vw;">
+            <p style="line-height: 2.5vw;
+            font-size: 2.5vw;
+            font-weight: 600;
+            margin-left: 24vw;"> Your Payment Is Panding</p>
+             <p style="line-height: 2vw;
+             font-size: 1.5vw;
+             font-weight: 500;
+             margin-left: 31.3vw;" ><a href="{{paymentLink}}">Click here to continue</a></p>
+            
+        </div>
+        </div>
+    <div class="box">
+    <div class="one" style="
+    border-radius: 1vw;
+    margin-right: 8vw;
+    width: 6vw;
+    padding-top: 1.5vw;
+    padding-left: 3vw;"><p style="line-height: 3vw;
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: justify;">
+    <img src="assets/order1.png" style="float: left;
+    height: 4.5vw;
+     margin-right: 2vw;">
+   Your Payment Panding Of ₹  {{orderValue}}<br>
+    Order Id :  {{orderId}}
+</p></div>
+    <div class="two" style="
+    width: 6vw;
+    border-radius: 1vw;
+    padding-top: 1.5vw;
+    padding-left: 3vw;" ><p style="line-height: 2vw;
+    font-weight: 400;
+    text-align: justify;"><img src="assets/order2.png" style="float: left;
+    height: 4.5vw;
+     margin-right: 2vw;"><p style="font-size: 2vw; font-weight: 600;">Just click!</p>
+     <p style="font-size: 1.5vw; font-weight: 200;">
+      <a href="{{myOrder}} ">
+        Go to my orders ></a></p></div>
+  </div>
+  <div class="box">
+      <div class="main" style="border-radius: 2vw;">
+          <h1 style="
+        margin-left: 3vw;
+        padding-top: 1vw;
+        font-weight: 600;
+        font-size: 2.5vw;
+        line-height: 4vw;
+        "><b>Delivery Address</b></h1>
+        <p style="margin-left: 3vw;
+        padding-top: 1vw;
+      font-weight: 500; 
+      font-size: 2vw;
+      line-height: 3vw;
+      padding-bottom: 3vw;">Customer Name : {{customerName}}<br>
+            Customer Full Address : {{customerAdd}}<br>
+            Customer Number : {{customerNumber}}<br>
+            This order is also tracked by {{trackNumber}}</p>
+    </div>
+  </div>
+</div>
+    <div *ngIf="isMobile">
+        <div class="box2">
+            <div class="fail blink" style="
+            border-radius: 1vw;
+            width: 6vw;
+            padding-top: 1.5vw;
+            padding-left: 3vw;">
+            <img class="img" src="assets/panding.png" style="height: 8vw; width: 8vw; margin-left: 33vw;">
+            <p style="line-height: 4.5vw;
+            font-size: 4vw;
+            font-weight: 600;
+            margin-left: 14vw;"> Your payment is panding</p>
+             <p style="line-height: 3.5vw;
+             font-size: 3vw;
+             font-weight: 500;
+             margin-left: 22vw;"><a href="{{paymentLink}}">Click here to continue</a> </p>
+        </div>
+        </div>
+    <div class="box2">
+    <div class="one" style="
+    border-radius: 3vw;
+    width: 6vw;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    padding-left: 5vw;"><p style="line-height: 6vw;
+    font-size: 4.5vw;
+    font-weight: 600;
+    text-align: justify;">
+    <img src="assets/order1.png" style="float: left;
+    height: 12vw;
+     margin-right: 2vw;">
+    Your Payment Panding of ₹ {{orderValue}}<br>
+    Order Id :  {{orderId}}
+</p></div></div>
+
+  <div class="box2">
+    <div class="one" style="
+    border-radius: 3vw;
+    width: 6vw;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    padding-left: 5vw;"><p style="line-height: 4vw;
+    font-size: 5vw;
+    font-weight: 500;
+    text-align: justify;">
+    <img src="assets/order2.png" style="float: left;
+        height: 12vw;
+     margin-right: 2vw;"><p style="padding-top: 2vw;
+     font-weight: 500;
+     ">
+    <b>Just click!</b></p>
+    <p style="font-size: 3vw; padding-top: 1vw;"><a href="{{myOrder}} ">
+        Go to my orders ></a></p>
+</div>
+  </div>
+<div class="box">
+  <div class="main" style="border-radius: 2vw;">
+      <h1 style="
+    margin-left: 7vw;
+    padding-top: 3vw;
+    font-weight: 600;
+    font-size: 5vw;
+    line-height: 5vw;
+    "><b>Delivery Address</b></h1>
+    <p style="margin-left: 7vw;
+    padding-top: 1vw;
+    font-weight: 500; 
+  font-size: 3vw;
+  line-height: 4vw;
+  padding-bottom: 3vw;">Customer Name : {{customerName}}<br>
+        Customer Full Address : {{customerAdd}}<br>
+        Customer Number : {{customerNumber}}<br>
+        This order is also tracked by {{trackNumber}}</p>
+</div>
+</div>
