@@ -32,6 +32,14 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
+import { SignupButtonComponent } from './signup-button/signup-button.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginButtonComponent } from './login-button/login-button.component';
+import { LoginComponent } from './login/login.component';
+import { OtpComponent } from './otp/otp.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
+import { SimilarProductsComponent } from './similar-products/similar-products.component';
+import { TrendingProductsComponent } from './trending-products/trending-products.component';
 
 @NgModule({
   declarations: [
@@ -48,8 +56,17 @@ import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.
     OrderPlaceSuccessComponent,
     DealOfTheDayComponent,
     DealDayProdCardComponent,
+    SignupButtonComponent,
+    SignupComponent,
+    LoginButtonComponent,
+    LoginComponent,
+    OtpComponent,
+    OrderDetailsComponent,
+    SimilarProductsComponent,
+    TrendingProductsComponent,
 
   ],
+  entryComponents:[LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

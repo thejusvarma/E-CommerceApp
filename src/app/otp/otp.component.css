@@ -1,0 +1,80 @@
+.heading{
+    border: 1px solid #FFD7B5;
+    background-color: #FFD7B5;
+    width: 30%;
+    margin: 0 auto;
+    /* padding: 10px 10px; */
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.heading h1{
+     text-align: center;
+     font-weight: 700;
+}
+.input{
+    width: 40%;
+    height: 45px;
+    background-color: #FFD7B5;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    /* padding-left: 10px; */
+    
+  
+  }
+  .content{
+      padding: 50px auto;
+      padding-top:50px;
+      border: 1px solid black;
+      border-radius: 40px !important;
+  }
+  .button{
+    font-weight: 500;
+    background-color: #FFD7B5;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    /* margin: 15px 0; */
+    display: block;
+    margin: 20px auto;
+    /* padding: 10px 90px; */
+    /* font-size: 1.2rem; */
+  }
+  .heading{
+      margin-bottom: -30px !important;
+      z-index: 1;
+  }
+  .text h3{
+      font-size: 1.2rem;
+      padding-left: 5%;
+  }
+  .confirmation h3{
+      font-weight: 600;
+  }
+  .confirmation span{
+      color: blue;
+  }
+  .heading-small{
+      /* font-size: 1rem !important; */
+      width: 50%;
+      padding-top: 10px !important;
+      
+
+  }
+  .heading-small h1{
+      font-size: 1rem !important;
+      /* margin-bottom: -1px !important; */
+      margin-bottom: 5px !important;
+  }
+  .text-small h3{
+      font-size: 1rem !important;
+  }
+  .button-small{
+      padding: 5px 30px !important;
+      font-size: 1rem;
+  }
+  .confirmation{
+      margin: 0 auto;
+  }

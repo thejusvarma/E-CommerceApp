@@ -1,0 +1,187 @@
+.container{
+    background-color: #FFD7B5;
+    padding-left:  30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    margin-bottom: 2%;
+}
+.heading-box{
+    background-color: #FFD7B5;
+    width: 250px;
+    height: 50px;
+    /* padding-left: 1  0px; */
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+.heading-box-small{
+    margin: 0 auto;
+    margin-bottom: 2% !important;
+}
+.small-container{
+    padding: 20px !important;
+
+}
+.row1{
+    border: solid 1px black;
+    background-color: white;
+    /* width: 100%; */
+}
+.row{
+    width: 100%;
+}
+/* .progressbar {
+    counter-reset: step;
+  }
+  .progressbar li {
+    list-style: none;
+    display: inline-block;
+    width: 45.33%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height : 30px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background-color: green;
+    color: green;
+    z-index: 2;
+  }
+  .progressbar li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index : -1;
+  }
+  .progressbar li:first-child:after {
+    content: none;
+  }
+  .progressbar li.active {
+    color: green;
+  }
+  .progressbar li.active:before {
+    border-color: green;
+  } 
+  .progressbar li.active + li:after {
+    background-color: green;
+  } */
+  .stepper{
+      padding-top: 4%;
+      position: relative;
+      /* margin: 0 auto; */
+  }
+  .circles{
+    height: 0.938em;
+    width: 0.938em;
+    border: 0.188em solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 1rem;
+    /* margin-left: 2%; */
+  }
+  
+  
+  .active{
+      background-color:green;
+  }
+
+  .danger{
+      background-color: red;
+  }
+  
+  .circle-desc-active{
+  font-weight: bold;
+  }
+  
+  .bar{
+    width: 20%;
+    height: 0.063em;
+    margin-bottom:0.42em;
+    border: 0.2rem solid #777;
+    color:#777;
+    background-color:#777;
+    display: inline-block;
+    text-align:center;
+    margin:"0 auto";
+  }
+
+  .barActive{
+    border: 0.2rem solid green;
+    color:green;
+    background-color:green;
+  }
+  
+  
+  .bar1{
+    width: 60%;
+    height: 0.063em;
+    margin-bottom:0.42em;
+    border: 0.2rem solid green;
+    color:green;
+    background-color:green;
+    display: inline-block;
+    text-align:center;
+    margin:"0 auto";
+  }
+  
+  
+  .circle-desc{
+   position: absolute;
+   top:4rem;
+   font-size: 1.125em;
+   width: auto;
+   max-width:9.375em;
+   margin-left:-0.750em;
+  }
+  .dates{
+      position: absolute;
+      top: 5rem;
+      
+      /* text-align: center; */
+      /* left: 1rem; */
+      text-align: right;
+  }
+  h1{
+      font-size: 200%;
+  }
+  h3{
+      font-size: 150%;
+  }
+  p{
+      font-size: 120%;
+  }
+  h2{
+      font-size: 180%;
+  }
+  mat-card{
+      border-radius: 20px;
+      /* padding: 3%; */
+  }
+  
+  hr{
+      border: 0.5px solid rgb(116, 113, 113);
+      height: 0;
+      margin-bottom: 5%;
+      /* color: red !important; */
+  }
+  .containing{
+      width: 91%;
+      margin: 0 auto;
+  }

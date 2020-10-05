@@ -1,0 +1,37 @@
+<div class="container ">
+    <div class="flex-container">
+        <div fxLayout="row" fxLayout.xs="column">
+            <div class="login-text" ngClass.xs="smalling-div"  fxFlex="40">
+              <div ngClass.xs="smalling-text"><h1>Login</h1></div> 
+               <div><h3 fxHide.xs>Get access to your Orders,
+                   <br> Wishlist and 
+                   <br>Recommendations</h3>
+                </div>
+            </div>
+            <div class="login-form"  ngClass.xs="login-form-small" fxFlex.xs="60" fxFlex="60">
+                <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+              <div >
+                  <h3>Enter Email/Mobile</h3>
+              
+                  <input class="input form-control" formControlName="emailphoneno" type="text">
+                        <span *ngIf="!myReactiveForm.get('emailphoneno').valid && myReactiveForm.get('emailphoneno').touched">
+                            Enter Valid Email Id or Phone number.</span>
+                    </div>
+              <div>
+                <h3>Password</h3>
+            
+                <input class="input form-control" formControlName="password" type="password">
+                <span *ngIf="!myReactiveForm.get('password').valid && myReactiveForm.get('password').touched">
+                    Minimum 8 characters are required.</span>
+            </div>
+            <div>
+                <button mat-flat-button type="submit" class="button" [disabled]="!myReactiveForm.valid">Login</button>
+              </div>
+              <div class="form-text" fxLayoutAlign="center">
+                  <h3>New User? <button class="register">Register Here</button> </h3>
+              </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
