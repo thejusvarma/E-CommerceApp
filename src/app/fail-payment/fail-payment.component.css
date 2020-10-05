@@ -17,7 +17,6 @@
 }
 .blink {
   animation: blinker 1s linear infinite;
-  font-size: 30px;
   font-weight: bold;
   font-family: sans-serif;
 }
@@ -55,8 +54,38 @@
       flex: 1 1 auto;
       background-color: #FFD7B5;
       margin-bottom: 4vw;
+      padding-left: 5%;
+      padding-top: 2%;
   }
 
-  a:link {
+  a:link,a:visited,a:active,a:hover {
+    color: black;
     text-decoration: none;
+    }
+  .button {
+    background-color: #ffd7b5; /* Green */
+    border: 1vw;
+    color: black;
+    border-radius: 1vw;
+    padding: 1vw 2vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+    margin-left: 42%;
+  }
+  .button2 {
+    background-color: #ffd7b5; /* Green */
+    border: 1vw;
+    border-radius: 1vw;
+    color: black;
+    padding: 1vw 2vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1vw;
+    margin-left: 28%;  
+    margin-bottom: 3vw;  
+    font-size: 3.5vw;
   }

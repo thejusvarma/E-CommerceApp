@@ -11,10 +11,11 @@ export class FailPaymentComponent implements OnInit {
   orderValue : number = 199;
   orderId : number = 94115487952;
   paymentLink : string ="/payment-fail";
-  customerName:string = "harsh";
+  customerName:string = "XYZ";
   customerAdd:string = "Xyz";
   customerNumber = "+91 98765431";
   trackNumber = "+91 98765431";
+  orderLink = "payment-fail";
   image = 'assets/fail.gif';
   constructor() {
    }
