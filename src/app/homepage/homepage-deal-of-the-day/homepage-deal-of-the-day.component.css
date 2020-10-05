@@ -45,5 +45,7 @@ p{
 }
 
 img{
-  height: 50%;
+  height: 40%;
+  background-color: #E1E1E1;
+  margin: 5px;
 }

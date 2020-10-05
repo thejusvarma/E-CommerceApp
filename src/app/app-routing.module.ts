@@ -15,8 +15,7 @@ const routes: Routes = [
   { path: 'cart', component: MyCartComponent },
   { path: 'order-placed', component: OrderPlaceSuccessComponent },
   { path: 'payment-options', component: SelectPaymentModeComponent },
-  { path: 'homepage', component: HomepageComponent },
-
+  { path: 'homepage', component: HomepageComponent},
 ];
 
 

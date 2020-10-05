@@ -1,19 +1,16 @@
 <div class="flex-container" fxLayout="column" fxLayoutGap="10px">
-  <div fxLayout="row" fxLayoutAlign="space-between center">
+
     <div fxLayout="row" fxFlex="80" fxLayoutGap="20px">
       <div class="label-feature" >
         <a class="label-feature-text">Trending Products</a>
       </div>
-      <div fxLayout="row" [fxShow.xs]="isVisibleOnMobile()">
-        <mat-icon>alarm</mat-icon>
+      <div fxLayout="row">
+        <img src="../../../assets/321.svg">
         <p>18:12:11</p>
       </div>
     </div>
 
-    <div >
-      <button  mat-flat-button>View all</button>
-    </div>
-  </div>
+
 
 <div id="trending" class="splide ">
   <div class="splide__track ">
@@ -28,6 +25,9 @@
         <li class="splide__slide"> <app-product-card></app-product-card></li>
     </ul>
   </div>
+</div>
+<div fxLayoutAlign="end">
+  <button  mat-flat-button>View all</button>
 </div>
 </div>
 

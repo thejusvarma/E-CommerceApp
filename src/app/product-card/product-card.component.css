@@ -93,23 +93,28 @@ display: none;
         font-weight: bold !important;
     }
 */
-  .w3-button:hover {
+  .w3-button {
     border-radius: 2px;
     background-color :black !important;
     color : white !important;
     transition: all 0.3s ease-in-out;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.w3-button:hover {
+
+  background-color : #dfaf86!important;
+  color : black !important;
 
 }
 
 
 .button {
-    margin-top:2px;
+    margin-top:10px;
     margin-right:8px;
+    margin-bottom:3px;
     border:none !important;
-
-
 }
 
 
