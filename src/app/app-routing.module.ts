@@ -7,8 +7,7 @@ import {MyCartComponent} from './my-cart/my-cart.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
 import { OrderCancellationComponent } from './order-cancellation/order-cancellation.component';
-
-
+import { OrdersComponent } from './orders/orders.component';
 const routes: Routes = [
   { path: 'contact', component: ContactUsComponent },
   { path: 'about', component: AboutUsComponent },
@@ -16,7 +15,8 @@ const routes: Routes = [
   { path: 'cart', component: MyCartComponent },
   { path: 'order-placed', component: OrderPlaceSuccessComponent },
   { path: 'payment-options', component: SelectPaymentModeComponent },
-  { path: 'cancel-order', component: OrderCancellationComponent }
+  { path: 'cancel-order', component: OrderCancellationComponent },
+  { path: 'myorders', component: OrdersComponent }
 ];
 
 

@@ -37,6 +37,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import { OrderCancellationComponent } from './order-cancellation/order-cancellation.component';
 import {MyCartItemComponent} from './my-cart/my-cart-item/my-cart-item.component';
 import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
+import { OrdersComponent } from './orders/orders.component';
+import { OrderCardComponent } from './order-card/order-card.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-s
     SelectPaymentModeComponent,
     MyCartItemComponent,
     MyCartSavedLaterComponent,
-    OrderCancellationComponent
+    OrderCancellationComponent,
+    OrdersComponent,
+    OrderCardComponent
 
   ],
   imports: [

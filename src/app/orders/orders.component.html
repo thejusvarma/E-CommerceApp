@@ -1,0 +1,36 @@
+<div fxLayout="row" style="height: 200px;" fxLayoutAlign="center center" *ngIf="l==0">
+  <h1 style="font-weight: 900;font-size: 60px;" [ngStyle.xs]="'font-size:30px;'">No Orders Placed</h1>
+</div>
+
+
+<div fxLayout="column" style="background-color:  #E1E1E1;" *ngIf="l>0">
+  <br>
+  <br>
+  <div fxLayout="row" fxLayoutAlign="center center"
+    style="width: 250px;height:60px;
+    text-align: center;background-color: #FFD7B5;border-radius: 8px;
+    margin-left:5%;"
+    [ngStyle.xs]="'width: 180px;height:40px;font-size:25px;margin-left:25%'"
+    >
+    <h1 style="padding-top: 5%;font-size: 30px;font-weight: 900;"
+      [ngStyle.xs]="'padding-top: 5%;font-size: 18px;font-weight: 900;'">MY ORDERS
+    </h1>
+  </div>
+  <br>
+  <br>
+  <div class="flex-container" class="card">
+    <app-order-card *ngFor="let order of order" [order]="order"></app-order-card>
+  </div>
+  <br>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <button mat-raised-button
+    style="width: 200px;height:60px;
+    font-size: 30px;font-weight: bold;text-align: center;background-color: #FFD7B5;border-radius: 8px;"
+    [ngStyle.xs]="'width: 200px;height:40px;font-size:25px;'"
+    >
+    View More <mat-icon [ngStyle.gt-xs]="'font-size: 30px;font-weight: bold;'">expand_more</mat-icon></button>
+  </div>
+  <br>
+  <br>
+</div>
+
