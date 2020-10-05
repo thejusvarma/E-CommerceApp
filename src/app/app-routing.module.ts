@@ -5,11 +5,12 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
 import {MyCartComponent} from './my-cart/my-cart.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
-import { LoginComponent } from './login/login.component';
 import { LoginButtonComponent } from './login-button/login-button.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { SimilarProductsComponent } from './similar-products/similar-products.component';
 import { TrendingProductsComponent } from './trending-products/trending-products.component';
+import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
+
 const routes: Routes = [
   { path: 'contact', component: ContactUsComponent },
   { path: 'about', component: AboutUsComponent },
@@ -17,9 +18,10 @@ const routes: Routes = [
   { path: 'cart', component: MyCartComponent },
   { path: 'order-placed', component: OrderPlaceSuccessComponent },
   { path: 'login', component: LoginButtonComponent},
-  {path: '', component:OrderDetailsComponent},
+  {path: 'order-details', component:OrderDetailsComponent},
   {path: 'similar', component: SimilarProductsComponent},
-  {path: 'trending', component: TrendingProductsComponent}
+  {path: 'trending', component: TrendingProductsComponent},
+  { path: 'payment-options', component: SelectPaymentModeComponent },
 ];
 
 

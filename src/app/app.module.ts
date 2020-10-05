@@ -40,6 +40,10 @@ import { OtpComponent } from './otp/otp.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { SimilarProductsComponent } from './similar-products/similar-products.component';
 import { TrendingProductsComponent } from './trending-products/trending-products.component';
+import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MyCartItemComponent} from './my-cart/my-cart-item/my-cart-item.component';
+import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +68,9 @@ import { TrendingProductsComponent } from './trending-products/trending-products
     OrderDetailsComponent,
     SimilarProductsComponent,
     TrendingProductsComponent,
+    SelectPaymentModeComponent,
+    MyCartItemComponent,
+    MyCartSavedLaterComponent,
 
   ],
   entryComponents:[LoginComponent],
@@ -87,7 +94,8 @@ import { TrendingProductsComponent } from './trending-products/trending-products
     MatCardModule,
     MatDialogModule,
     MatSnackBarModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
