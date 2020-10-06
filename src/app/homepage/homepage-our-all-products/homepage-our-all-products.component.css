@@ -1,0 +1,27 @@
+.flex-container{
+  margin: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.mat-flat-button{
+  background-color: #FFD7B5;
+  color: black;
+  border-radius: 5px;
+}
+.label-feature{
+  width: fit-content;
+  height: fit-content;
+  border:solid 0px #FFd7B5;
+  background-color: #FFd7B5;
+  border-radius: 7px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 9px;
+  padding-bottom: 8px;
+
+}
+.label-feature-text{
+  font-size: 115%;
+  font-weight: 400;
+  color: black;
+}

@@ -49,6 +49,12 @@ import { FailPaymentComponent } from './fail-payment/fail-payment.component';
 import { PandingPaymentComponent } from './panding-payment/panding-payment.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderCardComponent } from './order-card/order-card.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { HomepageImageCarouselComponent } from './homepage/homepage-image-carousel/homepage-image-carousel.component';
+import { HomepageOurAllProductsComponent } from './homepage/homepage-our-all-products/homepage-our-all-products.component';
+import { HomepageMidCarouselComponent } from './homepage/homepage-mid-carousel/homepage-mid-carousel.component';
+import { HomepageTrendingProductsComponent } from './homepage/homepage-trending-products/homepage-trending-products.component';
+import { HomepageDealOfTheDayComponent } from './homepage/homepage-deal-of-the-day/homepage-deal-of-the-day.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +86,14 @@ import { OrderCardComponent } from './order-card/order-card.component';
     PandingPaymentComponent,
     OrderCancellationComponent,
     OrdersComponent,
-    OrderCardComponent
+    OrderCardComponent,
+    HomepageComponent,
+    HomepageImageCarouselComponent,
+    HomepageOurAllProductsComponent,
+    HomepageMidCarouselComponent,
+    HomepageTrendingProductsComponent,
+    HomepageDealOfTheDayComponent,
+
 
   ],
   entryComponents:[LoginComponent],

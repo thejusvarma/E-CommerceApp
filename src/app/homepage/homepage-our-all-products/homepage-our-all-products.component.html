@@ -1,0 +1,28 @@
+<div class="flex-container">
+
+  <div class="label-feature" >
+    <a class="label-feature-text">Our all Products</a>
+  </div>
+  <br>
+  <div fxLayout="column" fxLayoutGap="10px">
+    <div fxLayout="row" fxLayoutGap="10px">
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+      <app-product-card [fxShow.xs]="isVisibleOnMobile()"></app-product-card>
+      <app-product-card [fxShow.xs]="isVisibleOnMobile()"></app-product-card>
+      <app-product-card [fxShow.xs]="isVisibleOnMobile()"></app-product-card>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+      <app-product-card [fxShow.xs]="isVisibleOnMobile()"></app-product-card>
+      <app-product-card [fxShow.xs]="isVisibleOnMobile()"></app-product-card>
+      <app-product-card [fxShow.xs]="isVisibleOnMobile()"></app-product-card>
+    </div>
+  </div>
+<br>
+<br>
+<div fxLayoutAlign="center none">
+  <button mat-flat-button>Explore More<mat-icon>expand_more</mat-icon></button>
+</div>
+</div>

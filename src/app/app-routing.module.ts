@@ -14,7 +14,7 @@ import { FailPaymentComponent } from './fail-payment/fail-payment.component';
 import { PandingPaymentComponent } from './panding-payment/panding-payment.component';
 import { OrderCancellationComponent } from './order-cancellation/order-cancellation.component';
 import { OrdersComponent } from './orders/orders.component';
-
+import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
   { path: 'contact', component: ContactUsComponent },
@@ -30,7 +30,8 @@ const routes: Routes = [
   {path: 'payment-fail', component: FailPaymentComponent},
   {path: 'payment-pending', component: PandingPaymentComponent},
   { path: 'cancel-order', component: OrderCancellationComponent },
-  { path: 'my-orders', component: OrdersComponent }
+  { path: 'my-orders', component: OrdersComponent },
+  { path: '', component: HomepageComponent},
 ];
 
 

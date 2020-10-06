@@ -13,6 +13,7 @@ img{
 button{
   border-radius: 20px;
   background-color: #FFd7B5;
+  color: black;
 }
 .mat-button-toggle{
   height: 50%;
@@ -25,7 +26,44 @@ button{
   background-color:#E1E1E1;
   color: black;
 }
-.blue{
-  background: blue;
 
+
+.mat-flat-button{
+  width: 45px!important;
+  min-width: unset!important;
+}
+
+.add-button{
+
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+  border: none;
+  outline-width: 0;
+  outline-style: none;
+  padding-top: 3px;
+}
+
+.minus-button{
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border: none;
+  outline-width: 0;
+  outline-style: none;
+  padding-top: 3px;
+}
+
+.value-box{
+  border: none;
+  outline-width: 0;
+  outline-style: none;
+  border-radius: 0%;
+  padding: 8px;
+}
+
+.minus-button:hover {
+  background:  #e7ba93;
+}
+
+.add-button:hover {
+  background: #e7ba93;
 }

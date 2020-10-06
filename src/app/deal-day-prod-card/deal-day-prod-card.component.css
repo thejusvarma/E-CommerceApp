@@ -3,18 +3,18 @@
  .top-right{ position: relative; }
  .top-right img { display: block; }
  .top-right .icon { position: absolute; top:0; right:0; z-index: 1; }
- 
+
  .icon{
      margin: 5%;
      margin-right: 7%;
      z-index: 1;
-     
+
  }
  .pic{
      position: relative;
  }
  .pic .overlay{
-    
+
      position: absolute;
      top: 0;
      bottom: 0;
@@ -45,7 +45,7 @@
      margin-left: 15%;
      margin-bottom: 15%;
      font-family:Poppins !important;
- 
+
  }
  .txt:hover
  {
@@ -59,7 +59,7 @@
      line-height: 140%;
      font-size: 100%;
      text-decoration: none;
-     
+
  }
  a{
      text-decoration: none;
@@ -84,5 +84,4 @@
      font-weight: bold;
      padding-left: 3%;
  }
- 
- 
+

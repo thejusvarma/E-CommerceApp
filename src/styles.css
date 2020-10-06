@@ -6,3 +6,18 @@ body {
   font-family: 'Poppins', sans-serif !important;
   background-color: #E1E1E1;
 }
+
+.splide__arrow {
+  height:25px !important;
+  width:25px !important;
+}
+
+.splide__arrow > svg {
+  height : 15px !important;
+  width:15px !important;
+}
+
+.splide__pagination{
+  color: black;
+
+}
