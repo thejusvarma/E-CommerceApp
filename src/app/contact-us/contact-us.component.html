@@ -1,16 +1,45 @@
-
-<div class="container" fxLayout="column wrap" fxLayoutAlign="start" >
-  <div class="flex-container" fxLayoutAlign="center">
-    <img src="../../../assets/images/coverpic.jpg" alt="">
-</div>
+  <form #f="ngForm">
+      <article id="slider" style="height: 40vw;">
+          <input type='radio' class="input" name='slider' [value]='0' ngModel id='slide1'/>
+          <input type='radio' name='slider'class="input" [value]='1' ngModel id='slide2'/>
+          <input type='radio' name='slider' [value]='2'class="input" id='slide3' ngModel/>
+          <input type='radio' name='slider' [value]='3' id='slide4' class="input" ngModel/>
+          <input type='radio' name='slider' id='slide5' [value]='4'class="input" ngModel/>
+          <div id="slides">
+              <div id="container2">
+                  <div class="inner">
+                      <article>
+                      <img src="assets/slide1.jpg"/>
+                      </article>
+                      <article>
+                      <img src="assets/slide2.jpg"/>
+                      </article>
+                      <article>
+      
+                      <img src="assets/slide3.jpg"/>
+                      </article>
+                      <article>
+                      
+                      <img src="assets/slide4.jpg"/>
+                      </article>
+                      <article>
+                      
+                      <img src="assets/slide5.jpg"/>
+                      </article>
+                  </div>
+              </div>
+          </div>
+          </article>
+      </form>
+      <div class="container" fxLayout="column wrap" fxLayoutAlign="start">
   <div class="heading-box flex-container">
-    <h1 class="heading">Contact Us</h1>
+    <div class="heading">Contact Us</div>
   </div>
-  <div class="containing" >
+  <div class="containing">
     <div class="flex-container" fxLayout="row wrap" fxLayoutAlign="center" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column"   fxLayoutGap="90px">
 
       <mat-card class="form" fxFlex="50"  >
-        <mat-card-title>Contact form</mat-card-title>
+        <mat-card-title>Contact Form</mat-card-title>
         <mat-card-content>
           <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
             <div fxLayout="row wrap" fxLayoutAlign="space-between">
@@ -60,11 +89,11 @@
       <mat-card class="services" fxFlex="33">
         <mat-card-content>
           <mat-icon class="icon">phone</mat-icon>
-          <h2>contact customer service</h2>
-          <p> Need assistance? Our customer service is here to assist you Monday through Friday from 9 am EST to 10 pm EST.</p>
+          <h2>Contact Customer Service</h2>
+          <p> Need Assistance? Our Customer Service Is Here To Assist You Monday To Friday From 9 AM EST to 10 pm EST.</p>
           <mat-icon class="icon">live_help</mat-icon>
-          <h2>Khan copper Faq</h2>
-          <p> You might find the answer you’re looking for in our frequently asked questions</p>
+          <h2>Khan copper FAQ</h2>
+          <p> You Might Find The Answer You’re Looking For In Our Frequently Asked Questions</p>
 
         </mat-card-content>
       </mat-card>
