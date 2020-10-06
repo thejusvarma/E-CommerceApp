@@ -6,14 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-place-success.component.css']
 })
 export class OrderPlaceSuccessComponent implements OnInit {
-  isMobile: boolean;
+  isMobile: boolean=false;
   loading = true;
   image = 'assets/test1.gif';
   constructor() {
-    this.isMobile = window.innerWidth < 768;
    }
 
   ngOnInit(): void {
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		if (isMobile) {
+      this.isMobile=true;
+    }
     setTimeout(() => {
       this.image = '';
     }, 3000);

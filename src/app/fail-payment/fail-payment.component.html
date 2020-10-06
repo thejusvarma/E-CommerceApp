@@ -1,0 +1,148 @@
+<div *ngIf="!loading">
+    <img style="padding-top: 10vw; padding-left: 40vw; padding-bottom: 20vw; width: 18vw; height: 18vw;" src="{{image}}">
+</div>
+    <div *ngIf="loading">
+        
+    <div *ngIf="!isMobile">
+        <div class="box">
+            <div class="fail" style="
+            border-radius: 1vw;
+            width: 6vw;
+            padding-top: 1.5vw;
+            padding-left: 3vw;">
+            <img class="img" src="assets/fail2.jpg" style="height: 4vw; width: 4vw; margin-left: 40vw;">
+            <p style="line-height: 2vw;
+            font-size: 2vw;
+            font-weight: 600;
+            margin-left: 32vw;"> Your payment failed</p>
+             <p style="line-height: 1.5vw;
+             font-size: 1.5vw;
+             font-weight: 500;
+             margin-left: 25.5vw;" class="blink">If any amount is deducted then it will be refunded</p>
+    <button class="button"><a href="">Retry Payment</a></button>    
+    
+    </div>
+        </div>
+    <div class="box">
+    <div class="one" style="
+    border-radius: 1vw;
+    margin-right: 8vw;
+    width: 6vw;
+    padding-top: 1.5vw;
+    padding-left: 3vw;"><p style="line-height: 2.5vw;
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: justify;">
+    <img src="assets/order1.png" style="float: left;
+    height: 4.5vw;
+     margin-right: 2vw;">
+    Placed Order For ₹ {{orderValue}}<br>
+    Order Id :  {{orderId}}
+</p></div>
+    <div class="two" style="
+    width: 6vw;
+    border-radius: 1vw;
+    padding-top: 1.5vw;
+    padding-left: 3vw;" ><p style="line-height: 2vw;
+    font-weight: 400;
+    text-align: justify;"><img src="assets/order2.png" style="float: left;
+    height: 4.5vw;
+     margin-right: 2vw;"><p style="font-size: 2vw; font-weight: 600;">Just click!</p>
+     <p style="font-size: 1.5vw; font-weight: 200;">
+   Go to my orders ></p></div>
+  </div>
+  <div class="box">
+      <div class="main" style="border-radius: 2vw;">
+          <h1 style="
+          padding-top: 1vw;
+        font-weight: 600;
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+        "><b>Delivery Address</b></h1>
+        <p style="font-weight: 500; 
+      font-size: 2vw;
+      line-height: 2.5vw;
+      padding-bottom: 3vw;">Customer name : {{customerName}} <br>
+            Customer full address : {{customerAdd}} <br>
+            Customer Number : {{customerNumber}} <br>
+            This order is also tracked by {{trackNumber}}</p>
+    </div>
+  </div>
+</div>
+    <div *ngIf="isMobile">
+        <div class="box2">
+            <div class="fail" style="
+            border-radius: 1vw;
+            width: 6vw;
+            padding-top: 1.5vw;
+            padding-left: 3vw;">
+            <img class="img" src="assets/fail2.jpg" style="height: 8vw; width: 8vw; margin-left: 33vw;">
+            <p style="line-height: 3.5vw;
+            font-size: 3.5vw;
+            font-weight: 600;
+            margin-left: 21vw;"> Your payment failed</p>
+             <p class="blink" style="line-height: 3vw;
+             font-size: 3.5vw;
+             font-weight: 500;
+             margin-left: 1vw;">If any amount is deducted then it will be refunded</p>
+    <button class="button2 blink"><a href="">Retry Payment</a></button>
+            
+        </div>
+        </div>
+    <div class="box2">
+    <div class="one" style="
+    border-radius: 3vw;
+    width: 6vw;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    padding-left: 5vw;"><p style="line-height: 7vw;
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: justify;">
+    <img src="assets/order1.png" style="float: left;
+    height: 12vw;
+     margin-right: 2vw;">
+    Placed Order for ₹ {{orderValue}}<br>
+    Order Id : {{orderId}}
+</p></div></div>
+
+  <div class="box2">
+    <div class="one" style="
+    border-radius: 3vw;
+    width: 6vw;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    padding-left: 5vw;"><p style="line-height: 2vw;
+    font-size: 5vw;
+    font-weight: 500;
+    text-align: justify;">
+    <img src="assets/order2.png" style="float: left;
+    height: 12vw;
+     margin-right: 2vw;"><p style="padding-top: 2vw;
+     font-weight: 500;
+     ">
+    <b>Just click!</b></p>
+    <p style="font-size: 3vw; padding-top: 1vw;">
+        <a >Go to my orders ></a></p>
+</div>
+</div>
+<div class="box2">
+    <div class="main" style="border-radius: 2vw;">
+        <h1 style="
+        padding-top: 4vw;
+      font-weight: 600;
+      font-size: 5vw;
+      line-height: 4vw;
+      "><b>Delivery Address</b></h1>
+      <p style="
+    font-weight: 500; 
+    font-size: 3vw;
+    line-height: 4vw;
+    padding-bottom: 3vw;">Customer Name : {{customerName}} <br>
+          Customer Address : {{customerAdd}} <br>
+          Customer Number : {{customerNumber}} <br>
+          This order is also tracked by {{trackNumber}}</p>
+  </div>
+</div>
+    
+</div>
