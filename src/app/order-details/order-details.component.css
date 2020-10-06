@@ -16,10 +16,14 @@
     border-radius: 10px;
     text-align: center;
     margin-bottom: 1%;
+    margin-top: 1.5% ;
 }
 .heading-box-small{
     margin: 0 auto;
     margin-bottom: 2% !important;
+    margin-top: 2% !important;
+    height: 40px !important;
+    width: 200px !important;
 }
 .small-container{
     padding: 20px !important;
