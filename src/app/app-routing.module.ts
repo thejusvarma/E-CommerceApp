@@ -24,8 +24,8 @@ const routes: Routes = [
   {path: 'similar', component: SimilarProductsComponent},
   {path: 'trending', component: TrendingProductsComponent},
   { path: 'payment-options', component: SelectPaymentModeComponent },
-  {path: 'payment-fail',component:FailPaymentComponent},
-  {path:'payment-panding',component:PandingPaymentComponent}
+  {path: 'payment-fail', component: FailPaymentComponent},
+  {path: 'payment-pending', component: PandingPaymentComponent}
 ];
 
 
