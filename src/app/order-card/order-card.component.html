@@ -1,0 +1,87 @@
+<div fxLayout="row" fxLayout.xs="column" class="card">
+  <div fxLayout="row" fxFlex="1 1 85">
+    <div fxLayout="column" fxFlex="1 1 100">
+      <br>
+      <div fxLayout="row"
+          style="width: 250px;height:40px;background-color: #FFD7B5;
+          text-align: center;border-radius: 8px;
+          margin-left:2%;"
+          [ngStyle.xs]="'width: 180px;height:40px;font-size:20px;margin-left:5%'"
+          >
+        <h2 style="padding-top: 2%;font-size: 20px;font-weight: 900;padding-left:8%"
+          [ngStyle.xs]="'padding-top: 3%;font-size: 15px;font-weight: 900;padding-left:8%'"
+          [ngStyle.md]="'padding-top: 2%;font-size: 20px;font-weight: 900;'"
+          [ngStyle.sm]="'padding-top: 2%;font-size: 20px;font-weight: 900;'"
+           >Order Id : {{orderid}}
+        </h2>
+      </div>
+      <br>
+      <div fxLayout="row" style="padding-left:2%;width:100%;" *ngFor="let order of orders">
+        <div fxLayout="row" fxFlex="1 1 100">
+          <div fxFlex="1 1 20" fxFlex.xs="1 1 40">
+            <img [src]="order.img" [ngStyle.gt-md]="'width:180px;height:200px;'"
+            [ngStyle.md]="'width:150px;height:150px;'"
+            [ngStyle.sm]="'width:110px;height:150px;'"
+            [ngStyle.xs]="'width:120px;height:180px;'">
+          </div>
+          <div fxLayout="row" fxFlex="1 1 80" fxFlex.xs="1 1 70" fxLayout.xs="column">
+            <div fxLayout="row" fxFlex="1 1 60">
+              <div class="flex-container" fxFlex="1 1 60" fxFlex.md="1 1 60" fxFlex.sm="1 1 60" fxFlex.xs="1 1 72">
+                <br>
+                <h2 style="font-weight: 600;text-transform: capitalize;font-size:20px;"
+                [ngStyle.md]="'font-size:18px;'"
+                [ngStyle.sm]="'font-size:15px;'"
+                [ngStyle.xs]="'font-size:12px;'"
+                >{{order.name}}</h2>
+                <p style="font-weight: 500;font-size:16px;"
+                [ngStyle.md]="'font-size:15px;'"
+                [ngStyle.sm]="'font-size:12px;'"
+                [ngStyle.xs]="'font-size:11px;'">size : {{order.size}} &nbsp;&nbsp;&nbsp;color : {{order.color}}</p>
+                <h4 style="font-weight: 500;font-size:16px;"
+                [ngStyle.md]="'font-size:15px;'"
+                [ngStyle.sm]="'font-size:12px;'"
+                [ngStyle.xs]="'font-size:11px;'">Quantity : {{order.quantity}}</h4>
+              </div>
+              <div fxLayout="row" fxLayoutAlign.xs="center end" fxLayoutAlign="center center">
+                <h2 style="font-weight: 600;font-size:25px;"
+                [ngStyle.md]="'font-size:15px;'"
+                [ngStyle.sm]="'font-size:15px;'"
+                [ngStyle.xs]="'font-size:12px;'">₹{{order.price}}</h2>
+              </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 1 30">
+              <h2 style="font-weight: 600;color:red"
+              [ngStyle.md]="'font-size:15px;'"
+              [ngStyle.sm]="'font-size:15px;'"
+              [ngStyle.xs]="'font-size:12px;'" *ngIf="order.orderstatus==-1">{{order.status}}</h2>
+              <h2 style="font-weight: 600;color:black"
+              [ngStyle.md]="'font-size:15px;'"
+              [ngStyle.sm]="'font-size:15px;'"
+              [ngStyle.xs]="'font-size:12px;'" *ngIf="order.orderstatus==0">{{order.status}}</h2>
+              <h2 style="font-weight: 600;color:green"
+              [ngStyle.md]="'font-size:15px;'"
+              [ngStyle.sm]="'font-size:15px;'"
+              [ngStyle.xs]="'font-size:12px;'" *ngIf="order.orderstatus==1">{{order.status}}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxFlex="1 1 15">
+    <div fxLayout="row" fxFlex="1 1 95" fxLayoutAlign="center center" fxLayoutAlign.xs="end center">
+      <button mat-raised-button
+        style="width: 150px;height:50px;font-size: 20px;
+        font-weight: bold;text-align: center;background-color: #FFD7B5;border-radius: 8px;
+        "
+        [ngStyle.xs]="'width:120px;height:40px;font-size: 15px;'"
+        [ngStyle.sm]="'width:100px;height:40px;font-size: 15px;'"
+        [ngStyle.md]="'width:120px;height:40px;font-size: 15px;'"
+        >
+        View More</button>
+    </div>
+  </div>
+  <br>
+</div>
+<br>
+<br>

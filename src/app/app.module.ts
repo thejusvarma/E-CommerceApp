@@ -42,10 +42,13 @@ import { SimilarProductsComponent } from './similar-products/similar-products.co
 import { TrendingProductsComponent } from './trending-products/trending-products.component';
 import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { OrderCancellationComponent } from './order-cancellation/order-cancellation.component';
 import {MyCartItemComponent} from './my-cart/my-cart-item/my-cart-item.component';
 import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
 import { FailPaymentComponent } from './fail-payment/fail-payment.component';
 import { PandingPaymentComponent } from './panding-payment/panding-payment.component';
+import { OrdersComponent } from './orders/orders.component';
+import { OrderCardComponent } from './order-card/order-card.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +77,11 @@ import { PandingPaymentComponent } from './panding-payment/panding-payment.compo
     MyCartItemComponent,
     MyCartSavedLaterComponent,
     FailPaymentComponent,
-    PandingPaymentComponent
+    PandingPaymentComponent,
+    OrderCancellationComponent,
+    OrdersComponent,
+    OrderCardComponent
+
   ],
   entryComponents:[LoginComponent],
   imports: [

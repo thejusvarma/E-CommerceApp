@@ -12,6 +12,9 @@ import { TrendingProductsComponent } from './trending-products/trending-products
 import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
 import { FailPaymentComponent } from './fail-payment/fail-payment.component';
 import { PandingPaymentComponent } from './panding-payment/panding-payment.component';
+import { OrderCancellationComponent } from './order-cancellation/order-cancellation.component';
+import { OrdersComponent } from './orders/orders.component';
+
 
 const routes: Routes = [
   { path: 'contact', component: ContactUsComponent },
@@ -25,7 +28,9 @@ const routes: Routes = [
   {path: 'trending', component: TrendingProductsComponent},
   { path: 'payment-options', component: SelectPaymentModeComponent },
   {path: 'payment-fail', component: FailPaymentComponent},
-  {path: 'payment-pending', component: PandingPaymentComponent}
+  {path: 'payment-pending', component: PandingPaymentComponent},
+  { path: 'cancel-order', component: OrderCancellationComponent },
+  { path: 'my-orders', component: OrdersComponent }
 ];
 
 
@@ -33,5 +38,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-// @ts-ignore
+
 export class AppRoutingModule { }
