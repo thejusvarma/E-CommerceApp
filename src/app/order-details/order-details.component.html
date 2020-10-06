@@ -1,0 +1,252 @@
+
+<div class="containing" ngClass.xs="small-containing">
+<div class="heading-box" ngClass.xs="heading-box-small">
+    <h1 class="heading">Order Details</h1>
+
+</div>
+<div class="container" ngClass.xs="small-container">
+    <div class="flex-container">
+        
+        <div fxLayout="column" fxLayoutAlign="space-between stretch" fxLayoutGap="2%" fxLayoutGap.xs="6%" >
+            <div class="column1">
+                <mat-card>
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="5%" >
+                    <div  class="user-details" fxFlex="30">
+                        <div fxLayout="column" fxLayoutAlign="space-between start" fxLayoutGap="2%" >
+                            <div >
+                                <h1 style="font-weight: 500;">Delivery Address</h1>
+                            </div>
+                            <div>
+                                <h3>{{dataUser.name}}</h3>
+                                <h3>{{dataUser.address}}</h3>
+                                <h3>Phone Number: {{dataUser.phoneNumber}}</h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rewards" fxFlex="30">
+                        <hr fxHide fxShow.xs>
+                        <div fxLayout="column"  fxLayoutGap="2%">
+                            <div fxLayout="row" fxLayoutGap="2%">
+                                <h1 style="font-weight: 500;">Your Rewards</h1>
+                            </div>
+                            <div fxLayout="row" fxLayoutGap="2%">
+                                
+                                <div class="icon1">
+                                    <mat-icon aria-hidden="false" aria-label="Example home icon">monetization_on</mat-icon>
+                                </div>
+                                <div class="icon1-name">
+                                    <h3>{{dataUser.rewards.rewardname1}}</h3>
+                                    <p>{{dataUser.rewards.rewardDesc1}}</p>
+                                </div>
+                            </div>
+                            <div fxLayout="row" fxLayoutGap="2%">
+                                
+                                <div class="icon1">
+                                    <mat-icon aria-hidden="false" aria-label="Example home icon">emoji_events</mat-icon>
+                                </div>
+                                <div class="icon1-name">
+                                    <h3>{{dataUser.rewards.rewardname2}}</h3>
+                                    <p>{{dataUser.rewards.rewardDesc2}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </mat-card>
+            </div>
+            <div class="column1" *ngFor="let dataRes of dataRe">
+                <mat-card >
+                <div  fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between stretch" fxLayoutGap="5%">
+                    <div class="image" fxFlex="15" fxFlex.md="10">
+                        <img src={{dataRes.productDetails.img}} alt="">
+                        
+                    </div>
+                    <div class="product-details" fxFlex="15">
+                        <div fxLayout="column">
+                            <div class="product-name">
+                                <h1>{{dataRes.productDetails.productname }}</h1>
+                            </div>
+                            <div class="product-color">
+                                <h3>Color: {{dataRes.productDetails.color }} </h3>
+                            </div>
+                            <div class="product-seller">
+                                <h3>Seller: {{dataRes.productDetails.seller }}</h3>
+                            </div>
+                            <div class="product-price">
+                                <h1>{{dataRes.productDetails.price}}</h1>
+                            </div>
+                            
+                        </div>
+                        <hr fxHide fxShow.xs>
+                    </div>
+                    <div class="stepper-part"   *ngIf="dataRes.orderstatus === 'cancel' "  >
+                        <div fxLayout="column" fxFlex="70" fxLayoutGap="20%" fxLayoutGap.xs="15%">
+                            <div class="stepper">
+                                
+                                    <span class="circle-desc" [class.circle-desc-active]="dataRes.orderBar == item">{{ counts1[0] }}</span>
+                                    <span class="circles active"></span>
+                                    <span class="bar1"></span>
+                                    <span class="circle-desc" [class.circle-desc-active]="dataRes.orderBar == item">{{ counts1[1] }}</span>
+                                    <span class="circles danger"></span>
+                                  
+                            </div>
+                            <div class="cancel-reason" >
+                                <h3>{{dataRes.cancellationReason}}</h3>
+                                <div fxLayout="row" fxLayoutAlign="space-between">
+                                    <div class="cancel-date" >
+                                        <h3>{{dataRes.cancellationDate}}</h3>
+                                    </div>
+                                    <div class="cancel-time" >
+                                        <h3>{{dataRes.cancellationTime}}</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        <hr fxHide fxShow.xs>
+                    </div>
+                    <hr fxHide fxShow.xs>
+                    <div class="stepper-part"  fxFlex="30" *ngIf="dataRes.orderstatus === 'deliver' || dataRes.orderstatus === 'placed' || dataRes.orderstatus === 'shipped' "  >
+                        <div fxLayout="column" fxLayoutGap="8%" fxLayoutGap.xs="20%">
+                            <div class="stepper" >
+                                <span *ngFor="let item of counts;let i = index">
+                                    <span class="circle-desc"  [class.circle-desc-active]="dataRes.orderBar == item">{{ item }}</span>
+                                    <span class="circles" [class.active]="dataRes.orderBar[i] == item"></span>
+                                    <span class="bar" [class.barActive]="dataRes.orderBar[i] == item" *ngIf="(i != counts.length-1)"></span>
+                                  </span>
+                            </div>
+                            <div class="delivered-confirm" *ngIf="dataRes.orderstatus === 'deliver'">
+                                <h3 style="font-weight: 500; padding-top: 10%;">{{dataRes.deliveredConfirm}}</h3>
+                            </div>
+                            <div class="shipped-confirm" *ngIf="dataRes.orderstatus === 'shipped'">
+                                <h3 style="font-weight: 500; padding-top: 10%;">{{dataRes.shippedConfirm}}</h3>
+                            </div>
+
+                                <div class="placed-message" *ngIf="dataRes.orderstatus === 'placed'">
+                                    <h3 style="font-weight: 500; padding-top: 10%;">{{dataRes.placedConfirm}}</h3>
+                                </div>
+                                
+                               
+                           
+                        </div>
+                        <hr fxHide fxShow.xs>
+                        
+                    </div>
+                    
+                    <div class="status-cancel" *ngIf="dataRes.orderstatus === 'cancel' " fxFlex=20>
+                        <div fxLayout="column" >
+                            <div class="status-heading">
+                                <h2>Cancelled</h2>
+                            </div>
+                            <div class="need-help-cancel">
+                                    <div fxLayout="row" fxLayoutGap="2%">
+                                        <div class="icon3">
+                                            <mat-icon aria-hidden="false" aria-label="Example home icon">live_help</mat-icon>
+                                        </div>
+                                        <div class="icon3-name">
+                                            <h3>NEED HELP?</h3>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-deliver" fxFlex="20" *ngIf="dataRes.orderstatus === 'deliver' ">
+                        <div fxLayout="column" fxLayoutGap="2%" >
+                            <div class="status-heading">
+                                <h2>{{dataRes.deliveredStatus}}</h2>
+                            </div>
+                            <div class="need-help-deliver">
+                                <div fxLayout="column">
+                                    <div fxLayout="row" fxLayoutGap="2%">
+                                        <div class="icon1">
+                                            <mat-icon aria-hidden="false" aria-label="Example home icon">star</mat-icon>
+                                        </div>
+                                        <div class="icon1-name">
+                                            <h3>RATE & REVIEW PRODUCT</h3>
+                                        </div>
+                                    </div>
+                                    <div fxLayout="row" fxLayoutGap="2%">
+                                        <div class="icon2">
+                                            <mat-icon aria-hidden="false" aria-label="Example home icon">autorenew</mat-icon>
+                                        </div>
+                                        <div class="icon2-name">
+                                            <h3>RETURN</h3>
+                                        </div>
+                                    </div>
+                                    <div fxLayout="row" fxLayoutGap="2%">
+                                        <div class="icon3">
+                                            <mat-icon aria-hidden="false" aria-label="Example home icon">live_help</mat-icon>
+                                        </div>
+                                        <div class="icon3-name">
+                                            <h3>NEED HELP?</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-shipped" fxFlex="20" *ngIf="dataRes.orderstatus === 'shipped' ">
+                        <div fxLayout="column" fxLayoutGap="2%" >
+                            <div class="status-heading">
+                                <h2>{{dataRes.shippedStatus}}</h2>
+                            </div>
+                            <div class="need-help-shipped">
+                                <div fxLayout="column">
+                                        <div fxLayout="row" fxLayoutGap="2%">
+                                        <div class="icon2">
+                                            <mat-icon aria-hidden="false" aria-label="Example home icon">autorenew</mat-icon>
+                                        </div>
+                                        <div class="icon2-name">
+                                            <h3>RETURN</h3>
+                                        </div>
+                                    </div>
+                                    <div fxLayout="row" fxLayoutGap="2%">
+                                        <div class="icon3">
+                                            <mat-icon aria-hidden="false" aria-label="Example home icon">live_help</mat-icon>
+                                        </div>
+                                        <div class="icon3-name">
+                                            <h3>NEED HELP?</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="need-help-placed" *ngIf="dataRes.orderstatus === 'placed' " fxFlex="20">
+                        <div fxLayout="column">
+                            
+                            <div fxLayout="row" fxLayoutGap="3%">
+                                <div class="icon1">
+                                    <mat-icon aria-hidden="false" aria-label="Example home icon">cancel</mat-icon>
+                                </div>
+                                <div class="icon1-name">
+                                    <h3>CANCEL ITEM</h3>
+                                </div>
+                            </div>
+                            
+                            <div fxLayout="row" fxLayoutGap="2%">
+                                <div class="icon2">
+                                    <mat-icon aria-hidden="false" aria-label="Example home icon">live_help</mat-icon>
+                                </div>
+                                <div class="icon2-name">
+                                    <h3>NEED HELP?</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </mat-card>
+            </div>
+            <div>
+
+            </div>
+          
+        </div>
+    </div>
+</div>
+</div>

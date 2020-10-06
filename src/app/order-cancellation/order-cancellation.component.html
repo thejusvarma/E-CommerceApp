@@ -1,0 +1,197 @@
+<div fxLayout="column" [ngStyle.gt-lg]="'background-color:#E1E1E1;height:1000px;'"
+[ngStyle.lg]="'background-color:#E1E1E1;height:635px;'"
+[ngStyle.md]="'background-color:#E1E1E1;height:620px;'"
+[ngStyle.sm]="'background-color:#E1E1E1;height:620px;'"
+fxHide.xs>
+  <div fxFlex="1 1 5"></div>
+  <div fxLayout="row" fxFlex="1 1 10">
+    <div fxFlex="1 1 5"></div>
+    <div fxFlex="1 1 30" style="background-color: #FFD7B5;" fxLayoutAlign="start center" class="card">
+      <h1 style="font-weight:bold;padding-left:4%;padding-top:2%;"> Easy Cancellation</h1>
+    </div>
+  </div>
+  <div fxFlex="1 1 5"></div>
+  <div fxLayout="row" fxFlex="1 1 75" fxLayout.xs="column">
+    <div fxFlex="1 1 5"></div>
+    <div fxFlex="1 1 45" style="background-color: white;" class="card">
+      <div fxLayout="row" fxFlex="1 1 100">
+        <div fxFlex="1 1 4"></div>
+        <div fxLayout="column" fxFlex="1 1 92">
+          <div fxFlex="1 1 8"></div>
+          <div fxLayout="column" fxFlex="1 1 80">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+              <div fxLayout="column wrap" fxLayoutAlign="space-between" fxLayoutGap="33px">
+                <div fxFlex="30">
+                  <h1>Reason For Cancellation</h1>
+                  <textarea type="text"  class="input form-control" formControlName="reason"></textarea>
+                  <span *ngIf="!form.get('reason').valid && form.get('reason').touched" style="color:red;">
+                              Enter valid reason.
+                          </span>
+                </div>
+                <div fxFlex="30">
+                  <h1>Comments</h1>
+                  <textarea type="text"  class="input1 form-control" formControlName="comment"></textarea>
+                  <span *ngIf="!form.get('comment').valid && form.get('comment').touched" style="color:red;">
+                                  Enter Valid Comment</span>
+                </div>
+                <div fxFlex="1 1 5"></div>
+                <div fxFlex="1 1 10" fxLayout="row" fxLayoutAlign="end center">
+                  <button mat-raised-button class="button"
+                  style="background-color:#FFD7B5;height:45px;width:200px;border-radius:20px;font-size:20px;font-weight:bold;"
+                  [disabled]="!form.valid">
+                    Continue</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="1 1 3"></div>
+    <div fxFlex="1 1 42" style="background-color: white;" class="card">
+      <div fxLayout="row" fxFlex="1 1 100">
+        <div fxFlex="1 1 3"></div>
+        <div fxLayout="column" fxFlex="1 1 95">
+          <div fxFlex="1 1 4"></div>
+          <div fxLayout="row" fxFlex="1 1 10">
+            <div fxFlex.gt-md="1 1 40" style="background-color: #FFD7B5;border-radius: 8px;" fxLayoutAlign="center center"
+            fxFlex.md="1 1 50"
+            fxFlex.sm="1 1 60">
+              <h1  [ngStyle.gt-xs]="'font-size:35px;padding-top:4%;'">Price Detail</h1>
+            </div>
+          </div>
+          <div fxFlex="1 1 8"></div>
+          <div fxLayout="row" fxFlex="1 1 15" fxLayoutGap.gt-md="40%" fxLayoutGap.md="20%" fxLayoutGap.sm="30%">
+            <h1 [ngStyle.gt-sm]="'font-size:35px;'">Price (1 item)</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:35px;'">₹330</h1>
+          </div>
+          <div fxLayout="row" fxFlex="1 1 15" fxLayoutGap.gt-md="35%" fxLayoutGap.md="15%" fxLayoutGap.sm="25%">
+            <h1 [ngStyle.gt-sm]="'font-size:35px;'">Delivery Charge</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:35px;'">₹52</h1>
+          </div>
+          <div fxFlex="1 1 8"></div>
+          <div fxLayout="row" fxFlex="1 1 15" fxLayoutGap.gt-md="40%" fxLayoutGap.md="20%" fxLayoutGap.sm="30%">
+            <h1 [ngStyle.gt-sm]="'font-size:35px;font-weight:bold;'"
+            [ngStyle.sm]="'font-size:25px;font-weight:bold;'">Total Amount</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:35px;font-weight:bold;'"
+            [ngStyle.sm]="'font-size:25px;font-weight:bold;'">₹382</h1>
+          </div>
+          <div fxFlex="1 1 8"></div>
+          <div fxLayout="row" fxLayoutAlign.gt-xs="center center" style="color:rgb(112, 106, 106);padding-left:5%;">
+            <img src="assets/lock.svg" width="35px" height="35px">
+            <p
+            fxFlex="1 1 60" style="font-style: normal;font-weight: 500;font-size: 25px;line-height: 20px;color: #837f7f;padding-top:1rem;">
+              Safe and Secure Payments 100% Authentic products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="height: 100px;background-color:#E1E1E1;" fxHide.xs></div>
+<!-- xs devices -->
+<div fxLayout="column" [ngStyle.xs]="'background-color:#E1E1E1;height:1000px;'" fxHide.gt-xs>
+  <div fxFlex="1 1 2"></div>
+  <div fxFlex="1 1 5">
+    <div fxLayout="row" fxLayout="1 1 100" fxFlex="1 1 100">
+      <div fxFlex="1 1 16"></div>
+      <div fxFlex="1 1 68" style="background-color: #FFD7B5;" fxLayoutAlign="center center" class="card">
+        <h1 style="font-size:25px;font-weight: bold;padding-top:3%;">Order Cancellation</h1>
+      </div>
+    </div>
+  </div>
+  <div fxFlex="1 1 5">
+    <div fxLayout="row" fxLayout="1 1 100" fxFlex="1 1 100">
+      <div fxFlex="1 1 16"></div>
+      <div fxFlex="1 1 68"fxLayoutAlign="center center">
+        <h1 style="font-size:20px;font-weight: bold;padding-top:3%;">Order Id : 94115487952</h1>
+      </div>
+    </div>
+  </div>
+  <div fxFlex="1 1 3"></div>
+  <div fxFlex="1 1 5">
+    <div fxLayout="row" fxLayout="1 1 100" fxFlex="1 1 100">
+      <div fxFlex="1 1 13"></div>
+      <div fxFlex="1 1 72" style="background-color: #FFD7B5;" fxLayoutAlign="center center">
+        <h1 style="font-size:25px;font-weight: bold;padding-top:3%;">Price Detail</h1>
+      </div>
+    </div>
+  </div>
+  <div fxFlex="1 1 25" fxLayout="row">
+    <div fxFlex="1 1 8"></div>
+    <div fxLayout="column" fxFlex="1 1 84" style="background-color: white;border-radius:20px;" class="card">
+      <div fxFLex="1 1 20"></div>
+                <div fxLayout="row" fxFLex="1 1 50">
+                  <div fxFlex="1 1 15"></div>
+                  <h1 style="font-size: 20px;text-align: center;color: #000000;opacity: 0.75;">Price (1 item)</h1>
+                  <div fxFlex="1 1 15"></div>
+                  <h1 style="font-size: 20px;text-align: center;color: #000000;opacity: 0.75;">₹5000</h1>
+                </div>
+                <div fxLayout="row" fxFLex="1 1 15">
+                  <div fxFlex="1 1 15"></div>
+                  <h1 style="font-size: 20px;text-align: center;color: #000000;opacity: 0.75;">Tax (if any)</h1>
+                  <div fxFlex="1 1 21"></div>
+                  <h1 style="font-size: 20px;text-align: center;color: #000000;opacity: 0.75;">₹150</h1>
+                </div>
+                <div fxLayout="row" fxFLex="1 1 15">
+                  <div fxFlex="1 1 15"></div>
+                  <h1 style="font-size: 20px;text-align: center;color: #000000;opacity: 0.75;">Delivery charge</h1>
+                  <div fxFlex="1 1 10"></div>
+                  <h1 style="font-size: 20px;text-align: center;color: #000000;opacity: 0.75;">₹50</h1>
+                </div>
+                <div fxLayout="row" fxFLex="1 1 15">
+                  <div fxFlex="1 1 12"></div>
+                  <h1 style="font-size: 20px;text-align: center;color: #000000;opacity: 0.75;font-weight:bold;">Total Amount</h1>
+                  <div fxFlex="1 1 18"></div>
+                  <h1 style="font-size: 20px;text-align: center;color: #000000;opacity: 0.75;font-weight:bold;">₹5200</h1>
+                </div>
+                <div fxLayout="row" fxFLex="1 1 15"></div>
+                <div fxLayout="row" fxLayoutAlign="center center" style="color:rgb(112, 106, 106);padding-left:5%;">
+                  <img src="assets/lock.svg" width="30px" height="30px">
+                  <p fxFlex="1 1 80" style="font-style: normal;font-weight: 500;font-size: 15px;line-height: 25px;color: #646161;">
+                    Safe and Secure Payments 100% Authentic products</p>
+                </div>
+    </div>
+  </div>
+  <div fxFlex="1 1 5"></div>
+  <div fxFlex="1 1 5">
+    <div fxLayout="row" fxLayout="1 1 100" fxFlex="1 1 100">
+      <div fxFlex="1 1 13"></div>
+      <div fxFlex="1 1 72" style="background-color: #FFD7B5;" fxLayoutAlign="center center">
+        <h1 style="font-size:25px;font-weight: bold;padding-top:3%;">Easy Cancellation</h1>
+      </div>
+    </div>
+  </div>
+  <div fxFlex="1 1 38" fxLayout="row">
+    <div fxFlex="1 1 8"></div>
+    <div fxLayout="row" fxFlex="1 1 84" style="background-color: white;border-radius:20px;" class="card">
+      <div fxFlex="1 1 5"></div>
+      <div fxFlex="1 1 90" fxLayout="column">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div fxLayout="column wrap" fxLayoutAlign="space-between" fxLayoutGap="15px">
+            <div fxFlex="30">
+              <h1 style="font-size: 20px;">Reason For Cancellation</h1>
+              <textarea type="text"  class="input form-control" formControlName="reason"></textarea>
+              <span *ngIf="!form.get('reason').valid && form.get('reason').touched" style="color:red;">
+                          Enter valid reason.
+                      </span>
+            </div>
+            <div fxFlex="30">
+              <h1 style="font-size: 20px;">Comments</h1>
+              <textarea type="text" rows="20" class="input1 form-control" formControlName="comment"></textarea>
+              <span *ngIf="!form.get('comment').valid && form.get('comment').touched" style="color:red;">
+                              Enter Valid Comment</span>
+            </div>
+            <div fxFlex="1 1 5"></div>
+            <div fxFlex="1 1 10" fxLayout="row" fxLayoutAlign="center center">
+              <button  mat-raised-button type="submit"
+              style="background-color:#FFD7B5;height:50px;width:200px;border-radius:20px;font-size:15px;font-weight:bold;"
+              [disabled]="!form.valid">
+              Confirm Cancellation</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

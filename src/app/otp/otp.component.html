@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="flex-container">
+        <div fxLayout="column" >
+            <div class="heading" ngClass.xs="heading-small">
+                <h1>OTP Verification</h1>
+            </div>
+            <div class="content" fxLayout="column"  fxLayoutGap="3%">
+                <div  class="text" ngClass.xs="text-small">
+                <h3>Enter Your OTP</h3>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <div fxLayoutAlign="center center">
+                    <input  class="input" type="text" maxlength="1" #otp1>
+                </div>
+                <div fxLayoutAlign="center center">
+                    <input  class="input" type="text" maxlength="1" #otp2>
+                </div>
+                <div fxLayoutAlign="center center">
+                    <input  class="input" type="text" maxlength="1" #otp3>
+                </div>
+                <div fxLayoutAlign="center center">
+                    <input  class="input" type="text" maxlength="1" #otp4>
+                </div>
+                <div fxLayoutAlign="center center">
+                    <input  class="input" type="text" maxlength="1" #otp5>
+                </div>
+                <div fxLayoutAlign="center center">
+                    <input  class="input" type="text" maxlength="1" #otp6>
+                </div>
+            </div>
+            <div>
+                <button mat-flat-button type="submit" class="button" (click)="display()" ngClass.xs="button-small">Verify</button>
+                <h2>{{str}}</h2>
+            </div>
+            <div class="confirmation">
+                 <h3>Not Recieve? <span>Click Here</span></h3>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

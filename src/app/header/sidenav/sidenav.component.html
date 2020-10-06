@@ -1,39 +1,39 @@
 <mat-sidenav-container
-    class="example-container" (backdropClick)="close()">
+  class="example-container" (backdropClick)="close()">
 
   <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
     <a> <img src="../../../assets/logo.png"> </a>
     <a (click)="close() "><mat-icon>clear</mat-icon></a>
     <mat-nav-list>
 
-        <a mat-list-item href="#" class="text-gap">Login</a>
+      <a mat-list-item href="#" class="text-gap">Login</a>
 
-        <a mat-list-item href="#">All Category</a>
+      <a mat-list-item href="#">All Category</a>
 
-        <mat-accordion>
-          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-            <mat-expansion-panel-header>
-              <mat-panel-title >
-                My Profile
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <a mat-list-item href="#">Orders</a>
-            <a mat-list-item href="#">Cart</a>
-            <a mat-list-item href="#">Wishlist</a>
-            <a mat-list-item href="#">Logout</a>
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title >
+              My Profile
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <a mat-list-item href="#">Orders</a>
+          <a mat-list-item href="#">Cart</a>
+          <a mat-list-item href="#">Wishlist</a>
+          <a mat-list-item href="#">Logout</a>
 
-          </mat-expansion-panel>
-        </mat-accordion>
+        </mat-expansion-panel>
+      </mat-accordion>
 
-        <a mat-list-item href="#">Offer Zone</a>
-        <a mat-list-item href="#">Deal of The Day</a>
-        <a mat-list-item href="#">Trending Products</a>
+      <a mat-list-item href="#">Offer Zone</a>
+      <a mat-list-item href="#">Deal of The Day</a>
+      <a mat-list-item href="#">Trending Products</a>
     </mat-nav-list>
   </mat-sidenav>
 
 
-    <app-navbar (buttonClicked)="sidenav.open()" ></app-navbar>
-    <app-mega-menu></app-mega-menu>
+  <app-navbar (buttonClicked)="sidenav.open()" ></app-navbar>
+  <app-mega-menu></app-mega-menu>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 

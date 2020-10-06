@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "Khan-Coppers-Admin-Frontend"
+  "defaultProject": "Khan-Coppers-Admin-Frontend",
+  "cli": {
+    "analytics": false
+  }
 }

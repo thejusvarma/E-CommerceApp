@@ -1,0 +1,67 @@
+<div class="container " ngClass.xs="containing">
+    <div class="flex-container">
+        <div fxLayout="row" fxLayout.xs="column">
+            <div class="signup-text" fxFlex="40" ngClass.xs="smalling-div" >
+              <div ngClass.xs="smalling-text"><h1>Sign Up</h1></div>
+              <div fxHide.xs><h3>
+                Register here to <br>
+                 use our various <br>              
+                services and make <br>               
+                order to various <br>               
+                products
+              </h3></div>
+            </div>
+            <div class="signup-form" ngClass.xs="signup-form-small" fxFlex="60" fxLayout="column">
+                <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+               <div fxLayout="row" fxLayoutAlign="space-between">
+                <div fxFlex="40">
+                    <h3>First Name</h3>
+                
+                    <input class="input form-control" ngClass.xs="input1" formControlName="firstname" type="text">
+                    <span *ngIf="!myReactiveForm.get('firstname').valid && myReactiveForm.get('firstname').touched">
+                        Enter valid First name.
+                    </span>
+                </div>
+                <div fxFlex="40">
+                    <h3>Last Name</h3>
+                
+                    <input class="input form-control" ngClass.xs="input1" type="text" formControlName="lastname">
+                    <span *ngIf="!myReactiveForm.get('lastname').valid && myReactiveForm.get('lastname').touched">
+                        Enter valid Last name.
+                    </span>
+                </div>
+               </div>
+                
+                <div>
+                  <h3>Enter Email</h3>
+              
+                  <input class="input form-control" ngClass.xs="input1" formControlName="email" type="email">
+                  <span *ngIf="!myReactiveForm.get('email').valid && myReactiveForm.get('email').touched">
+                    Enter Valid Email.</span>
+                </div>
+              
+              <div>
+                  <h3>Enter Mobile No.</h3>
+                  <input class="input form-control" ngClass.xs="input1" formControlName="phone" type="tel">
+                  <span *ngIf="!myReactiveForm.get('phone').valid && myReactiveForm.get('phone').touched">
+                    Enter Valid Mobile No.</span>
+              </div>
+              <div>
+                <h3>Enter Password</h3>
+                <input id="temp" #pwd class="input form-control" formControlName="password" type="password" value="" ngClass.xs="input1">
+                <span *ngIf="!myReactiveForm.get('password').valid && myReactiveForm.get('password').touched">
+                    Minimum 8 characters are required.</span>
+            </div>
+            <div>
+                <h3>Confirm Password</h3>
+                <input class="input" #cpwd type="password" ngClass.xs="input1">
+                <span *ngIf="flag">Confirm password doesn't match</span>
+            </div>
+            <div>
+                <button mat-flat-button type="submit" class="button"  [disabled]="!myReactiveForm.valid">Sign Up</button>
+              </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>

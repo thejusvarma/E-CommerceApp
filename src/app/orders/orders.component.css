@@ -1,0 +1,17 @@
+.scroll{
+  overflow-y:scroll;
+  overflow-x: hidden;
+  height: 1200px;
+}
+
+.card{
+  margin-left:5%;
+  width:90%;
+}
+
+@media (max-width:426px){
+  .card{
+    margin-left:8%;
+    width:84%;
+  }
+}

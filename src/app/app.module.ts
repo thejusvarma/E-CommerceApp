@@ -32,10 +32,23 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import {OrderPlaceSuccessComponent} from './order-place-success/order-place-success.component';
 import {DealOfTheDayComponent} from './deal-of-the-day/deal-of-the-day.component';
 import {DealDayProdCardComponent} from './deal-day-prod-card/deal-day-prod-card.component';
+import { SignupButtonComponent } from './signup-button/signup-button.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginButtonComponent } from './login-button/login-button.component';
+import { LoginComponent } from './login/login.component';
+import { OtpComponent } from './otp/otp.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
+import { SimilarProductsComponent } from './similar-products/similar-products.component';
+import { TrendingProductsComponent } from './trending-products/trending-products.component';
 import {SelectPaymentModeComponent} from './select-payment-mode/select-payment-mode.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { OrderCancellationComponent } from './order-cancellation/order-cancellation.component';
 import {MyCartItemComponent} from './my-cart/my-cart-item/my-cart-item.component';
 import {MyCartSavedLaterComponent} from './my-cart/my-cart-saved-later/my-cart-saved-later.component';
+import { FailPaymentComponent } from './fail-payment/fail-payment.component';
+import { PandingPaymentComponent } from './panding-payment/panding-payment.component';
+import { OrdersComponent } from './orders/orders.component';
+import { OrderCardComponent } from './order-card/order-card.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HomepageImageCarouselComponent } from './homepage/homepage-image-carousel/homepage-image-carousel.component';
 import { HomepageOurAllProductsComponent } from './homepage/homepage-our-all-products/homepage-our-all-products.component';
@@ -58,9 +71,22 @@ import { HomepageDealOfTheDayComponent } from './homepage/homepage-deal-of-the-d
     OrderPlaceSuccessComponent,
     DealOfTheDayComponent,
     DealDayProdCardComponent,
+    SignupButtonComponent,
+    SignupComponent,
+    LoginButtonComponent,
+    LoginComponent,
+    OtpComponent,
+    OrderDetailsComponent,
+    SimilarProductsComponent,
+    TrendingProductsComponent,
     SelectPaymentModeComponent,
     MyCartItemComponent,
     MyCartSavedLaterComponent,
+    FailPaymentComponent,
+    PandingPaymentComponent,
+    OrderCancellationComponent,
+    OrdersComponent,
+    OrderCardComponent,
     HomepageComponent,
     HomepageImageCarouselComponent,
     HomepageOurAllProductsComponent,
@@ -70,6 +96,7 @@ import { HomepageDealOfTheDayComponent } from './homepage/homepage-deal-of-the-d
 
 
   ],
+  entryComponents:[LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

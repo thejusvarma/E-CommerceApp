@@ -1,0 +1,91 @@
+.box {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.blink {
+  animation: blinker 2s linear infinite;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+@keyframes blinker {
+  55%{
+      opacity: 100%;
+  }
+    50% {
+    opacity: 0;
+  }
+  45%{
+      opacity: 100%;
+  }
+}
+
+  .box2 {
+    display: flex;
+    margin-top: 3%;
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+  .fail{
+       flex: 1 1 auto;
+      background-color: white;
+  }
+  .one {
+    flex: 1.7 1.7 auto;
+    background-color: #FFD7B5;
+  }
+
+  .two {
+    flex: 1 1 auto;
+    background-color: #FFD7B5;
+  }
+  .main{
+      flex: 1 1 auto;
+      background-color: #FFD7B5;
+      margin-bottom: 2vw;
+
+  }
+
+  a:link,a:visited,a:active,a:hover {
+    color: black;
+    text-decoration: none;
+    }
+  .button {
+    background-color: #ffd7b5; /* Green */
+    border: 1vw;
+    border-radius: 1vw;
+    color: black;
+    padding: 1vw 2vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+    margin-left: 38%;    
+  }
+  .button2 {
+    background-color: #ffd7b5; /* Green */
+    border: 1vw;
+    border-radius: 1vw;
+    color: black;
+    padding: 1vw 2vw 1vw;
+    text-align: center;
+    display: inline-block;
+    font-size: 3vw;
+    margin-left: 26%;  
+    margin-bottom: 3vw;  
+    margin-top: 1%;
+  }
