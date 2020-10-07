@@ -15,7 +15,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: inherit;
-    font-size: 0.96rem;
+    font-size: 0.87rem;
 }
 
 .bold {
@@ -94,7 +94,7 @@ display: none;
     }
 */
   .w3-button {
-    border-radius: 2px;
+    border-radius: 3px;
     background-color :black !important;
     color : white !important;
     transition: all 0.3s ease-in-out;
@@ -110,14 +110,15 @@ display: none;
 }
 
 .button {
-    margin-top:10px;
-    margin-right:8px;
+    margin-top:3px;
+    margin-right:20px;
+    margin-left:1px;
     margin-bottom:3px;
     border:none !important;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1360px) {
     .prod-buttons {
       display: none !important;
     }

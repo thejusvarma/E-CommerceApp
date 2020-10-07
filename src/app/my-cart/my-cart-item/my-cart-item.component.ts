@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyCartItemComponent implements OnInit {
 
+count:number=1;
+
+  increaseCount(){
+    return this.count++;
+  }
+  decreaseCount(){
+    if(this.count==1){
+      return this.count;
+    }
+    return this.count--;
+
+  }
+
+
   isVisibleOnMobile(){
 
   }
