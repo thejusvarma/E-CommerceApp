@@ -30,6 +30,14 @@
   border-radius: 0px;
 }
 
+.icons-xs{
+  padding-left:10px;
+  padding-top: 10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 0px;
+  background-color: #FFD7B5;
+}
 
 
 
@@ -74,15 +82,15 @@
 @media (max-width:426px){
   .foot-top h3 { font-size: 5px;}
   .foot-top h5 { font-size: 6px;}
-  .foot-top p {font-size: 6px;}
+  .foot-top p {font-size: 0.35rem;}
 }
 @media (max-width:376px){
   .foot-top h3 { font-size: 5px;}
   .foot-top h5 { font-size: 5px;}
-  .foot-top p {font-size: 6px;}
+  .foot-top p {font-size: 5px;}
 }
 @media (max-width:326px){
   .foot-top h3 { font-size: 5px;}
   .foot-top h5 { font-size: 4px;}
-  .foot-top p {font-size: 5px;}
+  .foot-top p {font-size: 4px;}
 }
