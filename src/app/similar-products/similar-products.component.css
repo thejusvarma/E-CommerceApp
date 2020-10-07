@@ -6,15 +6,25 @@
 }
 .heading-box{
     background-color: #FFD7B5;
-    width: 300px;
+    width: 250px;
     height: 50px;
     /* padding-left: 1  0px; */
-    padding-top: 20px;
+    padding-top: 18px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     margin-bottom: 2%;
+    margin-top: 2%;
+}
+.heading-box-small{
+    width: 200px;
+    height: 45px;
+    padding-top: 3% !important;
+    margin-bottom: 5%;
+}
+.heading-small{
+    font-size: 190%;
 }
 h1{
     align-items: center;
@@ -25,10 +35,15 @@ h1{
     margin-right: 15%;
 }
 .button{
-    font-weight: 500;
+    font-weight: 600;
     background-color: #FFD7B5;
-    padding: 15px 70px; 
-    border-radius: 50px;
-    font-size: 1.8rem;
+    padding: 10px 50px; 
+    border-radius:15px;
+    font-size: 190%;
     margin: 15px 0;
+}
+.button-small{
+font-size: 160%;
+/* padding: ; */
+padding: 5px 25px;
 }

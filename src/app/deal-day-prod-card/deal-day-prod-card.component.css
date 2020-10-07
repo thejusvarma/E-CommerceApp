@@ -2,7 +2,7 @@
 
  .top-right{ position: relative; }
  .top-right img { display: block; }
- .top-right .icon { position: absolute; top:0; right:0; z-index: 1; }
+ .top-right .icon { position: absolute; top:0; right:0; z-index: 1; display: none; }
 
  .icon{
      margin: 5%;
@@ -46,6 +46,9 @@
      margin-bottom: 15%;
      font-family:Poppins !important;
 
+ }
+ .pic:hover .icon{
+     display: block;
  }
  .txt:hover
  {

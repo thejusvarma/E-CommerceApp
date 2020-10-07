@@ -1,7 +1,7 @@
 
 <div class="containing" ngClass.xs="small-containing">
 <div class="heading-box" ngClass.xs="heading-box-small">
-    <h1 class="heading">Order Details</h1>
+    <h1 class="heading" style="font-weight: 600;">Order Details</h1>
 
 </div>
 <div class="container" ngClass.xs="small-container">
@@ -10,7 +10,7 @@
         <div fxLayout="column" fxLayoutAlign="space-between stretch" fxLayoutGap="2%" fxLayoutGap.xs="6%" >
             <div class="column1">
                 <mat-card>
-                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="5%" >
+                <div fxLayout="row" fxLayout.xs="column" fxLayout.lt-md="column" fxLayoutGap="5%" >
                     <div  class="user-details" fxFlex="30">
                         <div fxLayout="column" fxLayoutAlign="space-between start" fxLayoutGap="2%" >
                             <div >
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="rewards" fxFlex="30">
-                        <hr fxHide fxShow.xs>
+                        <hr fxHide fxShow.xs fxShow.lt-md>
                         <div fxLayout="column"  fxLayoutGap="2%">
                             <div fxLayout="row" fxLayoutGap="2%">
                                 <h1 style="font-weight: 500;">Your Rewards</h1>
@@ -58,9 +58,9 @@
             </div>
             <div class="column1" *ngFor="let dataRes of dataRe">
                 <mat-card >
-                <div  fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between stretch" fxLayoutGap="5%">
-                    <div class="image" fxFlex="15" fxFlex.md="10">
-                        <img src={{dataRes.productDetails.img}} alt="">
+                <div  fxLayout="row" fxLayout.xs="column" fxLayout.lt-md="column" fxLayoutAlign="space-between stretch" fxLayoutGap="5%">
+                    <div class="image"  fxFlex="15" fxFlex.sm="20">
+                        <img ngClass.xs="image-center" ngClass.sm="image-center" fxFlex.xs="60" fxFlex.sm="60" style="width: 100%;" fxLayoutAlign.xs="center" fxLayoutAlign.lt-md="center" src={{dataRes.productDetails.img}} alt="">
                         
                     </div>
                     <div class="product-details" fxFlex="15">
@@ -79,10 +79,10 @@
                             </div>
                             
                         </div>
-                        <hr fxHide fxShow.xs>
+                        <hr fxHide fxShow.xs fxShow.lt-md>
                     </div>
-                    <div class="stepper-part"   *ngIf="dataRes.orderstatus === 'cancel' "  >
-                        <div fxLayout="column" fxFlex="70" fxLayoutGap="20%" fxLayoutGap.xs="15%">
+                    <div class="stepper-part"   fxLayoutAlign.xs="center center" *ngIf="dataRes.orderstatus === 'cancel' "  >
+                        <div fxLayout="column" fxFlex="70" fxFlex.xs="80" fxLayoutGap="20%" fxLayoutGap.xs="15%">
                             <div class="stepper">
                                 
                                     <span class="circle-desc" [class.circle-desc-active]="dataRes.orderBar == item">{{ counts1[0] }}</span>
@@ -106,9 +106,9 @@
 
                             
                         </div>
-                        <hr fxHide fxShow.xs>
+                        <hr fxHide fxShow.xs fxShow.lt-md>
                     </div>
-                    <hr fxHide fxShow.xs>
+                    <hr fxHide fxShow.xs fxShow.lt-md>
                     <div class="stepper-part"  fxFlex="30" *ngIf="dataRes.orderstatus === 'deliver' || dataRes.orderstatus === 'placed' || dataRes.orderstatus === 'shipped' "  >
                         <div fxLayout="column" fxLayoutGap="8%" fxLayoutGap.xs="20%">
                             <div class="stepper" >
@@ -132,7 +132,7 @@
                                
                            
                         </div>
-                        <hr fxHide fxShow.xs>
+                        <hr fxHide fxShow.xs fxShow.lt-md>
                         
                     </div>
                     
