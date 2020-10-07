@@ -82,10 +82,11 @@
     color: black;
     padding: 1vw 2vw 1vw;
     text-align: center;
-    text-decoration: none;
+    font-weight: 600;
+    padding:2vw 2vh 2vw 2vh;
     display: inline-block;
     margin-bottom: 1vw;
-    margin-left: 28%;  
+    margin-left: 29%;  
     margin-bottom: 3vw;  
     font-size: 3.5vw;
   }

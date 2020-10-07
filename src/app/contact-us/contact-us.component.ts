@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-contact-us',
@@ -9,7 +9,12 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 export class ContactUsComponent implements OnInit {
 
   constructor() { }
-
+  @ViewChild('f',{static:true}) form : NgForm;
+  nextSlide(){
+   var number=this.form.value.slider;
+   number = number == 4 ? 0 : ++number;
+   this.form.controls["slider"].setValue(number);
+  }
   myReactiveForm: FormGroup;
   nameField = '[a-zA-Z ]*';
   phoneNumber = '^[1-9][0-9]*';
@@ -22,8 +27,11 @@ export class ContactUsComponent implements OnInit {
       subject: new FormControl(null, Validators.required),
       message: new FormControl(null, Validators.required)
     });
-    console.log(this.myReactiveForm);
-  }
+    setInterval(() => {
+      this.nextSlide();
+    }, 3000);
+  } 
+  
 
   onSubmit(): void{
     console.log(this.myReactiveForm);

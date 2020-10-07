@@ -62,22 +62,23 @@
   a:link,a:visited,a:active,a:hover {
     color: black;
     text-decoration: none;
+    font-weight: 900;
     }
   .button {
-    background-color: #ffd7b5; /* Green */
+    background-color: #ffd7b5; 
     border: 1vw;
     border-radius: 1vw;
     color: black;
     padding: 1vw 2vw 1vw;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 1.2vw;
-    margin-bottom: 2vw;
-    margin-left: 38%;    
+    font-size: 1.4vw;
+    margin-left: 34%;  
+    margin-bottom: 3vw;  
+    margin-top: 1%;
   }
   .button2 {
-    background-color: #ffd7b5; /* Green */
+    background-color: #ffd7b5; 
     border: 1vw;
     border-radius: 1vw;
     color: black;
@@ -85,7 +86,7 @@
     text-align: center;
     display: inline-block;
     font-size: 3vw;
-    margin-left: 26%;  
+    margin-left: 25%;  
     margin-bottom: 3vw;  
     margin-top: 1%;
   }
