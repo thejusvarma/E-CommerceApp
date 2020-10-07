@@ -13,10 +13,10 @@
   <div  fxLayout="row">
     <div><mat-icon> location_on</mat-icon></div>
     <div>
-      <p>  Deliver To  -</p>
+      <h3>  Deliver To  -</h3>
     </div>
     <div class="address-feature">
-      <span>3524343432432</span>
+      <span>{{address}}</span>
     </div>
   </div>
 </div>
@@ -36,7 +36,7 @@
   <div  fxFlex="25"  fxFlex.xs="100"  fxLayout="column"  fxLayoutGap="-10px">
     <div fxLayoutAlign.lt-md="center none">
       <div class="label-feature" >
-        <span class="label-feature-text text-bold">Price Details</span>
+        <span class="label-feature-text ">Price Details</span>
       </div>
     </div>
 
@@ -78,14 +78,20 @@
     </div>
     <br>
     <div class="place-order-button">
-      <button mat-raised-button class="place-order-button span1" >Place Order <mat-icon>shop</mat-icon></button>
+      <button mat-raised-button class="place-order-button span1" >Place Order <img class="placeorder-icon" src="../../assets/icons/checkout.svg" ></button>
     </div>
     <br>
 
-    <div class="white-card">
-      <span class="span1"><mat-icon>verified_user</mat-icon> Safe and Secure Payments </span>
-      <br>
-      <span > 100% Authentic products</span>
+    <div class="white-card" fxLayout="column" fxLayoutAlign="center center">
+      <div>
+        <img class="secure-icon" src="../../assets/icons/shield-lock.svg">
+      </div>
+      <div>
+        <span class="span2">Safe and Secure Payments </span>
+      </div>
+      <div>
+        <span > 100% Authentic products</span>
+      </div>
     </div>
   </div>
 </div>

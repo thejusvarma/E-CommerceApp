@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyCartComponent implements OnInit {
 
+  address= "6-3-18/1/C/2,xyz";
   isVisibleOnMobile(){
-
   }
 
   constructor() { }

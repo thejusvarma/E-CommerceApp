@@ -6,7 +6,7 @@
   </div>
 
   <div fxFlex="15" fxFlex.xs="35">
-    <span><a> <img src="../../../assets/logo.png"> </a></span>
+    <span><a> <img class="logo" src="../../../assets/logo.png"> </a></span>
   </div>
 
   <div fxFlex="60" fxFlex.xs="15" [fxShow.xs]="isVisibleOnMobile()">
@@ -26,19 +26,21 @@
 
   <div fxFlex="5" fxFlex.xs="15" [fxShow.lt-sm]="isVisibleOnMobile()">
     <a href="#" matTooltip="My Profile">
-      <mat-icon matBadge="15"  matBadgeColor="warn">perm_identity</mat-icon>
+      <img class="utility-icon"  src="../../../assets/icons/user.svg">
+
     </a>
   </div>
 
   <div fxFlex="5" fxFlex.xs="8">
     <a href="#"  matTooltip="Wishlist">
-      <mat-icon matBadge="15"  matBadgeColor="accent">assignment</mat-icon>
+      <!-- <mat-icon matBadge="15"  matBadgeColor="accent">assignment</mat-icon> -->
+      <img class="utility-icon"  src="../../../assets/icons/wishlist.svg">
     </a>
   </div>
 
   <div fxFlex="5" fxFlex.xs="5" >
     <a href="#" matTooltip="My Cart">
-      <mat-icon matBadge="15" matBadgeColor="accent">shopping_basket</mat-icon>
+      <img class="utility-icon"  src="../../../assets/icons/shopping-bag.svg">
     </a>
   </div>
 </mat-toolbar>

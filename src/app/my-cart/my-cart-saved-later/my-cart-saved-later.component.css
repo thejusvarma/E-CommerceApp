@@ -8,4 +8,6 @@ img{
 .mat-flat-button{
   background-color: #FFD7B5;
   color:black;
+  font-weight: bold !important;
+  border-radius: 12px;
 }
