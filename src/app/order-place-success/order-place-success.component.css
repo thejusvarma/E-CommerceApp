@@ -1,6 +1,6 @@
 .box {
     display: flex;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -8,8 +8,8 @@
   .box2 {
     display: flex;
     margin-top: 3%;
-    margin-left: 8%;
-    margin-right: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
 
   .one {
