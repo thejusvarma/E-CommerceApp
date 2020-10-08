@@ -16,7 +16,9 @@
     flex: 1.7 1.7 auto;
     background-color: #FFD7B5;
   }
-
+ body{
+   height: auto;
+ }
   .two {
     flex: 1 1 auto;
     background-color: #FFD7B5;
