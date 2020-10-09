@@ -32,7 +32,7 @@ const routes: Routes = [
   {path: 'payment-pending', component: PandingPaymentComponent},
   { path: 'cancel-order', component: OrderCancellationComponent },
   { path: 'my-orders', component: OrdersComponent },
-  {path:'error-404',component:Error404Component},
+  {path: 'error-404', component: Error404Component},
   { path: '', component: HomepageComponent},
 ];
 
