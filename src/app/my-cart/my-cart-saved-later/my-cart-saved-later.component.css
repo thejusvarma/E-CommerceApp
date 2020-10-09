@@ -11,3 +11,7 @@ img{
   font-weight: bold !important;
   border-radius: 12px;
 }
+
+.text-bold{
+  font-weight: 500;
+}
