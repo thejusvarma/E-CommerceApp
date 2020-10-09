@@ -28,7 +28,7 @@ fxHide.xs>
             <h1 style="padding-top: 18px;font-weight: 600;
             background: -webkit-linear-gradient(rgb(196, 245, 81), rgb(58, 116, 4));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;font-size:3vw;line-height: 80px;
+            -webkit-text-fill-color: transparent;font-size:2.5vw;line-height: 80px;
             ">Cash on Delivery</h1>
           </mat-radio-button>
         </mat-radio-group>
@@ -43,26 +43,39 @@ fxHide.xs>
       </div>
       <br>
       <div fxLayout="row" fxFlex="1 1 50">
-        <div fxFlex="1 1 3"></div>
-        <div fxLayout="column" fxFlex="1 1 95">
+        <div fxFlex="1 1 10"></div>
+        <div fxLayout="column" fxFlex="1 1 85">
           <br>
-          <div fxLayout="row" fxFlex="1 1 25" fxLayoutGap.gt-md="40%" fxLayoutGap.md="25%" fxLayoutGap.sm="16%" [ngStyle.lg]="'padding-left: 5%'" >
-            <h1 [ngStyle.gt-sm]="'font-size:28px;'">Price (1 item)</h1>
-            <h1 [ngStyle.gt-sm]="'font-size:28px;'">₹330</h1>
+          <div fxLayout="row" fxFlex="1 1 25" fxFlex.md="1 1 22" fxFlex.sm="1 1 19" fxLayoutGap.gt-md="40%" fxLayoutGap.md="25%" fxLayoutGap.sm="16%" [ngStyle.lg]="'padding-left: 5%'" >
+            <h1 [ngStyle.gt-sm]="'font-size:25px;'"
+            [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'">Price ({{items}} item)</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:25px;'"
+            [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'">₹{{price}}</h1>
           </div>
-          <div fxLayout="row" fxFlex="1 1 25" fxLayoutGap.gt-md="35%" fxLayoutGap.md="20%" fxLayoutGap.sm="12%" [ngStyle.lg]="'padding-left: 5%'">
-            <h1 [ngStyle.gt-sm]="'font-size:28px;'">Delivery Charge</h1>
-            <h1 [ngStyle.gt-sm]="'font-size:28px;'">₹52</h1>
+          <div fxLayout="row" fxFlex="1 1 25" fxFlex.md="1 1 22" fxFlex.sm="1 1 19" fxLayoutGap.gt-md="45%" fxLayoutGap.md="30%" fxLayoutGap.sm="25%" [ngStyle.lg]="'padding-left: 5%'">
+            <h1 [ngStyle.gt-sm]="'font-size:25px;'"
+            [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'">Tax (if any)</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:25px;'"
+            [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'">₹{{tax}}</h1>
           </div>
-          <div fxLayout="row" fxFlex="1 1 25" fxLayoutGap.gt-md="40%" fxLayoutGap.md="25%" fxLayoutGap.sm="15%" [ngStyle.lg]="'padding-left: 5%'">
-            <h1 [ngStyle.gt-sm]="'font-size:28px;font-weight:bold;'"
-            [ngStyle.sm]="'font-size:25px;font-weight:bold;'">Total Amount</h1>
-            <h1 [ngStyle.gt-sm]="'font-size:28px;font-weight:bold;'"
-            [ngStyle.sm]="'font-size:25px;font-weight:bold;'">₹382</h1>
+          <div fxLayout="row" fxFlex="1 1 25" fxFlex.md="1 1 22" fxFlex.sm="1 1 19" fxLayoutGap.gt-md="38%" fxLayoutGap.md="20%" fxLayoutGap.sm="12%" [ngStyle.lg]="'padding-left: 5%'">
+            <h1 [ngStyle.gt-sm]="'font-size:25px;'"
+            [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'">Delivery Charge</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:25px;'"
+            [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'">₹{{delivery}}</h1>
           </div>
-          <hr style="border:1px solid #837f7f;width:90%">
+          <div fxLayout="row" fxFlex="1 1 25" fxFlex.md="1 1 22" fxFlex.sm="1 1 19" fxLayoutGap.gt-md="40%" fxLayoutGap.md="25%" fxLayoutGap.sm="15%" [ngStyle.lg]="'padding-left: 5%'">
+            <h1 [ngStyle.gt-sm]="'font-size:25px;font-weight:bold;'"
+            [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'"
+            >Total Amount</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:25px;font-weight:bold;'"
+            [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'"
+            >₹{{total}}</h1>
+          </div>
+          <hr style="border:1px solid #837f7f;width:100%">
         </div>
       </div>
+      <br fxHide.sm>
       <div fxLayout="row" fxLayoutAlign="center center" fxHide.xs>
         <button mat-raised-button
         style="width: 200px;height:40px;
@@ -79,7 +92,7 @@ fxHide.xs>
         <p
         fxFlex="1 1 60" style="font-style: normal;font-weight: 500;font-size: 22px;color: #837f7f;"
         [ngStyle.md]="'font-size:15px;'"
-        [ngStyle.sm]="'font-size:15px;'">
+        [ngStyle.sm]="'font-size:12px;'">
           Safe and Secure Payments 100% Authentic products</p>
       </div>
     </div>
@@ -103,21 +116,21 @@ fxHide.xs>
     <br>
     <div fxLayout="row" fxFLex="1 1 15">
       <div fxFlex="1 1 15"></div>
-      <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">Price (1 item)</h1>
+      <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">Price ({{items}} item)</h1>
       <div fxFlex="1 1 15"></div>
-      <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹5000</h1>
+      <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹{{price}}</h1>
     </div>
     <div fxLayout="row" fxFLex="1 1 15">
       <div fxFlex="1 1 15"></div>
       <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">Tax (if any)</h1>
       <div fxFlex="1 1 21"></div>
-      <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹150</h1>
+      <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹{{tax}}</h1>
     </div>
     <div fxLayout="row" fxFLex="1 1 15">
       <div fxFlex="1 1 15"></div>
       <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">Delivery charge</h1>
       <div fxFlex="1 1 10"></div>
-      <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹50</h1>
+      <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹{{delivery}}</h1>
     </div>
     <br>
     <div fxLayout="row" fxFLex="1 1 15">

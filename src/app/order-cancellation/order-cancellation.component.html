@@ -63,28 +63,32 @@ fxHide.xs>
           </div>
           <div fxFlex="1 1 8"></div>
           <div fxLayout="row" fxFlex="1 1 15" fxLayoutGap.gt-md="40%" fxLayoutGap.md="25%" fxLayoutGap.sm="16%" [ngStyle.lg]="'padding-left: 5%'" >
-            <h1 [ngStyle.gt-sm]="'font-size:2vw;'">Price (1 item)</h1>
-            <h1 [ngStyle.gt-sm]="'font-size:2vw;'">₹330</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:2vw;'">Price ({{items}} item)</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:2vw;'">₹{{price}}</h1>
+          </div>
+          <div fxLayout="row" fxFlex="1 1 15" fxLayoutGap.gt-md="45%" fxLayoutGap.md="30%" fxLayoutGap.sm="25%" [ngStyle.lg]="'padding-left: 5%'">
+            <h1 [ngStyle.gt-sm]="'font-size:2vw;'">Tax (if any)</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:2vw;'">₹{{tax}}</h1>
           </div>
           <div fxLayout="row" fxFlex="1 1 15" fxLayoutGap.gt-md="35%" fxLayoutGap.md="20%" fxLayoutGap.sm="12%" [ngStyle.lg]="'padding-left: 5%'">
             <h1 [ngStyle.gt-sm]="'font-size:2vw;'">Delivery Charge</h1>
-            <h1 [ngStyle.gt-sm]="'font-size:2vw;'">₹52</h1>
+            <h1 [ngStyle.gt-sm]="'font-size:2vw;'">₹{{delivery}}</h1>
           </div>
-          <div fxFlex="1 1 8"></div>
+          <div fxFlex="1 1 5"></div>
           <div fxLayout="row" fxFlex="1 1 15" fxLayoutGap.gt-md="40%" fxLayoutGap.md="25%" fxLayoutGap.sm="15%" [ngStyle.lg]="'padding-left: 5%'">
             <h1 [ngStyle.gt-sm]="'font-size:2vw;;font-weight:bold;'"
             [ngStyle.sm]="'font-size:25px;font-weight:bold;'">Total Amount</h1>
             <h1 [ngStyle.gt-sm]="'font-size:2vw;;font-weight:bold;'"
-            [ngStyle.sm]="'font-size:25px;font-weight:bold;'">₹382</h1>
+            [ngStyle.sm]="'font-size:25px;font-weight:bold;'">₹{{total}}</h1>
           </div>
-          <div fxFlex="1 1 8"></div>
+
           <div fxLayout="row" fxLayoutAlign.gt-xs="center center" style="color:rgb(112, 106, 106);padding-left:5%;">
             <img src="assets/lock.svg" width="35px" height="40px">
             <div fxFlex="1 1 2"></div>
             <p
             fxFlex="1 1 60" style="font-style: normal;font-weight: 500;font-size: 22px;color: #837f7f;"
             [ngStyle.md]="'font-size:15px;'"
-            [ngStyle.sm]="'font-size:15px;'">
+            [ngStyle.sm]="'font-size:12px;'">
               Safe and Secure Payments 100% Authentic products</p>
           </div>
         </div>
@@ -128,27 +132,27 @@ fxHide.xs>
       <br>
                 <div fxLayout="row" fxFLex="1 1 15">
                   <div fxFlex="1 1 15"></div>
-                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">Price (1 item)</h1>
+                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">Price ({{items}} item)</h1>
                   <div fxFlex="1 1 15"></div>
-                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹5000</h1>
+                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹{{price}}</h1>
                 </div>
                 <div fxLayout="row" fxFLex="1 1 15">
                   <div fxFlex="1 1 15"></div>
                   <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">Tax (if any)</h1>
                   <div fxFlex="1 1 21"></div>
-                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹150</h1>
+                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹{{tax}}</h1>
                 </div>
                 <div fxLayout="row" fxFLex="1 1 15">
                   <div fxFlex="1 1 15"></div>
                   <h1 style="font-size:5vw;text-align: center;color: #000000;opacity: 0.75;">Delivery charge</h1>
                   <div fxFlex="1 1 10"></div>
-                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹50</h1>
+                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;">₹{{delivery}}</h1>
                 </div>
                 <div fxLayout="row" fxFLex="1 1 15">
                   <div fxFlex="1 1 12"></div>
                   <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;font-weight:bold;">Total Amount</h1>
                   <div fxFlex="1 1 18"></div>
-                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;font-weight:bold;">₹5200</h1>
+                  <h1 style="font-size: 5vw;text-align: center;color: #000000;opacity: 0.75;font-weight:bold;">₹{{total}}</h1>
                 </div>
                 <div fxLayout="row" fxFLex="1 1 15"></div>
                 <div fxLayout="row" fxLayoutAlign="center center" style="color:rgb(112, 106, 106);padding-left:5%;">
