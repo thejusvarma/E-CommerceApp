@@ -1,0 +1,115 @@
+<div class="flex-container">
+    <div class="heading-box">
+        <h1 class="heading">Product Detail</h1>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center stretch" fxLayout.xs="column">
+        <!-- <div class="product-image" fxFlex="30">
+            <img src="https://dummyimage.com/200x200/00e1ff/000000" style="width: 100%;" alt="">
+        </div> -->
+        <div class="img-indicators1" fxFlex="10">
+            <div fxLayout="column" fxHide.xs fxFlex="50" fxLayoutAlign="space-between stretch">
+                <a class="image-focus"><img src="{{images.img1}}" class="demo1" (click)="currentDiv(1)" style="width: 100%;" alt=""></a>
+                <a class="image-focus"><img src="{{images.img2}}" class="demo1" (click)="currentDiv(2)" style="width: 100%;" alt=""></a>
+                <img src="{{images.img3}}" class="demo1" (click)="currentDiv(3)" style="width: 100%;" alt="">
+                <img src="{{images.img4}}" class="demo1" (click)="currentDiv(4)" style="width: 100%;" alt="">
+                <img src="{{images.img5}}" class="demo1" (click)="currentDiv(5)" style="width: 100%;" alt="">
+
+            </div>
+        </div>
+        <div class="img-shown" fxFlex="30">
+            <img src="{{images.img1}}" class="mySlides displaying" style="width: 100%; height: 100%;" alt="" #i1>
+            <img src="{{images.img2}}" class="mySlides displaying" style="width: 100%; display: none; height: 100%;" alt="" #i2>
+            <img src="{{images.img3}}" class="mySlides displaying" style="width: 100%; display: none; height: 100%;" alt="" #i3>
+            <img src="{{images.img4}}" class="mySlides displaying" style="width: 100%; display: none; height: 100%;" alt="" #i4>
+            <img src="{{images.img5}}" class="mySlides displaying" style="width: 100%; display: none; height: 100%;" alt="" #i5>
+        </div>
+        <div class="img-indicators2">
+            <div fxLayout="row" fxHide fxShow.xs fxFlex="100" fxLayoutAlign="space-evenly center" >
+                <img src="{{images.img1}}" class="demo2" (click)="currentDiv(1)" style="width: 10%;" alt="">
+                <img src="{{images.img2}}" class="demo2" (click)="currentDiv(2)" style="width: 10%;" alt="">
+                <img src="{{images.img3}}" class="demo2" (click)="currentDiv(3)" style="width: 10%;" alt="">
+                <img src="{{images.img4}}" class="demo2" (click)="currentDiv(4)" style="width: 10%;" alt="">
+                <img src="{{images.img5}}" class="demo2" (click)="currentDiv(5)" style="width: 10%;" alt="">
+            </div>
+        </div>
+        <div class="product-details" fxFlex="30">
+            <h3>{{productDetails.category}}</h3>
+            <h2 class="white-bg">{{productDetails.availability}}</h2>
+            <h1 class="product-name">{{productDetails.productName}}</h1>
+            <h3 class="product-price">{{productDetails.productPrice}}</h3>
+            <p>{{productDetails.productAbout}}</p>
+            <br>
+            <h2>Category:</h2>
+            
+            <h3>size: <select placeholder="select size" id="cars" name="cars">
+                <option value="volvo">123</option>
+                <option value="saab">456</option>
+                <option value="fiat">789</option>
+                <option value="audi">1238</option>
+              </select></h3>
+              <br>
+            <div fxLayout="row" fxLayoutGap="10%" fxLayoutGap.xs="5%">
+                <div class="quantity">
+                    <div fxLayout="row" fxlayoutAlign="start none" fxLayoutGap.xs="">
+                        <div><h3>QTY:</h3></div>
+                        <div><button (click)="decreaseCount()" class="minus-button"><mat-icon>remove</mat-icon></button></div>
+                        <div><button  class="value-box">{{count}}</button></div>
+                        <div> <button (click)="increaseCount()" class="add-button"><mat-icon>add</mat-icon></button></div>
+                      </div>
+                </div>
+                <div class="color" >
+                    <div fxLayout="row" fxlayoutAlign="center center" fxLayoutGap.xs="3%" fxLayoutGap="10%">
+                        <div><h3>Color:</h3></div>
+                        <div><span class="dot1"></span></div>
+                        <div><span class="dot2"></span></div>
+                    </div>
+                </div>
+                <div class="pincode">
+                    <div fxLayout="row" fxlayoutAlign="start none" fxLayoutGap.xs="" fxLayoutGap="5%">
+                        <div><h3>Pincode:</h3></div>
+                        <div><input type="text" placeholder="Enter pincode" class="pincode-input"></div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <br>
+            <div fxLayoutAlign="row" fxLayoutGap="5%">
+                <div fxFlex="50">
+                <button class="cart" ngClass.xs="cart-small">Add to Cart <img src="../../assets/images/cart.svg" style="width: 20%; height: 20%;" alt=""></button>
+            </div>
+            <div fxFlex="50">
+                <button class="buy" ngClass.xs="buy-small">Buy Now <img src="../../assets/images/flash.svg" style="width: 20%; height: 20%;" alt=""></button>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div fxLayoutAlign="row" fxLayoutAlign="space-evenly stretch" class="details-section" >
+        <div>
+          <h2><button  class="details-btn" ngClass.xs="details-btn-small" (click)="details(1)">Description</button></h2>
+        </div>
+        <div>
+            <h2><button class="details-btn" ngClass.xs="details-btn-small" (click)="details(2)">Additional Information</button></h2>
+          </div>
+          <div>
+            <h2><button class="details-btn" ngClass.xs="details-btn-small" (click)="details(3)">Reviews(0)</button></h2>
+          </div>
+    </div>
+    
+    <div fxLayoutAlign="row" fxLayoutAlign="center stretch" class="describing-details" ngClass.xs="describing-details-small">
+    <h3>{{showData.data}}</h3>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="10%" style="margin-bottom: 5%; margin-top: 5%;">
+        <div fxLayoutAlign="center center">
+            <button class="service-btn" ngClass.xs="service-btn-small">
+                <mat-icon>info</mat-icon>
+                Customer Service </button>
+        </div>
+        <div fxLayoutAlign="center center">
+            <button class="payment-btn" ngClass.xs="payment-btn-small"><mat-icon>lock</mat-icon>
+                Secure Payment </button>
+        </div>
+    </div>
+</div>

@@ -15,6 +15,7 @@ import { PandingPaymentComponent } from './panding-payment/panding-payment.compo
 import { OrderCancellationComponent } from './order-cancellation/order-cancellation.component';
 import { OrdersComponent } from './orders/orders.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: 'contact', component: ContactUsComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'cancel-order', component: OrderCancellationComponent },
   { path: 'my-orders', component: OrdersComponent },
   { path: '', component: HomepageComponent},
+  {path: 'product',component: ProductDetailComponent}
 ];
 
 
