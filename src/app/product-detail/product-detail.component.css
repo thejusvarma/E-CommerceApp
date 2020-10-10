@@ -226,14 +226,14 @@ font-size: 190% !important; */
         /* border-radius: 50px !important; */
         /* padding: 10% !important; */
     }
-    .demo1:hover{
+    /* .demo1:focus{
         border: 2px solid black;
         padding: 5%;
         cursor: pointer;
-    }
+    } */
     .demo2:hover{
-        border: 1px solid black;
-        padding: 2%;
+        border: thick solid black;
+        /* padding: 2%; */
         cursor: pointer;
     }
     .quantity button{
@@ -248,7 +248,7 @@ font-size: 190% !important; */
         border: none;
         outline-width: 0;
         outline-style: none;
-        padding-top: 3px;
+        padding-top: 1px;
       }
       
       .minus-button{
@@ -257,7 +257,7 @@ font-size: 190% !important; */
         border: none;
         outline-width: 0;
         outline-style: none;
-        padding-top: 3px;
+        padding-top: 1px;
       }
       
       .value-box{
@@ -265,7 +265,7 @@ font-size: 190% !important; */
         outline-width: 0;
         outline-style: none;
         border-radius: 0% !important;
-        padding: 8px 0;
+        padding: 7px 0;
       }
       .pincode-input{
           border: 1px solid white;
@@ -398,50 +398,4 @@ button:focus{
       /* border-color: #4c4; */
   }
 
-@keyframes tonext {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: 100%;
-    }
-    98% {
-      left: 100%;
-    }
-    99% {
-      left: 0;
-    }
-  }
-  
-  @keyframes tostart {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: -300%;
-    }
-    98% {
-      left: -300%;
-    }
-    99% {
-      left: 0;
-    }
-  }
-  
-  @keyframes snap {
-    96% {
-      scroll-snap-align: center;
-    }
-    97% {
-      scroll-snap-align: none;
-    }
-    99% {
-      scroll-snap-align: none;
-    }
-    100% {
-      scroll-snap-align: center;
-    }
-  }
-  .details-btn h2:active{
-color: red !important;
-  }
+
