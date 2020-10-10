@@ -13,18 +13,19 @@
       <h3>INR 3000</h3>
     </div>
 
-    <div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-xs="100px" >
       <p>colour -  </p>
-    </div>
 
-    <div>
       <p>size -</p>
     </div>
 
-    <div fxLayout="row" fxlayoutAlign="start none" fxLayoutGap="">
+
+
+
+    <div fxLayout="row" fxlayoutAlign="start none" style="margin-top: 5px;">
       <div><button (click)="decreaseCount()" class="minus-button"><mat-icon>remove</mat-icon></button></div>
       <div><button  class="value-box">{{count}}</button></div>
-      <div> <button (click)="increaseCount()" class="add-button"><mat-icon>add</mat-icon></button></div>
+      <div><button (click)="increaseCount()" class="add-button"><mat-icon>add</mat-icon></button></div>
     </div>
 <!--
     <div fxLayout="row">

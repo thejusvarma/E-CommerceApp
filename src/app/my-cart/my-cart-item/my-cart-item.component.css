@@ -14,6 +14,7 @@ button{
   border-radius: 20px;
   background-color: #FFd7B5;
   color: black;
+  margin-top: 10px;
 }
 .mat-button-toggle{
   height: 50%;

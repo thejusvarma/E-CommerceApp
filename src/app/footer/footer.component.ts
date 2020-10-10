@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+
+  address = 'Downtown Srinagar, J&K 190002';
+  phone = '+91-9541122925';
+  mail = 'support@khancopper.com';
   constructor() { }
 
   ngOnInit(): void {

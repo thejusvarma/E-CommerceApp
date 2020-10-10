@@ -1,6 +1,6 @@
 .box {
     display: flex;
-    margin-top: 3%;
+    margin-top:2%;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -64,29 +64,4 @@
     text-decoration: none;
     font-weight: 900;
     }
-  .button {
-    background-color: #ffd7b5; 
-    border: 1vw;
-    border-radius: 1vw;
-    color: black;
-    padding: 1vw 2vw 1vw;
-    text-align: center;
-    display: inline-block;
-    font-size: 1.4vw;
-    margin-left: 34%;  
-    margin-bottom: 3vw;  
-    margin-top: 1%;
-  }
-  .button2 {
-    background-color: #ffd7b5; 
-    border: 1vw;
-    border-radius: 1vw;
-    color: black;
-    padding: 1vw 2vw 1vw;
-    text-align: center;
-    display: inline-block;
-    font-size: 3vw;
-    margin-left: 25%;  
-    margin-bottom: 3vw;  
-    margin-top: 1%;
-  }
+  

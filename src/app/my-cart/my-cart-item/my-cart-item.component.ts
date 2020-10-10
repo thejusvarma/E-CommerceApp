@@ -10,6 +10,9 @@ export class MyCartItemComponent implements OnInit {
 count:number=1;
 
   increaseCount(){
+    if(this.count==10){
+      return this.count;
+    }
     return this.count++;
   }
   decreaseCount(){
