@@ -74,23 +74,8 @@
   .foot-top h5{font-size: 10px;}
   .foot-top p{font-size:8px;}
 }
-@media (max-width:550px){
-  .foot-top h3 { font-size: 5px;}
-  .foot-top h5 { font-size: 6px;}
+@media only screen and (max-width:540px) and (min-width:520px){
+  .foot-top h5 { font-size: 5px;}
   .foot-top p {font-size: 7px;}
 }
-@media (max-width:426px){
-  .foot-top h3 { font-size: 5px;}
-  .foot-top h5 { font-size: 6px;}
-  .foot-top p {font-size: 0.35rem;}
-}
-@media (max-width:376px){
-  .foot-top h3 { font-size: 5px;}
-  .foot-top h5 { font-size: 5px;}
-  .foot-top p {font-size: 5px;}
-}
-@media (max-width:326px){
-  .foot-top h3 { font-size: 5px;}
-  .foot-top h5 { font-size: 4px;}
-  .foot-top p {font-size: 4px;}
-}
+
