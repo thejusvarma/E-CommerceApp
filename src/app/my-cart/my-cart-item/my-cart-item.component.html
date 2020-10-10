@@ -1,65 +1,49 @@
-
-<div fxLayout="row" fxLayoutGap.gt-xs="40px">
-  <div fxFlex="30" fxFlex.xs="45">
-     <img src="../assets/prod2.jpg">
-  </div>
-
-  <div fxFlex="50" fxFlex.xs="55" class="gap" fxLayout="column" fxLayoutGap="-10px">
-    <div>
-      <h2>Product Name</h2>
+<div fxLayout="column" fxLayoutGap="-12px" >
+  <div fxLayout="row" fxLayoutGap.gt-xs="40px">
+    <div fxFlex="30" fxFlex.xs="45">
+      <img src="https://dummyimage.com/800x800/4d4c4d/fff">
     </div>
 
-    <div >
-      <h3>INR 3000</h3>
-    </div>
-
-    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-xs="100px" >
-      <p>colour -  </p>
-
-      <p>size -</p>
-    </div>
-
-
-
-
-    <div fxLayout="row" fxlayoutAlign="start none" style="margin-top: 5px;">
-      <div><button (click)="decreaseCount()" class="minus-button"><mat-icon>remove</mat-icon></button></div>
-      <div><button  class="value-box">{{count}}</button></div>
-      <div><button (click)="increaseCount()" class="add-button"><mat-icon>add</mat-icon></button></div>
-    </div>
-<!--
-    <div fxLayout="row">
-      <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-          <mat-icon>remove</mat-icon>
-      </button>
-      <div class="number">
-          1
+    <div fxFlex="50" fxFlex.xs="55" class="gap" fxLayout="column" fxLayoutGap="-10px" fxLayoutGap.lt-sm="-15px">
+      <div>
+        <h2 class="text-bold">Product Name</h2>
       </div>
-      <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-        <mat-icon>add</mat-icon>
-      </button>
-    </div> -->
 
-    <br>
-
-    <div fxLayout="row" fxLayoutAlign="space-between" [fxShow.xs]="isVisibleOnMobile()">
       <div >
-        <button  mat-raised-button>Save for Later</button>
+        <h3 class="text-bold">INR 3000</h3>
+      </div>
+
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-xs="100px" >
+        <p class="text-bold">colour -  </p>
+        <p class="text-bold">size -</p>
+      </div>
+
+      <div fxLayout="row" fxlayoutAlign="start none" style="margin-top: 5px;">
+        <div><button (click)="decreaseCount()" class="minus-button"><mat-icon >remove</mat-icon></button></div>
+        <div><button  class="value-box text-bold">{{count}}</button></div>
+        <div><button (click)="increaseCount()" class="add-button"><mat-icon >add</mat-icon></button></div>
+      </div>
+      <br>
+
+      <div fxLayout="row" fxLayoutAlign="space-between" [fxShow.xs]="isVisibleOnMobile()">
+      <div >
+        <button  mat-raised-button class="text-bold">Save for Later</button>
       </div>
       <div>
-        <button mat-raised-button>Remove</button>
+        <button mat-raised-button class="text-bold">Remove</button>
       </div>
     </div>
   </div>
 </div>
 
-<div fxLayout="row" fxLayoutAlign="space-around" [fxShow.gt-xs]="isVisibleOnMobile()">
+<div fxLayout="row" fxLayoutAlign="space-around start" [fxShow.gt-xs]="isVisibleOnMobile()">
   <div >
     <button mat-raised-button>Save for Later</button>
   </div>
   <div>
     <button mat-raised-button>Remove</button>
   </div>
+</div>
 </div>
 
 <hr>

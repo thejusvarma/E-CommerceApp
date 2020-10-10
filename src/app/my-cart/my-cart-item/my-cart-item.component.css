@@ -22,7 +22,9 @@ button{
 .mat-button-toggle-group{
   height: 50%;
 }
-
+.text-bold{
+  font-weight: bold !important;
+}
 .mat-icon-button{
   background-color:#E1E1E1;
   color: black;
