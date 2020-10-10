@@ -1,15 +1,17 @@
 .input{
   width: 100%;
   font-size: 1rem;
-  height: 40px;
+  height: 50px;
   background-color: #FFD7B5;
+  border-radius: 20px;
 }
 
 .input1{
   width: 100%;
   font-size: 1rem;
-  height: 85px;
+  height: 130px;
   background-color: #FFD7B5;
+  border-radius: 20px;
 }
 
 .card{

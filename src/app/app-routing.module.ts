@@ -16,6 +16,7 @@ import { OrderCancellationComponent } from './order-cancellation/order-cancellat
 import { OrdersComponent } from './orders/orders.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { Error404Component } from './error404/error404.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: 'contact', component: ContactUsComponent },
@@ -32,8 +33,9 @@ const routes: Routes = [
   {path: 'payment-pending', component: PandingPaymentComponent},
   { path: 'cancel-order', component: OrderCancellationComponent },
   { path: 'my-orders', component: OrdersComponent },
-  {path:'error-404',component:Error404Component},
+  {path: 'error-404', component: Error404Component},
   { path: '', component: HomepageComponent},
+  {path: 'product', component: ProductDetailComponent}
 ];
 
 
