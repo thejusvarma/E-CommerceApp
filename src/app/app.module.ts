@@ -55,6 +55,9 @@ import { HomepageOurAllProductsComponent } from './homepage/homepage-our-all-pro
 import { HomepageMidCarouselComponent } from './homepage/homepage-mid-carousel/homepage-mid-carousel.component';
 import { HomepageTrendingProductsComponent } from './homepage/homepage-trending-products/homepage-trending-products.component';
 import { HomepageDealOfTheDayComponent } from './homepage/homepage-deal-of-the-day/homepage-deal-of-the-day.component';
+import { Error404Component } from './error404/error404.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ShareButtonComponent } from './share-button/share-button.component';
 
 @NgModule({
   declarations: [
@@ -93,6 +96,9 @@ import { HomepageDealOfTheDayComponent } from './homepage/homepage-deal-of-the-d
     HomepageMidCarouselComponent,
     HomepageTrendingProductsComponent,
     HomepageDealOfTheDayComponent,
+    Error404Component,
+    ProductDetailComponent,
+    ShareButtonComponent
 
 
   ],
