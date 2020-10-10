@@ -66,7 +66,7 @@
     background-color: #ffd7b5; /* Green */
     border: 1vw;
     color: black;
-    border-radius: 1vw;
+    border-radius: 1.3vw;
     padding: 1vw 2vw 1vw;
     text-align: center;
     text-decoration: none;
@@ -78,7 +78,7 @@
   .button2 {
     background-color: #ffd7b5; /* Green */
     border: 1vw;
-    border-radius: 1vw;
+    border-radius: 2.5vw;
     color: black;
     padding: 1vw 2vw 1vw;
     text-align: center;
@@ -86,7 +86,7 @@
     padding:2vw 2vh 2vw 2vh;
     display: inline-block;
     margin-bottom: 1vw;
-    margin-left: 29%;  
+    margin-left: 22vw;  
     margin-bottom: 3vw;  
     font-size: 3.5vw;
   }
