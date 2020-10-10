@@ -19,7 +19,7 @@ export class OrderPlaceSuccessComponent implements OnInit {
     }
     setTimeout(() => {
       this.image = '';
-    }, 3000);
+    }, 4000);
   }
 
 }

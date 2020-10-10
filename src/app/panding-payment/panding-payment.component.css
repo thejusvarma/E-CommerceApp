@@ -2,7 +2,7 @@
     display: flex;
     margin-top:2%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 5%; 
   }
   @keyframes blink {
     0% {
@@ -16,7 +16,7 @@
     }
 }
 .blink {
-  animation: blinker 2s linear infinite;
+  animation: blinker 1s linear infinite;
   font-size: 30px;
   font-weight: bold;
   font-family: sans-serif;
