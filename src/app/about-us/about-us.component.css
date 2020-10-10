@@ -10,7 +10,7 @@
     font-size: 5vw;
   }
   #rcorners2 {
-    border-radius: 3.5vw;
+    border-radius: 5.5vw;
     border: 2px solid #FFD7B5;
   }
   #rcorners1 {
@@ -54,5 +54,5 @@ article img{width:100%}
 
 img{
   border-radius: 5%;  
-  height: 40vw;
+  height: 35vw;
 }

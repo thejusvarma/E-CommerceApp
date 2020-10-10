@@ -21,9 +21,12 @@ export class AboutUsComponent implements OnInit {
 		if (isMobile) {
       this.isMobile=true;
     }
-     setInterval(() => {
-       this.nextSlide();
-     }, 3000);
+    setTimeout(()=>{
+      setInterval(() => {
+        this.nextSlide();
+      }, 2000);
+    },1);
+     
    }
 
 }
