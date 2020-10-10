@@ -27,12 +27,14 @@ export class ProductDetailComponent implements OnInit {
      }
      else if(i==2)
      {
+      this.d.nativeElement.style.fontWeight="300"
        this.showData={
         data:"additionalll data",
        }
      }
      else if(i==3)
      {
+      this.d.nativeElement.style.fontWeight="300"
        this.showData={
         data:"reviews",
        }
@@ -49,8 +51,25 @@ export class ProductDetailComponent implements OnInit {
    
   
   constructor() { }
-
+  numSlide:number=1
+  fontweight:string="bolder"
   ngOnInit(): void {
+    setTimeout(()=>{
+      this.d.nativeElement.style.fontWeight="bolder"
+      // console.log(this.d.nativeElement.style);
+    },100)
+    setInterval(()=>{
+      this.getNum()
+      
+      this.numSlide++;
+
+      this.numSlide == 6 ? this.numSlide = 1 : this.numSlide; 
+      // console.log(this.numSlide)
+      this.currentDiv(this.numSlide);
+      
+    },3000);
+    
+    
   }
   
   @ViewChild('i1') i1:ElementRef;
@@ -58,7 +77,29 @@ export class ProductDetailComponent implements OnInit {
   @ViewChild('i3') i3:ElementRef;
   @ViewChild('i4') i4:ElementRef;
   @ViewChild('i5') i5:ElementRef;
-  
+  @ViewChild('d') d:ElementRef;
+  getNum(){
+    if(this.i1.nativeElement.style.display=='block')
+    {
+      this.numSlide=1
+    }
+    if(this.i2.nativeElement.style.display=='block')
+    {
+      this.numSlide=2
+    }
+    if(this.i3.nativeElement.style.display=='block')
+    {
+      this.numSlide=3
+    }
+    if(this.i4.nativeElement.style.display=='block')
+    {
+      this.numSlide=4
+    }
+    if(this.i5.nativeElement.style.display=='block')
+    {
+      this.numSlide=5
+    }
+  }
   currentDiv(n){
     if(n==1){
       this.i1.nativeElement.style.display='block';
@@ -112,6 +153,25 @@ export class ProductDetailComponent implements OnInit {
     return this.count--;
 
   }
-  
+  i:number=1;
+  next(){
+    this.i++
+    if(this.i==6)
+    {
+      this.i=1
+    }
+    this.currentDiv(this.i)
+   
+  }
+  previous()
+  {
+    this.i--
+    if(this.i<1)
+    {
+      this.i=5
+    }
+    this.currentDiv(this.i)
+    
+  }
 
 }
