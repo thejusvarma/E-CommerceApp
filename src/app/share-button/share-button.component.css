@@ -1,0 +1,144 @@
+.share-bar {
+    position: fixed;
+    bottom: 25px;
+    left: 4px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    cursor: pointer; }
+
+img{
+  height: 20px;
+}
+
+
+    @media screen and (max-width: 1024px) {
+      .share-bar {
+        bottom: 20px;
+        left: 0px; }
+                                         }
+    @media screen and (max-width: 768px) {
+      .share-bar {
+        bottom: 15px;
+        left: 0px; } }
+    .share-bar .title {
+      height: 100%;
+      width: 100%; }
+      .share-bar .title .ion {
+        font-size: 24px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        position: relative;
+        z-index: 1;
+
+        display: block;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        text-align: center;
+        -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+        -o-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+        transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s; }
+        @media screen and (min-width: 1025px) {
+          .share-bar .title .ion {
+            background-color: #fff; } }
+      .share-bar .title .name {
+        height: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+        width: 100%;
+        position: absolute;
+        word-wrap: normal;
+        text-align: left;
+        bottom: 10px;
+        left: 25px;
+        font-weight: bold !important;
+        font-size: 1em;
+        -webkit-transform: translate(-50%, -100%) rotate(-90deg);
+            -ms-transform: translate(-50%, -100%) rotate(-90deg);
+                transform: translate(-50%, -100%) rotate(-90deg);
+        -webkit-transition: .15s ease-in-out;
+        -o-transition: .15s ease-in-out;
+        transition: .15s ease-in-out;
+        -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+        -o-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+        transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s; }
+        @media screen and (max-width: 768px) {
+          .share-bar .title .name {
+            display: none; } }
+    .share-bar .links {
+      background: inherit;
+      -webkit-border-radius: 0px;
+              border-radius: 0px;
+      text-align: center;
+      background-color: #fff;
+      -webkit-border-radius: 25px;
+      border-radius: 25px;
+      left: 25px;
+      position: absolute;
+      bottom: 50px;
+      -webkit-transform: translate(-50%, 30px);
+          -ms-transform: translate(-50%, 30px);
+              transform: translate(-50%, 30px);
+      opacity: 0;
+      -webkit-transition: .2s ease-in-out;
+      -o-transition: .2s ease-in-out;
+      transition: .2s ease-in-out;
+      visibility: hidden; }
+      .share-bar .links a {
+        color: inherit;
+        width: 40px;
+        height: 40px;
+        line-height: 50px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        text-align: center;
+        display: block; }
+        .share-bar .links a:before {
+          display: none; }
+        .share-bar .links a:hover {
+          color: #B79B6C;
+          background-color: #f9f9f9; }
+      .share-bar .links span {
+        font-size: 18px;
+        margin: 0;
+        -webkit-transition: margin .15s ease-in-out;
+        -o-transition: margin .15s ease-in-out;
+        transition: margin .15s ease-in-out; }
+    @media screen and (min-width: 769px) {
+      .share-bar.header-6 {
+        left: 275px; }
+      .share-bar.header-8 {
+        left: 105px; } }
+
+  .share-bar.active .links {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .share-bar.active .links span {
+      margin: 6px 0; }
+
+  .share-bar.active .title .ion {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+    .share-bar.active .title .ion:after {
+      background: rgba(0, 0, 0, 0.04);
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+
+  .share-bar.active .title .name {
+    opacity: 0; }
+
+
+  .share-bar:focus {
+    outline : 0 !important;
+  }
