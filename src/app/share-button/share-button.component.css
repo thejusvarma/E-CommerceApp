@@ -58,7 +58,7 @@ img{
         text-align: left;
         bottom: 10px;
         left: 25px;
-        font-weight: bold !important;
+        font-weight: 900 !important;
         font-size: 1em;
         -webkit-transform: translate(-50%, -100%) rotate(-90deg);
             -ms-transform: translate(-50%, -100%) rotate(-90deg);
