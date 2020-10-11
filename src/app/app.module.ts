@@ -103,7 +103,7 @@ import {MatSelectModule} from '@angular/material/select';
 
 
   ],
-  entryComponents:[LoginComponent],
+  entryComponents: [LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
