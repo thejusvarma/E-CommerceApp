@@ -58,6 +58,7 @@ import { HomepageDealOfTheDayComponent } from './homepage/homepage-deal-of-the-d
 import { Error404Component } from './error404/error404.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ShareButtonComponent } from './share-button/share-button.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -124,7 +125,8 @@ import { ShareButtonComponent } from './share-button/share-button.component';
     MatDialogModule,
     MatSnackBarModule,
     MatButtonToggleModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
