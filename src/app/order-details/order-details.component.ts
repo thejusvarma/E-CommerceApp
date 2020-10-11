@@ -18,7 +18,7 @@ export class OrderDetailsComponent implements OnInit {
     placedConfirm: "Delivery expected by Oct 06.",
     shippedStatus:"Delivery Expected by Tomorrow, Oct 06",
     productDetails: {
-      img:"https://dummyimage.com/200x200/00e1ff/000000",
+      img:"https://dummyimage.com/800x800/00e1ff/000000",
       productname: "Redmi Note 6 (64GB)",
       price: 20000,
       color: "white",
@@ -37,7 +37,7 @@ export class OrderDetailsComponent implements OnInit {
     placedConfirm: "Delivery expected by Oct 06.",
     shippedStatus:"Delivery Expected by Tomorrow, Oct 06",
     productDetails: {
-      img:"https://dummyimage.com/200x200/00e1ff/000000",
+      img:"https://dummyimage.com/800x800/00e1ff/000000",
       productname: "Redmi Note 6 (64GB)",
       price: 20000,
       color: "white",

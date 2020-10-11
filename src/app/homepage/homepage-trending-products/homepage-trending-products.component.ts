@@ -33,7 +33,7 @@ export class HomepageTrendingProductsComponent implements OnInit {
         '400': {
           padding:'0px',
           perPage: 2,
-          gap    : '10px',
+          gap    : '5px',
         },
       }
     } ).mount();

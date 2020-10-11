@@ -40,7 +40,7 @@ export class HomepageImageCarouselComponent implements OnInit {
         }
 
   constructor(){
-  this.subscription= interval(2000).subscribe((x =>{
+  this.subscription= interval(3000).subscribe((x =>{
         this.changeSlides();
                   }));
 
