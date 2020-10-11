@@ -52,7 +52,7 @@ fxHide.xs>
             <h1 [ngStyle.gt-sm]="'font-size:25px;'"
             [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'">₹{{price}}</h1>
           </div>
-          <div fxLayout="row" fxFlex="1 1 25" fxFlex.md="1 1 22" fxFlex.sm="1 1 19" fxLayoutGap.gt-md="45%" fxLayoutGap.md="30%" fxLayoutGap.sm="25%" [ngStyle.lg]="'padding-left: 5%'">
+          <div fxLayout="row" fxFlex="1 1 25" fxFlex.md="1 1 22" fxFlex.sm="1 1 19" fxLayoutGap.gt-md="46%" fxLayoutGap.md="30%" fxLayoutGap.sm="25%" [ngStyle.lg]="'padding-left: 5%'">
             <h1 [ngStyle.gt-sm]="'font-size:25px;'"
             [ngStyle.md]="'font-size:22px;'" [ngStyle.sm]="'font-size:18px;'">Tax (if any)</h1>
             <h1 [ngStyle.gt-sm]="'font-size:25px;'"
@@ -86,13 +86,10 @@ fxHide.xs>
         Proceed Payment</button>
       </div>
       <div fxFlex="1 1 2"></div>
-      <div fxLayout="row" fxLayoutAlign.gt-xs="center center" style="color:rgb(112, 106, 106);padding-left:5%;">
-        <img src="assets/lock.svg" width="35px" height="40px">
+      <div fxLayout="row" fxLayoutAlign="center center" style="color:rgb(112, 106, 106);padding-left:5%;">
+        <img src="assets/lock.svg" width="40px" height="35px">
         <div fxFlex="1 1 2"></div>
-        <p
-        fxFlex="1 1 50" style="font-style: normal;font-weight: 500;font-size: 20px;color: #837f7f;padding-top:2%;"
-        [ngStyle.md]="'font-size:15px;'"
-        [ngStyle.sm]="'font-size:12px;'">
+        <p fxFlex="1 1 50" style="font-style: normal;font-weight: 500;font-size: 1.2vw;color: #646161;padding-top: 2%;">
           Safe and Secure Payments 100% Authentic products</p>
       </div>
     </div>
@@ -105,10 +102,12 @@ fxHide.xs>
 <div fxLayout="column" [ngStyle.xs]="'background-color:#E1E1E1;height:850px'" fxHide.gt-xs>
   <br><br>
   <div fxFlex="1 1 5" style="margin-left:20%;margin-right:20%;">
-    <div fxLayout="row"  fxFlex="1 1 100" fxLayoutAlign="center center">
-      <h1 style="font-size:6vw;font-weight: 600;padding-top:2%;padding-bottom:2%;
-        padding-left:17%;padding-right:17%;
+    <div fxLayout="row" fxLayout="1 1 100" fxFlex="1 1 100">
+      <div fxFlex="1 1 100"  fxLayoutAlign="center center">
+        <h1 style="font-size:5vw;font-weight: 600;width:50vw;text-align: center;
+        padding-top:1%;padding-bottom: 1%;
         background-color: #FFD7B5;border-radius: 10px;">Price Details</h1>
+      </div>
     </div>
   </div>
 
@@ -147,12 +146,14 @@ fxHide.xs>
         Safe and Secure Payments 100% Authentic products</p>
     </div>
   </div>
-  <br><br><br>
+  <br><br>
   <div fxFlex="1 1 5" style="margin-left:20%;margin-right:20%;">
-    <div fxLayout="row"  fxFlex="1 1 100" fxLayoutAlign="center center">
-      <h1 style="font-size:6vw;font-weight: 600;padding-top:2%;padding-bottom:2%;
-        padding-left:5%;padding-right:5%;
+    <div fxLayout="row" fxLayout="1 1 100" fxFlex="1 1 100">
+      <div fxFlex="1 1 100"  fxLayoutAlign="center center">
+        <h1 style="font-size:5vw;font-weight: 600;width:50vw;text-align: center;
+        padding-top:1%;padding-bottom: 1%;
         background-color: #FFD7B5;border-radius: 10px;">Payment Options</h1>
+      </div>
     </div>
   </div>
 
