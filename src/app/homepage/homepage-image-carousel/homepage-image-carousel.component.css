@@ -40,7 +40,7 @@ a{
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
 
   .w3-display-bottomleft {
     bottom: 3px;
@@ -57,5 +57,25 @@ a{
     margin-left: 2px;
 
   }
-
 }
+
+/*
+@media only screen and (min-width:600px),(max-width: 1000px) {
+
+  .w3-display-bottomleft {
+    bottom: 5px;
+    left: 7px;
+  }
+  .text1{
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  .text2{
+    font-size: 120%;
+    font-weight: 500;
+    margin-left: 2px;
+
+  }
+
+} */
