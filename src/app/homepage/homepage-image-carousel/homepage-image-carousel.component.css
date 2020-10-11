@@ -25,7 +25,7 @@ a{
   text-decoration: none;
 }
 .text2{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-left: 2px;
   color: white;
@@ -43,6 +43,19 @@ a{
 @media only screen and (max-width: 1000px) {
 
   .w3-display-bottomleft {
-    display: none;
+    bottom: 3px;
+    left: 5px;
   }
+  .text1{
+    font-size: 90%;
+    font-weight: bold;
+  }
+
+  .text2{
+    font-size: 80%;
+    font-weight: 500;
+    margin-left: 2px;
+
+  }
+
 }
