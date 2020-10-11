@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DealDayProdCardComponent implements OnInit {
 images={
-  product_image:"https://dummyimage.com/600x600/00e1ff/000000",
+  product_image:"https://dummyimage.com/800x800/00e1ff/000000",
   cart_image:"../../../assets/images/cart.svg"
 }
   constructor() { }
