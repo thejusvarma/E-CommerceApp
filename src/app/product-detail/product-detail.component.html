@@ -2,12 +2,12 @@
     <div class="heading-box" ngClass.xs="heading-box-small">
         <h1 class="heading" ngClass.xs="heading-small" style="font-weight: 600;">Product Details</h1>
     </div>
-    <div fxLayout="row" fxLayoutAlign="center stretch" fxLayout.xs="column">
+    <div fxLayout="row"  fxLayoutAlign="center none" fxLayout.xs="column">
         <!-- <div class="product-image" fxFlex="30">
             <img src="https://dummyimage.com/200x200/00e1ff/000000" style="width: 100%;" alt="">
         </div> -->
         <div class="img-indicators1" fxFlex="10">
-            <div fxLayout="column" fxHide.xs fxFlex="50" fxLayoutAlign="space-between stretch">
+            <div fxLayout="column" fxHide.xs fxFlex="50" fxLayoutAlign="space-between center">
                 <img src="{{images.img1}}" class="demo1" (click)="currentDiv(1)" style="width: 100%;" alt="" #in1>
                 <img src="{{images.img2}}" class="demo1" (click)="currentDiv(2)" style="width: 100%;" alt="" #in2>
                 <img src="{{images.img3}}" class="demo1" (click)="currentDiv(3)" style="width: 100%;" alt="" #in3>
@@ -16,7 +16,7 @@
 
             </div>
         </div>
-        <div class="img-shown" fxFlex="35">
+        <div class="img-shown" fxFlex="35" fxFlex.lt-md="25" fxFlexAlign="center">
             <button class="backward" (click)="previous()"><mat-icon class="prev-icon">arrow_back_ios</mat-icon></button>
             <button class="forward" (click)="next()"><mat-icon class="next-icon">arrow_forward_ios</mat-icon></button>
             <img src="{{images.img1}}" class="mySlides displaying" style="width: 100%; height: 100%;" alt="" #i1>
@@ -34,13 +34,13 @@
                 <img src="{{images.img5}}" class="demo2" (click)="currentDiv(5)" style="width: 10%;" alt="" #ins5>
             </div>
         </div>
-        <div class="product-details" fxFlex="35">
+        <div class="product-details" fxFlex="35" fxFlex.lt-md="70">
             <h3>{{productDetails.category}}</h3>
             <h2 class="white-bg">{{productDetails.availability}}</h2>
             <h1 class="product-name">{{productDetails.productName}}</h1>
             <h3 class="product-price">{{productDetails.productPrice}}</h3>
             <p>{{productDetails.productAbout}}</p>
-            <br>
+            <!-- <br> -->
             <h2>Category:</h2>
             
             <!-- <h3>size: <select placeholder="select size" >
@@ -50,7 +50,7 @@
                 <option value="1238">1238</option>
               </select></h3> -->
               
-              <br>
+              <!-- <br> -->
             <div fxLayout="row" fxLayoutGap="20%" fxLayoutGap.xs="8%" fxLayoutGap.lt-lg="2%">
                 <div class="size">
                     <div fxLayout="row" fxlayoutAlign="start none" fxLayoutGap.xs="3%" fxLayoutGap="10%" fxLayoutGap.lt-lg="2%">
@@ -100,13 +100,13 @@
                 </div> -->
 
             </div>
-            <br>
+            <!-- <br> -->
             <div fxLayout="row" fxLayoutGap="2%">
                 <div><h3>Pincode:</h3></div>
                 <div><input type="tel" placeholder="Enter Pincode" class="pincode-input"></div>
                 <div><button class="check-btn">Check</button></div>
             </div>
-            <br>
+            <!-- <br> -->
             <div fxLayoutAlign="row" fxLayoutGap="5%" fxLayoutGap.xs="1%">
                 <div fxFlex="50">
                 <button class="cart">

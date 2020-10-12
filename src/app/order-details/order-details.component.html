@@ -1,7 +1,7 @@
 
 <div class="containing" ngClass.xs="small-containing">
 <div class="heading-box" ngClass.xs="heading-box-small">
-    <h1 class="heading" style="font-weight: 600;">Order Details</h1>
+    <h1 class="heading" ngClass.xs="heading-small">Order Details</h1>
 
 </div>
 <div class="container" ngClass.xs="small-container">
@@ -60,7 +60,7 @@
                 <mat-card >
                 <div  fxLayout="row" fxLayout.xs="column" fxLayout.lt-md="column" fxLayoutAlign="space-between stretch" fxLayoutGap="5%">
                     <div class="image"  fxFlex="15" fxFlex.sm="20">
-                        <img ngClass.xs="image-center" ngClass.sm="image-center" fxFlex.xs="85" fxFlex.sm="85" style="width: 100%;" fxLayoutAlign.xs="center" fxLayoutAlign.lt-md="center" src={{dataRes.productDetails.img}} alt="">
+                        <img ngClass.xs="image-center" ngClass.sm="image-center" fxFlex.xs="85" fxFlex.sm="85" style="width: 100%;" fxLayoutAlign.xs="center" fxLayoutAlign.lt-md="center" fxLayoutAlign="start center"  src={{dataRes.productDetails.img}} alt="">
                         
                     </div>
                     <div class="product-details" fxFlex="15">
@@ -87,7 +87,7 @@
                                 
                                     <span class="circle-desc" [class.circle-desc-active]="dataRes.orderBar == item">{{ counts1[0] }}</span>
                                     <span class="circles active"></span>
-                                    <span class="bar1"></span>
+                                    <span class="bar1" ngClass.xs="bar1-small"></span>
                                     <span class="circle-desc" [class.circle-desc-active]="dataRes.orderBar == item">{{ counts1[1] }}</span>
                                     <span class="circles danger"></span>
                                   
@@ -115,7 +115,7 @@
                                 <span *ngFor="let item of counts;let i = index">
                                     <span class="circle-desc"  [class.circle-desc-active]="dataRes.orderBar == item">{{ item }}</span>
                                     <span class="circles" [class.active]="dataRes.orderBar[i] == item"></span>
-                                    <span class="bar" [class.barActive]="dataRes.orderBar[i] == item" *ngIf="(i != counts.length-1)"></span>
+                                    <span class="bar" ngClass.xs="bar-small" [class.barActive]="dataRes.orderBar[i] == item" *ngIf="(i != counts.length-1)"></span>
                                   </span>
                             </div>
                             <div class="delivered-confirm" *ngIf="dataRes.orderstatus === 'deliver'">

@@ -10,22 +10,22 @@
             </div>
             <div fxLayout="row" fxLayoutAlign="space-between center">
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1" #otp1>
+                    <input  class="input" type="text" maxlength="1" #otp1 (keyup)="onKey($event , otp1 , otp1 , otp2)" >
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1" #otp2>
+                    <input  class="input" type="text" maxlength="1" #otp2  (keyup)="onKey($event , otp1 , otp2 , otp3)">
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1" #otp3>
+                    <input  class="input" type="text" maxlength="1" #otp3  (keyup)="onKey($event , otp2 , otp3 , otp4)">
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1" #otp4>
+                    <input  class="input" type="text" maxlength="1" #otp4  (keyup)="onKey($event , otp3 , otp4 , otp5)">
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1" #otp5>
+                    <input  class="input" type="text" maxlength="1" #otp5 (keyup)="onKey($event , otp4 , otp5 , otp6)">
                 </div>
                 <div fxLayoutAlign="center center">
-                    <input  class="input" type="text" maxlength="1" #otp6>
+                    <input  class="input" type="text" maxlength="1" #otp6 (keyup)="onKey($event , otp5 , otp6 , otp6)">
                 </div>
             </div>
             <div>
