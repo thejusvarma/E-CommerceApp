@@ -37,7 +37,7 @@
     text-align: center;
     margin-bottom: 1.5%;
     margin-top: 1.5% ;
-    margin-left: 9.7%;
+    margin-left: 7%;
     /* font-size: 200%; */
 }
 .heading-box-small{
@@ -49,7 +49,8 @@
 }
 .product-details{
     background-color: #FFD7B5;
-    padding: 2% 2%;
+    padding: 2% 1%;
+    padding-top: 4% !important;
 }
 .white-bg{
     margin-top: 7%;
@@ -93,47 +94,51 @@ font-size: 190% !important; */
     .cart{
         background-color: white;
         border: 1px solid white;
-        padding: 3% 8%;
-        padding-left: 10% !important;
+        padding: 3% 2%;
+        /* padding-left: 10% !important; */
         border-radius: 50px;
         /* margin-bottom: 10%; */
     }
     .cart-text{
-        margin-top: 3%; font-size: 190%;
+        margin-top: 3%; font-size: 170%;
     }
     .cart-text-small{
         /* margin-left: 2% !important; */
-        font-size: 150%;
+        font-size: 110%;
+        font-weight: 700;
+        margin-top: 10% !important;
     }
     .cart-icon{
-        width: 90%; height: 90%;
+        width: 80%; height: 80%;
     }
     .cart-icon-small{
-        margin-top: 4% !important;
-        width: 80%;
-        height: 80%;
+        margin-top: 15% !important;
+        width: 70%;
+        height: 70%;
     }
     .buy{
         background-color: white;
         border: 1px solid white;
-        padding: 3% 8%;
-        padding-left: 10% !important;
+        padding: 3% 2%;
+        /* padding-left: 10% !important; */
         border-radius: 50px;
         /* margin-bottom: 10%; */
     }
     .buy-text{
-        margin-top: 3%; font-size: 190%;
+        margin-top: 3%; font-size: 170%;
     }
     .buy-text-small{
-        font-size: 150%;
+        font-size: 110%;
+        font-weight: 700;
+        margin-top: 10%;
     }
     .buy-icon{
-        width: 90%; height: 90%;
+        width: 80%; height: 80%;
     }
     .buy-icon-small{
-        margin-top: 4% !important;
-        width: 80%;
-        height: 80%;
+        margin-top: 8% !important;
+        width: 70%;
+        height: 70%;
     }
     /* .buy{
         background-color: white;
@@ -399,3 +404,23 @@ button:focus{
   }
 
 
+  .place-order-button{
+    width: 100%;
+    background: white;
+    font-size: 110%;
+    color: black;
+    font-weight: bold !important;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    border-radius: 50px;
+    }
+    .span1{
+        font-size: 120%;
+        font-weight: 500;
+      }
+      .placeorder-icon{
+        margin-bottom: 3%;
+      
+        height: 22px;
+        width: 22px;
+      }
