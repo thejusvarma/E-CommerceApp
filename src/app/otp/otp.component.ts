@@ -25,6 +25,30 @@ export class OtpComponent implements OnInit {
      
    
   }
+  onKey(event , earlyTxt , currentTxt , nextTxt){
+    console.log(event.key)
+    if(event.key == 'Tab'){
+      earlyTxt.focus()
+    }
+    else if(event.key == 'Enter' ||event.key == ' '){  //for elemination of space tab enter keys
+    currentTxt.focus();
+    
+    // return
+    }
+    else if(event.key == 'Backspace'){
+      earlyTxt.value=""
+      
+    earlyTxt.focus();
+    }
+    else{
+      if(currentTxt == 'otp6'){ 
+        
+        return 0; }
+      
+    nextTxt.focus();
+    }
+    
+    }
   
    display(){
     this.str= this.otp1.nativeElement.value+this.otp2.nativeElement.value+this.otp3.nativeElement.value+this.otp4.nativeElement.value+this.otp5.nativeElement.value+this.otp6.nativeElement.value;
