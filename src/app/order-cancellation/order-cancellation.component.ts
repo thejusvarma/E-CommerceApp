@@ -14,6 +14,9 @@ export class OrderCancellationComponent implements OnInit {
   delivery = 50;
   total = 5200;
   tax = 150;
+
+  reasons = new FormControl();
+  reasonList: string[] = ['reason1', 'reason2', 'reason3', 'reason4'];
   constructor() { }
 
   ngOnInit(): void {
