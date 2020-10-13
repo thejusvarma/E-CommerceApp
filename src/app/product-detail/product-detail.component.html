@@ -1,13 +1,13 @@
 <div class="flex-container">
-    <div class="heading-box" ngClass.xs="heading-box-small">
-        <h1 class="heading" ngClass.xs="heading-small" style="font-weight: 600;">Product Details</h1>
+    <div class="heading-box" ngClass.xs="heading-box-small" ngClass.lt-lg="heading-box-small">
+        <h1 class="heading" ngClass.xs="heading-small" ngClass.lt-lg="heading-small" style="font-weight: 600;">Product Details</h1>
     </div>
-    <div fxLayout="row"  fxLayoutAlign="center stretch" fxLayout.xs="column" >
+    <div fxLayout="row"  fxLayoutAlign="center stretch" fxLayout.xs="column" fxLayout.lt-lg="column">
         <!-- <div class="product-image" fxFlex="30">
             <img src="https://dummyimage.com/200x200/00e1ff/000000" style="width: 100%;" alt="">
         </div> -->
         <div class="img-indicators1" fxFlex="10">
-            <div fxLayout="column" fxHide.xs   fxFlex="50" fxLayoutAlign="space-between stretch">
+            <div fxLayout="column" fxHide.xs fxHide.lt-lg  fxFlex="50" fxLayoutAlign="space-between stretch">
                 <img src="{{images.img1}}" class="demo1" (click)="currentDiv(1)" style="width: 100%;" alt="" #in1>
                 <img src="{{images.img2}}" class="demo1" (click)="currentDiv(2)" style="width: 100%;" alt="" #in2>
                 <img src="{{images.img3}}" class="demo1" (click)="currentDiv(3)" style="width: 100%;" alt="" #in3>
@@ -16,7 +16,7 @@
 
             </div>
         </div>
-        <div class="img-shown" fxFlex="45" fxFlex.md="50" fxFlex.lt-lg="50" fxFlex.sm="50" >
+        <div class="img-shown" fxFlex="45" fxFlex.md="50"  fxFlex.sm="50" >
             <!-- fxFlexAlign="center" -->
             <button class="backward" (click)="previous()"><mat-icon class="prev-icon">arrow_back_ios</mat-icon></button>
             <button class="forward" (click)="next()"><mat-icon class="next-icon">arrow_forward_ios</mat-icon></button>
@@ -27,7 +27,7 @@
             <img src="{{images.img5}}" class="mySlides displaying" style="width: 100%; display: none; height: 100%;" alt="" #i5>
         </div>
         <div class="img-indicators2">
-            <div fxLayout="row" fxHide fxShow.xs  fxFlex="100" fxLayoutAlign="space-evenly center" >
+            <div fxLayout="row" fxHide fxShow.xs fxShow.lt-lg fxFlex="100" fxLayoutAlign="space-evenly center" >
                 <img src="{{images.img1}}" class="demo2" (click)="currentDiv(1)" style="width: 10%;" alt="" #ins1 >
                 <img src="{{images.img2}}" class="demo2" (click)="currentDiv(2)" style="width: 10%;" alt="" #ins2>
                 <img src="{{images.img3}}" class="demo2" (click)="currentDiv(3)" style="width: 10%;" alt="" #ins3>
@@ -56,7 +56,7 @@
                 <div class="size" fxFlex="15" fxFlex.xs="25">
                     <div fxLayout="row" fxlayoutAlign="start none" fxLayoutGap.xs="3%" fxLayoutGap="10%" fxLayoutGap.lt-lg="2%">
                         <div><h3>Size:</h3></div>
-                        <div><h3><select placeholder="select size" >
+                        <div><h3><select placeholder="select size" style="padding: 8% 0;" >
                             <option value="123">123</option>
                             <option value="456">456</option>
                             <option value="789">789</option>
@@ -65,17 +65,17 @@
                     </div>
                 </div>
                 <div class="color" fxFlex="15" fxFlex.xs="20">
-                    <div fxLayout="row" fxlayoutAlign="center center" fxLayoutGap.xs="" fxLayoutGap="5%" fxLayoutGap.lt-lg="" fxLayoutGap.md="">
+                    <div fxLayout="row" fxlayoutAlign="center center" fxLayoutGap.xs="1%" fxLayoutGap="5%" fxLayoutGap.lt-lg="2%" fxLayoutGap.md="1%">
                         <div><h3>Color:</h3></div>
                         <!-- <div><span class="dot1" matTooltip="Copper"></span></div>
                         <div><span class="dot2"></span></div> -->
                         <!-- <div class="radio-toolbar"><input type="radio" matTooltip="Copper"></div> -->
                         <div class="radio-toolbar">
-                            <input type="radio" id="radioA" name="radioA" value="a">
+                            <input type="radio" id="radioA" name="radioColor" value="a">
                             <label for="radioA" class="label1" matTooltip="Copper"></label>
                         </div>
                         <div class="radio-toolbar">
-                            <input type="radio" id="radioB" name="radioB" value="b">
+                            <input type="radio" id="radioB" name="radioColor" value="b">
                             <label for="radioB" class="label2" matTooltip="Tin"></label>
 <!--                         
                             <input type="radio" id="radioOrange" name="radioFruit" value="orange">
