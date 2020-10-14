@@ -1,11 +1,11 @@
 <div class="container" fxLayout="column wrap" fxLayoutAlign="start center">
-    <div class="heading-box">
-        <h1 class="heading" style="font-weight: 600;">Deal of the Day</h1>
+    <div class="heading-box" ngClass.xs="heading-box-small">
+        <h1 class="heading" ngClass.xs="heading-small">Deal of the Day</h1>
 
     </div>
     <div class="timer" fxLayout="row" style="margin-bottom: 2%; margin-top: 1%;">
-        <mat-icon class="icon">alarm</mat-icon>
-        <h3>24:31:34</h3>
+        <mat-icon class="icon" style="font-size: 3vw;" [ngStyle.xs]="'font-size: 8vw;'">alarm</mat-icon>
+        <h3 style="font-size: 2vw; margin-top: 8%; margin-left: 15%;" [ngStyle.xs]="'font-size: 5vw;margin-top: 2%; margin-left: 2%;'">24:31:34</h3>
     </div>
     <div fxLayout="row" style="height: 100%; margin-bottom: 10%;" fxLayoutAlign="center" fxLayoutGap="5%"    fxLayout.sm="column" fxFlex.sm="2"
      fxLayoutAlign.sm="space-between stretch" fxLayout.lt-md="column" fxLayoutAlign.md="space-between stretch" fxLayoutAlign.lt-md="column" fxLayoutAlign.lt-md="space-between stretch" fxFlex.lt-md="10">

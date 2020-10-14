@@ -5,9 +5,9 @@ fxHide.xs>
   <div fxFlex="1 1 5"></div>
   <div fxLayout="row" fxFlex="1 1 10">
     <div fxFlex="1 1 5"></div>
-    <div fxFlex="1 1 20" fxFlex.md="1 1 30" fxFlex.sm="1 1 35" style="border-radius: 10px;background-color: #FFD7B5;
+    <div fxFlex="1 1 23" fxFlex.md="1 1 25" fxFlex.sm="1 1 25" style="border-radius: 30px;background-color: #FFD7B5;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);" fxLayoutAlign="center center">
-      <h1 style="font-weight:bold;padding-top:5%;"> Easy Cancellation</h1>
+      <h1 style="font-weight:bold;padding-top:5%;font-size:2.5vw;"> Easy Cancellation</h1>
     </div>
   </div>
   <div fxFlex="1 1 5"></div>
@@ -23,7 +23,9 @@ fxHide.xs>
               <div fxLayout="column wrap" fxLayoutAlign="space-between" fxLayoutGap="33px">
                 <div fxFlex="28">
                   <h1>Reason For Cancellation</h1>
-                  <textarea type="text"  class="input form-control" formControlName="reason"></textarea>
+                  <select class="input" formControlName="reason">
+                    <option *ngFor="let reason of reasonList" [value]="reason">{{reason}}</option>
+                  </select>
                   <span *ngIf="!form.get('reason').valid && form.get('reason').touched" style="color:red;">
                               Enter valid reason.
                           </span>
@@ -55,10 +57,9 @@ fxHide.xs>
         <div fxLayout="column" fxFlex="1 1 95">
           <div fxFlex="1 1 4"></div>
           <div fxLayout="row" fxFlex="1 1 10" fxLayoutAlign="center center">
-            <div fxFlex.gt-md="1 1 40" style="background-color: #FFD7B5;border-radius: 10px;" fxLayoutAlign="center center"
-            fxFlex.md="1 1 50"
-            fxFlex.sm="1 1 60">
-              <h1  [ngStyle.gt-xs]="'font-size:30px;padding-top:6%;'">Price Detail</h1>
+            <div fxFlex.gt-xs="1 1 40" style="background-color: #FFD7B5;border-radius: 30px;" fxLayoutAlign="center center"
+            >
+              <h1  [ngStyle.gt-xs]="'font-size:2.5vw;padding-top:6%;font-weight:bold;'">Price Detail</h1>
             </div>
           </div>
           <div fxFlex="1 1 8"></div>
@@ -183,8 +184,10 @@ fxHide.xs>
           <div fxLayout="column wrap" fxLayoutAlign="space-between" fxLayoutGap="15px">
             <div fxFlex="30">
               <h1 style="font-size: 5vw;">Reason For Cancellation</h1>
-              <textarea type="text"  class="form-control" formControlName="reason"
-              style="border-radius: 20px;width:74vw;height:10vw;background-color: #FFD7B5;"></textarea>
+              <select class="input" formControlName="reason"
+               style="border-radius: 20px;width:74vw;height:10vw;background-color: #FFD7B5;">
+                <option *ngFor="let reason of reasonList" [value]="reason">{{reason}}</option>
+              </select>
               <span *ngIf="!form.get('reason').valid && form.get('reason').touched" style="color:red;">
                           Enter valid reason.
                       </span>

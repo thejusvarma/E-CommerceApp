@@ -17,9 +17,6 @@ export class OrderPlaceSuccessComponent implements OnInit {
 		if (isMobile) {
       this.isMobile=true;
     }
-    setTimeout(() => {
-      this.image = '';
-    }, 4000);
   }
 
 }
