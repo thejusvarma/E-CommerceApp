@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="product-details" fxFlex="30" fxFlex.md="30" fxFlex.sm="30" fxFlex.lt-lg="40">
-            <h3>{{productDetails.category}}</h3>
+            <h3 style="font-weight: 600; font-size: 170%;">{{productDetails.category}}</h3>
             <h2 class="white-bg">{{productDetails.availability}}</h2>
             <h1 class="product-name">{{productDetails.productName}}</h1>
             <h3 class="product-price">{{productDetails.productPrice}}</h3>
@@ -44,14 +44,6 @@
             <br>
             <h2>Category:</h2>
             
-            <!-- <h3>size: <select placeholder="select size" >
-                <option value="123">123</option>
-                <option value="456">456</option>
-                <option value="789">789</option>
-                <option value="1238">1238</option>
-              </select></h3> -->
-              
-              <!-- <br> -->
             <div fxLayout="row" fxLayoutGap="15%" fxLayoutGap.xs="8%" fxLayoutGap.lt-lg="18%" fxLayoutGap.md="18%">
                 <div class="size" fxFlex="15" fxFlex.xs="25">
                     <div fxLayout="row" fxlayoutAlign="start none" fxLayoutGap.xs="3%" fxLayoutGap="10%" fxLayoutGap.lt-lg="2%">
@@ -67,19 +59,14 @@
                 <div class="color" fxFlex="15" fxFlex.xs="20">
                     <div fxLayout="row" fxlayoutAlign="center center" fxLayoutGap.xs="1%" fxLayoutGap="5%" fxLayoutGap.lt-lg="2%" fxLayoutGap.md="1%">
                         <div><h3>Color:</h3></div>
-                        <!-- <div><span class="dot1" matTooltip="Copper"></span></div>
-                        <div><span class="dot2"></span></div> -->
-                        <!-- <div class="radio-toolbar"><input type="radio" matTooltip="Copper"></div> -->
                         <div class="radio-toolbar">
                             <input type="radio" id="radioA" name="radioColor" value="a">
                             <label for="radioA" class="label1" matTooltip="Copper"></label>
                         </div>
                         <div class="radio-toolbar">
                             <input type="radio" id="radioB" name="radioColor" value="b">
-                            <label for="radioB" class="label2" matTooltip="Tin"></label>
-<!--                         
-                            <input type="radio" id="radioOrange" name="radioFruit" value="orange">
-                            <label for="radioOrange">Orange</label>  -->
+                            <label for="radioB" class="label2" matTooltip="Silver"></label>
+
                         </div>
                     </div>
                 </div>
@@ -92,45 +79,31 @@
                       </div>
                 </div>
                 
-                <!-- <div class="pincode">
-                    <div fxLayout="row" fxlayoutAlign="start none" fxLayoutGap.xs="" fxLayoutGap="5%">
-                        <div><h3>Pincode:</h3></div>
-                        <div><input type="text" placeholder="Enter pincode" class="pincode-input"></div>
-                    </div>
-                    
-                </div> -->
+                
 
             </div>
             <br>
-            <div fxLayout="row" fxLayoutGap="2%">
-                <div><h3>Pincode:</h3></div>
+            <div fxLayout="row">
+                <div><h3 style="margin-top: 6%;">Pincode:</h3></div>
                 <div><input type="tel" placeholder="Enter Pincode" class="pincode-input"></div>
-                <div><button class="check-btn">Check</button></div>
+                <div><button class="check-btn" ngClass.xs="check-btn-small">Check</button></div>
             </div>
             <br>
-            <div fxLayoutAlign="row" fxLayoutGap="5%" fxLayoutGap.xs="1%">
+            <div fxLayout="row" fxLayoutGap="5%" fxLayoutGap.xs="1%">
                 <div fxFlex="50"  fxFlex.xs="50">
-                <!-- <button class="cart">
-                    <div fxLayout="row"><div  class="cart-text" ngClass.xs="cart-text-small" >Add to Cart</div>
-                    <div><img src="../../assets/images/cart.svg"class="cart-icon" ngClass.xs="cart-icon-small" alt=""></div> 
-                </div>
-                </button> -->
-                <button mat-raised-button class="place-order-button span1" >Add to Cart <img class="placeorder-icon" src="../../assets/images/cart.svg" ></button>
+                
+                <button mat-raised-button class="place-order-button span1" >Add to Cart <img class="placeorder-icon" [ngStyle.xs]="'margin-top:2%;'" src="../../assets/images/cart.svg" ></button>
             </div>
             <div fxFlex="50" fxFlex.xs="50" >
-                <!-- <button class="buy">
-                    <div fxLayout="row"><div  class="buy-text" ngClass.xs="buy-text-small" >Buy Now</div>
-                    <div><img src="../../assets/images/flash.svg"class="buy-icon" ngClass.xs="buy-icon-small"  alt=""></div> 
-                </div>
-                </button> -->
-                <button mat-raised-button class="place-order-button span1" >Buy Now <img class="placeorder-icon" src="../../assets/images/flash.svg" ></button>
+                
+                <button mat-raised-button class="place-order-button span1" >Buy Now <img class="placeorder-icon" [ngStyle.xs]="'margin-top:2%;'" src="../../assets/images/flash.svg" ></button>
             </div>
             </div>
 
         </div>
 
     </div>
-    <div fxLayoutAlign="row" fxLayoutAlign="space-evenly stretch" class="details-section" >
+    <div fxLayout="row" fxLayoutAlign="space-evenly stretch" class="details-section" >
         <div>
           <h2><button   #d class="details-btn" ngClass.xs="details-btn-small" (click)="details(1)">Description</button></h2>
         </div>
@@ -142,18 +115,19 @@
           </div>
     </div>
     
-    <div fxLayoutAlign="row" fxLayoutAlign="center stretch" class="describing-details" ngClass.xs="describing-details-small">
+    <div fxLayout="row" fxLayoutAlign="center stretch" class="describing-details" ngClass.xs="describing-details-small">
     <h3>{{showData.data}}</h3>
     </div>
-    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="10%" style="margin-bottom: 5%; margin-top: 5%;">
-        <div fxLayoutAlign="center center">
-            <button class="service-btn" ngClass.xs="service-btn-small">
-                <mat-icon>info</mat-icon>
-                Customer Service </button>
-        </div>
-        <div fxLayoutAlign="center center">
-            <button class="payment-btn" ngClass.xs="payment-btn-small"><mat-icon>lock</mat-icon>
-                Secure Payment </button>
-        </div>
+    
+
+      <div fxLayout="row" fxLayoutAlign="center center"  fxLayoutGap="10%" fxLayout.xs="column">
+        <div fxFlex="40">
+        
+        <button  mat-raised-button class="customer" [ngStyle.xs]="'width: 300px;'" [ngStyle.lt-lg]="'font-size:2vw'" ngClass.xs="customer-small"><mat-icon class="customer-icon" ngClass.xs="customer-icon-small">info</mat-icon> Customer Service </button>
+    </div>
+    <div fxFlex="40" >
+        
+        <button mat-raised-button class="secure" [ngStyle.xs]="'width: 300px;'" ngClass.xs="secure-small" ><mat-icon class="secure-icon" ngClass.xs="secure-icon-small">lock</mat-icon> Secure Payment</button>
+    </div>
     </div>
 </div>

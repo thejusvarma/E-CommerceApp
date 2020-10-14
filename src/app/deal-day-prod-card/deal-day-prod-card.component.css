@@ -87,4 +87,16 @@
      font-weight: bold;
      padding-left: 3%;
  }
-
+ .buy-button{
+     background-color: black;
+     color: white;
+     border: none;
+     border-radius: 50vw;
+     margin-top: 10% !important;
+     width: 80%;
+     padding: 3% 0;
+     margin-left: 6%;
+ }
+.buy-button:focus{
+    outline: none;
+}
