@@ -24,16 +24,24 @@ button{
 }
 .text-bold{
   font-weight: bold !important;
+  font-family: 'Poppins', sans-serif !important;
+
 }
 .mat-icon-button{
   background-color:#E1E1E1;
   color: black;
 }
 
+.mat-raised-button{
+  font-weight: bold !important;
+
+}
 
 .mat-flat-button{
   width: 45px!important;
   min-width: unset!important;
+  font-weight: bold !important;
+
 }
 
 .add-button{
@@ -44,6 +52,7 @@ button{
   outline-width: 0;
   outline-style: none;
   padding-top: 3px;
+
 }
 
 .minus-button{
@@ -60,7 +69,9 @@ button{
   outline-width: 0;
   outline-style: none;
   border-radius: 0%;
-  padding: 8px;
+  padding: 5.5px;
+  padding-left: 8px;
+  padding-right:8px ;
 }
 
 .minus-button:hover {

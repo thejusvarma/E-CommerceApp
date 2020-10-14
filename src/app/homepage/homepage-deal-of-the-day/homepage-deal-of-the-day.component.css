@@ -19,7 +19,7 @@
 }
 .label-feature-text{
   font-size: 125%;
-  font-weight: bold !important;
+  font-weight: bolder !important;
   color: black;
 }
 
@@ -31,9 +31,9 @@ button{
   border-radius: 25px;
   background-color: #FFd7B5;
   color: black;
-  font-weight: bold !important;
+  font-weight: bolder !important;
+  font-family: 'Poppins', sans-serif !important;
 }
-
 
 p{
   margin-top: 10px;

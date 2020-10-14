@@ -10,8 +10,16 @@ img{
   color:black;
   font-weight: bold !important;
   border-radius: 25px;
+  font-family: 'Poppins', sans-serif !important;
+
 }
 
 .text-bold{
   font-weight: 600;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif !important;
+
 }

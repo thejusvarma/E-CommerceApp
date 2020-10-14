@@ -1,4 +1,4 @@
-<div fxLayout="column" fxLayoutGap="-12px" >
+<div fxLayout="column" fxLayoutGap="-10px" >
   <div fxLayout="row" fxLayoutGap.gt-xs="40px">
     <div fxFlex="30" fxFlex.xs="45">
       <img src="https://dummyimage.com/800x800/4d4c4d/fff">
@@ -19,9 +19,9 @@
       </div>
 
       <div fxLayout="row" fxlayoutAlign="start none" style="margin-top: 5px;">
-        <div><button (click)="decreaseCount()" class="minus-button"><mat-icon >remove</mat-icon></button></div>
-        <div><button  class="value-box text-bold">{{count}}</button></div>
-        <div><button (click)="increaseCount()" class="add-button"><mat-icon >add</mat-icon></button></div>
+        <div><button (click)="decreaseCount()" class="minus-button"><mat-icon style="font-weight: bold;" >remove</mat-icon></button></div>
+        <div><button  class="value-box text-bold" style="font-weight: bold !important;">{{count}}</button></div>
+        <div><button (click)="increaseCount()" class="add-button" ><mat-icon style="font-weight: bold;">add</mat-icon></button></div>
       </div>
       <br>
 
