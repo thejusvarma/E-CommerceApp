@@ -61,7 +61,6 @@ export class ProductDetailComponent implements OnInit {
   
   constructor() { }
   numSlide:number=1
-  // fontweight:string="bolder"
   ngOnInit(): void {
     setTimeout(()=>{
       this.d.nativeElement.style.fontWeight="bolder"
@@ -185,6 +184,9 @@ export class ProductDetailComponent implements OnInit {
   }
   count:number=1;
   increaseCount(){
+    if(this.count==10){
+      return this.count;
+    }
     return this.count++;
   }
   decreaseCount(){

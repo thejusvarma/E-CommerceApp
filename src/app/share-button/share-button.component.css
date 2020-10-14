@@ -11,6 +11,10 @@ img{
   height: 20px;
 }
 
+/* .mat-icon:hover{
+  color: #B79B6C;
+}
+ */
 
     @media screen and (max-width: 1024px) {
       .share-bar {
@@ -19,12 +23,20 @@ img{
                                          }
     @media screen and (max-width: 768px) {
 
+      .share-bar:focus {
+        outline : none !important;
+      }
+
       .share-bar {
         bottom: 15px;
-        left: 0px; } }
+        left: 0px;
+        outline: none ! important;} }
     .share-bar .title {
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      text-decoration: none;
+      outline: 0 ! important;}
+
 
       .share-bar .title .ion {
         font-size: 24px;
@@ -37,6 +49,7 @@ img{
         -webkit-border-radius: 50%;
                 border-radius: 50%;
         text-align: center;
+        outline: 0 ! important;
         -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
         -webkit-transform: translateX(0);
@@ -85,6 +98,7 @@ img{
           -ms-transform: translate(-50%, 30px);
               transform: translate(-50%, 30px);
       opacity: 0;
+      outline: none ! important;
       -webkit-transition: .2s ease-in-out;
       -o-transition: .2s ease-in-out;
       transition: .2s ease-in-out;
@@ -102,7 +116,7 @@ img{
           display: none; }
         .share-bar .links a:hover {
           color: #B79B6C;
-          background-color: #f9f9f9; }
+          background-color: #ebebeb; }
       .share-bar .links span {
         font-size: 18px;
         margin: 0;
