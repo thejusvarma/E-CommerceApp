@@ -3,10 +3,14 @@
         <h1 class="heading" ngClass.xs="heading-small">Deal of the Day</h1>
 
     </div>
-    <div class="timer" fxLayout="row" style="margin-bottom: 2%; margin-top: 1%;">
+    <div fxLayout="row" style="margin-bottom: 2%; margin-top: 1%;">
+        <img src="../../../assets/321.svg" style="width: 3vw; height: 3vw;" [ngStyle.xs]="'width: 8vw; height: 8vw; margin-top: 6%'">
+        <h3 style="font-weight: bold; margin-left: 40px; font-size: 210%; margin-top: 5%;" [ngStyle.xs]="'margin-left:20px; font-size: 120%;'">{{remainingTime}}</h3>
+      </div>
+    <!-- <div class="timer" fxLayout="row" style="margin-bottom: 2%; margin-top: 1%;">
         <mat-icon class="icon" style="font-size: 3vw;" [ngStyle.xs]="'font-size: 8vw;'">alarm</mat-icon>
         <h3 style="font-size: 2vw; margin-top: 8%; margin-left: 15%;" [ngStyle.xs]="'font-size: 5vw;margin-top: 2%; margin-left: 2%;'">24:31:34</h3>
-    </div>
+    </div>  -->
     <div fxLayout="row" style="height: 100%; margin-bottom: 10%;" fxLayoutAlign="center" fxLayoutGap="5%"    fxLayout.sm="column" fxFlex.sm="2"
      fxLayoutAlign.sm="space-between stretch" fxLayout.lt-md="column" fxLayoutAlign.md="space-between stretch" fxLayoutAlign.lt-md="column" fxLayoutAlign.lt-md="space-between stretch" fxFlex.lt-md="10">
         <div fxLayout="column"  fxFlex="15" fxLayoutGap="10%" style="margin-bottom: 2%;" >

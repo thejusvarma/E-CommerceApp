@@ -57,4 +57,24 @@ p{
 }
 }
 
+.heading-box{
+  margin-top:1%;
+  margin-left:14%;
+  margin-bottom: 1%;
+  width: max-content;
+  height:max-content;
+ border-radius: 50px;
+ background-color: #FFD7B5;
+ }
 
+ .heading{
+ font-weight: 900;
+ font-size: 6vw;
+ padding-top: 2vw;
+ padding-bottom:2vw ;
+ padding-left: 2vw;
+ padding-right: 2vw;
+ text-align: center;
+ font-family:Poppins;
+
+ }
