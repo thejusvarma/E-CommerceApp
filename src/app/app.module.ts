@@ -59,6 +59,7 @@ import { Error404Component } from './error404/error404.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ShareButtonComponent } from './share-button/share-button.component';
 import {MatSelectModule} from '@angular/material/select';
+import { AllCategoryComponent } from './all-category/all-category.component';
 
 @NgModule({
   declarations: [
@@ -99,7 +100,8 @@ import {MatSelectModule} from '@angular/material/select';
     HomepageDealOfTheDayComponent,
     Error404Component,
     ProductDetailComponent,
-    ShareButtonComponent
+    ShareButtonComponent,
+    AllCategoryComponent
 
 
   ],
