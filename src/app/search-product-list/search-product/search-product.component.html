@@ -1,0 +1,32 @@
+<a href="#" fxLayout="row"  fxLayoutGap="40px" fxLayoutGap.lt-sm="8px" style="margin-bottom: 13px;">
+    <div fxFlex="20" fxFlex.xs="40">
+      <img src="https://dummyimage.com/800x800/4d4c4d/fff">
+    </div>
+
+    <div fxLayout="row"  fxFlex="900" fxFlex.xs="60" fxLayoutAlign="space-between">
+      <div fxFlex="85" fxLayout="column" fxLayoutGap.lt-sm="-15px">
+        <div>
+          <h1 class="text-bold">Product Name</h1>
+        </div>
+        <div>
+          <h3 class="text-bold">Category</h3>
+        </div>
+        <div [fxShow.gt-xs]="isVisibleOnMobile()"  >
+          <h3 class="text-bold">₹ 3000</h3>
+        </div>
+        <div >
+          <p class="text-fam">More Info</p>
+        </div>
+        <div>
+          <h4  class="text-fam">Availabe in - </h4>
+        </div>
+      </div>
+
+      <div fxFlex="15" [fxShow.xs]="isVisibleOnMobile()">
+        <div>
+          <h2 class="text-bold">₹ 1200</h2>
+        </div>
+      </div>
+    </div>
+  </a>
+  <hr>

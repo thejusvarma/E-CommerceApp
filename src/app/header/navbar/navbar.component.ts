@@ -17,6 +17,18 @@ export class NavbarComponent implements OnInit {
     event.stopPropagation();
   }
 
+  showCount:number=0;
+  show(){
+    if(this.showCount==0)
+    {
+      return this.showCount++;
+
+    }
+    if(this.showCount==1)
+    {
+      return --this.showCount;
+    }
+  }
 
   isVisibleOnMobile(){
 

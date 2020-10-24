@@ -13,14 +13,8 @@ button{
   background-color: #FFD7B5;
  }
  .mat-icon{
-  margin-top: 10px;
+  margin-top: 8px;
   color:black;
- }
-
- .seacrh-icon-pad{
-  margin:0px;
-  color: white;
-  background-color: white;
  }
 
  .logo{
@@ -30,7 +24,7 @@ button{
    margin-left: -15px;
  }
  .utility-icon{
-   margin-top: 9px;
+   margin-top: 8px;
    height: 20px;
    width: 20px;
  }
@@ -155,12 +149,12 @@ form.phone button:hover {
 }
 
 .display{
-  display: none;
+  margin-bottom: -20px;
 }
 
-.phonesearch:hover .display{
+/* .phonesearch:hover .display{
   display: block;
-}
+} */
 
 /* Clear floats */
 form.phone::after {

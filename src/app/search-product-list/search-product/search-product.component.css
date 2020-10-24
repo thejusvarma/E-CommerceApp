@@ -1,0 +1,29 @@
+img{
+  width: 100%;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.text-fam{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.text-bold{
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+@media only screen and (max-width: 600px) {
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  h1{
+    font-size: 150%;
+  }
+
+  }
+

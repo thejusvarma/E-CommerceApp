@@ -18,6 +18,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { Error404Component } from './error404/error404.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { AllCategoryComponent } from './all-category/all-category.component';
+import { SearchProductListComponent } from './search-product-list/search-product-list.component';
+
 const routes: Routes = [
   { path: 'contact', component: ContactUsComponent },
   { path: 'about', component: AboutUsComponent },
@@ -36,6 +38,7 @@ const routes: Routes = [
   {path: 'error-404', component: Error404Component},
   {path: 'all-category', component: AllCategoryComponent},
   {path: 'product', component: ProductDetailComponent},
+  {path: 'search', component: SearchProductListComponent},
   { path: '', component: HomepageComponent},
 ];
 

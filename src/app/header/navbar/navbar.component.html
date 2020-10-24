@@ -12,13 +12,13 @@
   <div fxFlex="60" fxFlex.xs="15" [fxShow.xs]="isVisibleOnMobile()">
     <form class="example" action=" ">
       <input type="text" placeholder="Search for Products" name="search">
-      <button type="submit"><mat-icon class="search-icon-pad"><a class="search-icon-pad">search</a></mat-icon></button>
+      <button type="submit"><mat-icon >search</mat-icon></button>
     </form>
   </div>
 
-  <div class="phonesearch">
+  <div class="phonesearch" (click)="show()">
     <div fxFlex="5" fxFlex.xs="8" fxShow [fxShow.gt-xs]="isVisibleOnMobile()" >
-      <a href="#" >
+      <a >
         <mat-icon  matBadge="15" matBadgeColor="warn">search</mat-icon>
       </a>
     </div>
@@ -44,7 +44,7 @@
   </div>
 </mat-toolbar>
 
-<div class="display" >
+<div class="display" *ngIf="showCount==1" [fxShow.gt-xs]="isVisibleOnMobile()" >
   <div fxLayoutAlign="center none">
     <form class="phone" action=" ">
       <input type="text" placeholder="Search.." name="search">

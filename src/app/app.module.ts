@@ -60,6 +60,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ShareButtonComponent } from './share-button/share-button.component';
 import {MatSelectModule} from '@angular/material/select';
 import { AllCategoryComponent } from './all-category/all-category.component';
+import { SearchProductListComponent } from './search-product-list/search-product-list.component';
+import { SearchProductComponent } from './search-product-list/search-product/search-product.component';
 
 @NgModule({
   declarations: [
@@ -101,7 +103,9 @@ import { AllCategoryComponent } from './all-category/all-category.component';
     Error404Component,
     ProductDetailComponent,
     ShareButtonComponent,
-    AllCategoryComponent
+    AllCategoryComponent,
+    SearchProductListComponent,
+    SearchProductComponent
 
 
   ],
